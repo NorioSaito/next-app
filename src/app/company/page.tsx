@@ -1,10 +1,9 @@
 import React from 'react'
+import Hero from '../_components/Hero'
 
 function page() {
   return (
-    <div>
-      company
-    </div>
+    <Hero title='Company' text='会社概要' />
   )
 }
 
