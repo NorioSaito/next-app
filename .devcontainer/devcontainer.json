@@ -31,7 +31,7 @@
 	// "shutdownAction": "none",
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "npm run dev"
+	"postCreateCommand": "npm run dev --prefix src"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
