@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-function Hero(props: { title: string, text: string}) {
+function Hero(props: { title: string, text: string, desc: string }) {
   return (
     <section className="grid h-64 bg-neutral-600 content-center">
       <motion.p
@@ -11,16 +11,16 @@ function Hero(props: { title: string, text: string}) {
         animate={{ x: '15vw', y: '-2vw', opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        { props.title }
+        {props.title}
       </motion.p>
       <motion.section
-        initial={{ y: '3vw', opacity: 0 }}
+        initial={{ y: '3vw', opacity: 30 }}
         animate={{ y: '0vw', opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
         className="ml-64"
       >
-        <h1>{ props.text }</h1>
-        <p>テキストテキストテキスト</p>
+        <h1>{props.text}</h1>
+        <p>{props.desc}</p>
       </motion.section>
     </section>
   )

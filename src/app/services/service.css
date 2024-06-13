@@ -1,0 +1,106 @@
+.margin-large {
+    margin: 100px 0;
+  }
+  
+  .service_catchcopy{ /*キャッチコピー*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:xx-large;
+    margin: 100px;
+    width: 1000px;
+  }
+  .introdure_company,.service{ /*会社紹介・サービスグリッド*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  .btn_introcom,.btn_service{ /*会社紹介へボタン*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: smaller;
+    height: 40px;
+    width: 180px;
+    border: 1px solid;
+    color: aliceblue;
+    background-color: #333;
+    margin-top: 10px;
+    border-radius:18px;
+  }
+  
+  .btn_introcom:hover,.btn_service:hover{ /*会社紹介へ・サービスボタン ホバー時*/
+    background-color: #fd7e00;
+  }
+
+  .service_subtitle{ /*サービス小見出し*/
+    text-align: start;
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .desc_introcom,.desc_service{ /*会社紹介・サービス　説明*/
+    text-align: start;
+  }
+
+  .servicelogo{
+    text-align: start;
+  }
+
+  .servicetitle{ /*Service 英語文字列*/
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 50px;
+  }
+
+  .servicetitle_jp{ /*サービス 日本語文字列*/
+    text-align: left;
+    font-size: medium;
+    padding-left: 50px;
+  }
+
+  .products{
+    text-align: center;
+  }
+  .productstitle{ /*Products 見出し*/
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .productstitle_jp{ /*取扱製品一覧　文字列*/
+    font-size: medium;
+    font-weight: bold;
+
+  }
+
+  .productcard{ /*Salesforce・CELFカードコンポーネント*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  .salesforce,.celf { /*Salesforceカード*/
+    margin: 30px auto;
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+  }
+
+  .salesforce_img{ /*Salesforce 画像*/
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-card_content {
+    padding: 20px;
+  }
+
+  .salesforce_text {
+    color: #777;
+    font-size: 20px;
+    line-height : 1.5;
+  }

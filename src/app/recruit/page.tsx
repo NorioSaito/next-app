@@ -3,7 +3,7 @@ import Hero from '../_components/Hero'
 
 function Recruit() {
   return (
-    <Hero title='Recruit' text='採用情報' />
+    <Hero title='Recruit' text='採用情報' desc='求める人材とは' />
   )
 }
 
