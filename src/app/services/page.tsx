@@ -3,6 +3,8 @@ import Hero from '../_components/Hero';
 import './service.css';
 import Image from "next/image";
 import Link from 'next/link';
+/*import { motion } from framer - motion;*/
+
 
 
 function Services() {
@@ -11,73 +13,87 @@ function Services() {
       <Hero title='Services' text='サービス' desc='どんな事業をやっているのか？' />
       <div>
         <main className='service_top'>
-          <h1 className='service_catchcopy'>
-            キャッチコピーキャッチコピーキャッチコピー
-          </h1>
-          <div className='containers'>
-            <div className='introdure_company'>
-              <Image
-                src="A-force_horizon.svg"
-                alt=""
-                width={200}
-                height={970}
-              />
+          <div className='container mx-auto p-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 pt-8 gap-4'>
               <div>
-                <div className='desc_introcom'>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-                  テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-                  テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-                </div>
-                <button className='btn_introcom' type='button'>
-                  会社紹介へ
+                <h1 className='text-2xl font-bold mb-4 '>ミッション</h1>
+                <h2 className='text-gray-700 mb-4'>お客様の成功と笑顔を広げるベストデリバリーカンパニー</h2>
+                <p className='text-gray-700 ml-4'>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                </p>
+              </div>
+              <div className='bg-white p-6 rounded shadow-md'>
+                <img src='A-force_horizon.svg' alt='' />
+              </div>
+              <hr className='col-span-2 my-4 border-gray-300'></hr>
+              <div>
+                <h1 className='text-2xl font-bold mb-4 '>エクセレントサービス</h1>
+                <h1 className='text-gray-700 mb-4'>エクセレントサービス小見出し</h1>
+                <p className='text-gray-700 ml-4'>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                </p>
+              </div>
+              <div className='bg-white p-6 rounded shadow-md'>
+                <img src='A-force_horizon.svg' alt='' />
+              </div>
+              <hr className='col-span-2 my-4 border-gray-300'></hr>
+              <div>
+                <h1 className='text-2xl font-bold mb-4 '>SI事業</h1>
+                <h2 className='text-gray-700 mb-4'>SI事業小見出し</h2>
+                <p className='text-gray-700 ml-4'>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                </p>
+                <button className='bg-black text-white py-2 px-10 mt-4 ml-4 rounded-md' >
+                  詳しく見る
                 </button>
               </div>
+              <div className='items-center justify-center bg-white p-6 rounded shadow-md'>
+                <img src="A-force_horizon.svg" alt='' />
+              </div>
+              <hr className='col-span-2 my-4 border-gray-300'></hr>
+              <div>
+                <h1 className='text-2xl font-bold mb-4 '>コンサルティング事業</h1>
+                <h2 className='text-gray-700 mb-4'>コンサルティング事業小見出し</h2>
+                <p className='text-gray-700 ml-4'>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                </p>
+                <button className='bg-black text-white py-2 px-10 mt-4 ml-4 rounded-md' >
+                  詳しく見る
+                </button>
+              </div>
+              <div className='items-center justify-center bg-white p-6 rounded shadow-md'>
+                <img src="A-force_horizon.svg" alt='' />
+              </div>
+              <hr className='col-span-2 my-4 border-gray-300'></hr>
+              <div>
+                <h1 className='text-2xl font-bold mb-4 '>教育事業</h1>
+                <h2 className='text-gray-700 mb-4'>教育事業小見出し</h2>
+                <p className='text-gray-700 ml-4'>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                  テキストテキストテキストテキストテキストテキストテキスト<br></br>
+                </p>
+                <button className='bg-black text-white py-2 px-10 mt-4 ml-4 rounded-md' >
+                  詳しく見る
+                </button>
+              </div>
+              <div className='items-center justify-center bg-white p-6 rounded shadow-md'>
+                <img src="A-force_horizon.svg" alt='' />
+              </div>
+              <hr className='col-span-2 my-4 border-gray-300'></hr>
             </div>
-          </div>
-          <div className='service'>
-            <div>
-              <h1 className='servicetitle'>
-                Service
-              </h1>
-              <p className='servicetitle_jp'>
-                サービス
-              </p>
-            </div>
-            <div>
-              <div className='service_subtitle'>
-                小見出し
-              </div>
-              <div className='desc_service'>
-                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              </div>
-              <button className='btn_service' type='button'>
-                サービスへ
-              </button>
-            </div>
-          </div>
-          <div className='products'>
-            <h1 className='productstitle'>Products</h1>
-            <h1 className='productstitle_jp'>取扱製品一覧</h1>
-          </div>
-          <div className='productcard'>
-            <section className='salesforce'>
-              <img className='salesforce_img' src="A-force_horizon.svg" alt='' />
-              <div className='card_content'>
-                <p className='salesforce_text'>Salesforce</p>
-              </div>
-            </section>
-            <section className='celf'>
-              <img className='celf_img' src="A-force_horizon.svg" alt='' />
-              <div className='card_content'>
-                <p className='celf_text'>CELF</p>
-              </div>
-            </section>
-          </div>
-        </main>
-      </div>
-    </div>
+          </div >
+        </main >
+      </div >
+    </div >
   );
 }
 
