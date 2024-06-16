@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "airbnb-base"],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-console": ["error"],
+		"indent": ["error", "tab"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"no-unused-vars": ["error"],
+		"camelcase": ["error"],
+		"no-tabs": "off",
+		"import/extensions": ["error", "never"]
+	}
 }
