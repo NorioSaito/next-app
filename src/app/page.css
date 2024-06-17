@@ -51,7 +51,7 @@
     text-align: start;
   }
 
-  .servicetitle,.newstitle{ /*Service 英語文字列*/
+  .newstitle{ /*Service 英語文字列*/
     text-align: left;
     font-size: xx-large;
     font-weight: bold;

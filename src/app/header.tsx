@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import {
   Dialog,
@@ -11,6 +11,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,10 +23,10 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image
-                src="A-force_horizon.svg"
-                alt=""
-                width={200}
-                height={970}
+              src="A-force_horizon.svg"
+              alt=""
+              width={200}
+              height={970}
             />
           </Link>
         </div>
@@ -41,19 +42,32 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link href="/company" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            会社紹介
           </Link>
-          <Link href="/services" className="text-sm font-semibold leading-6 text-gray-900">
-            Services
+          <div className="relative group">
+            <Link href="/services" className="text-sm font-semibold leading-6 text-gray-900 hover:text-black">
+              サービス
+            </Link>
+            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
+              <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">サブメニュー1</Link>
+              <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">サブメニュー2</Link>
+              <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">サブメニュー3</Link>
+            </div>
+          </div>
+          <Link href="/products" className="text-sm font-semibold leading-6 text-gray-900">
+            製品一覧
           </Link>
           <Link href="/products" className="text-sm font-semibold leading-6 text-gray-900">
-            Products
+            教育事業
+          </Link>
+          <Link href="/products" className="text-sm font-semibold leading-6 text-gray-900">
+            ニュース
           </Link>
           <Link href="/recruit" className="text-sm font-semibold leading-6 text-gray-900">
-            Recruit
+            採用情報
           </Link>
           <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
-            Contact
+            お問い合わせ
           </Link>
         </PopoverGroup>
       </nav>
@@ -86,25 +100,37 @@ export default function Header() {
                   href="/company"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  会社紹介
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Services
+                  サービス
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Products
+                  製品一覧
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Recruit
+                  教育事業
+                </Link>
+                <Link
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  ニュース
+                </Link>
+                <Link
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  採用情報
                 </Link>
                 <Link
                   href="#"

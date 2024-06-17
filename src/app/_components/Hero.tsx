@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 
 function Hero(props: { title: string, text: string, desc: string }) {
+
   return (
     <section className="grid h-64 bg-neutral-600 content-center">
       <motion.p
