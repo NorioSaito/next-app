@@ -17,6 +17,11 @@
 		"no-unused-vars": ["error"],
 		"camelcase": ["error"],
 		"no-tabs": "off",
-		"import/extensions": ["error", "never"]
+		"import/extensions": "off"
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
 	}
 }
