@@ -1,4 +1,6 @@
 import React from 'react'
+import './button.css';
+import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 
 
 interface ButtonProps {
@@ -8,9 +10,13 @@ interface ButtonProps {
 
 const button: React.FC<ButtonProps> = ({ text, onClick }) => {
   return (
-    <button onClick={onClick} className="navButton">
-      {text}
+    <div>
+    <button onClick={onClick} 
+    className="border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black text-xs m-2 py-2 px-4  rounded-full hover:bg-yellow-300 transition-all duration-300 flex items-center">
+      <span>{text}</span>
+      <ArrowRightCircleIcon className="h-5 w-5 ml-3 p-1 text-white bg-orange-500 rounded-full" />
     </button>
+   </div>
   );
 };
 export default button;

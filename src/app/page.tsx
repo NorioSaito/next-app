@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Button from './_components/button';
+import Button from './_components/button'; //ボタンコンポーネントをインポート
 
 // import { useRouter } from 'next/router';
 
@@ -16,15 +16,15 @@ import Button from './_components/button';
 // }
 // }
 const handleClick = () => {
-	
-}
-
-export default function Home() {
+	console.log('Button clicked!');
+  };
+  
+  export default function Home() {
 	return (
-		<main>
-			<div className="ssamplebutton">
-				<Button text="トップページボタン" onClick={handleClick} />
-			</div>
-		</main>
+	  <main>
+		<div className="ssamplebutton">
+		  <Button text="トップページボタン" onClick={handleClick} />
+		</div>
+	  </main>
 	);
-}
+  }
