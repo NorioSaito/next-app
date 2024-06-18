@@ -5,6 +5,7 @@ const PATHS = {
 	PRODUCTS: '/products',
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',
+	PRIVACYPOLICY: '/',
 };
 
 export default PATHS;
