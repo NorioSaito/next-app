@@ -3,9 +3,10 @@ const PATHS = {
 	COMPANY: '/company',
 	SERVICES: '/services',
 	PRODUCTS: '/products',
+	EDUCATION: '/',
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',
-	PRIVACYPOLICY: '/',
+	PRIVACYPOLICY: '/privacy',
 };
 
 export default PATHS;

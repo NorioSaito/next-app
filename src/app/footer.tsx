@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PATHS from '../constants/paths';
 import { PopoverGroup } from '@headlessui/react';
-
+import { Square2StackIcon } from '@heroicons/react/24/outline';
 
 function footer() {
 
@@ -12,9 +12,10 @@ function footer() {
 		{ key: 'company', text: 'Company', path: PATHS.COMPANY },
 		{ key: 'services', text: 'Service', path: PATHS.SERVICES },
 		{ key: 'products', text: 'Products', path: PATHS.PRODUCTS },
+		{ key: 'education', text: 'Education', path: PATHS.EDUCATION },
 		{ key: 'recruit', text: 'Recruit', path: PATHS.RECRUIT },
 		{ key: 'contact', text: 'Contact', path: PATHS.CONTACT },
-		{ key: 'privacypolicy', text: 'Privacy Policy', path: PATHS.CONTACT },
+		{ key: 'privacypolicy', text: 'Privacy Policy', path: PATHS.PRIVACYPOLICY },
 	];
 	
 	// const returnTop = () => {
@@ -29,7 +30,7 @@ function footer() {
 			<div className="w-1/2">
 					<div className="relative flex ml-20">
 						<Image className="pt-4" src="Alogo.svg" alt="" width={346.71} height={270.3}  />
-						<Image className="absolute bottom-0 right-0" src="footer_catchcopy.svg" alt="" width={329.29} height={76} />
+						<Image className="absolute bottom-0 right-10" src="footer_catchcopy.svg" alt="" width={329.29} height={76} />
 					</div>
 					<div className="relative flex ml-20 mt-6 mr-4" >
 						<Image src="footer_A-force.svg" alt="" width={198} height={47} />
@@ -49,11 +50,16 @@ function footer() {
 				</div>
 				<nav className="relative flex justify-end">
 					<PopoverGroup className="absolute bottom-16 right-10 flex flex-col items-end text-white">
-						{footerMenu.map((item) => (
+						{footerMenu.map((item) => (item.key === 'education' ? (
+							<Link className="m-1 text-left w-full flex" key={item.key} href={item.path} target="_blank" rel='noopener'>
+								{item.text}
+								<Square2StackIcon className="h-5"></Square2StackIcon>
+							</Link>
+						):(
 							<Link className="m-1 text-left w-full" key={item.key} href={item.path}>
 								{item.text}
 							</Link>
-						))}
+						)))}
 					</PopoverGroup>
 				</nav>
 			</div>
