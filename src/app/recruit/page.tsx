@@ -58,7 +58,7 @@ function Recruit() {
         <Card imageUrl='A-force_horizon.svg' title='社員３' description='テキストテキスト' link=''/>
       </section>
     </div>
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }
