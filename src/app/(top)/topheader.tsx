@@ -27,7 +27,7 @@ function Topheader() {
 				<div className="w-1/2">
 					<Link href={PATHS.INDEX} className="-m-1.5 p-1.5">
 						<span className="sr-only">Your Company</span>
-						<Image src="A-force_horizon.svg" alt="" width={187} height={47}></Image>
+						<Image src="A-force_horizon.svg" alt="エイ・フォース株式会社" width={187} height={47}></Image>
 					</Link>
 				</div>
 				<div className="w-1/2 flex justify-end">
@@ -48,6 +48,7 @@ function Topheader() {
 						)))}
 					</PopoverGroup>
 					<div>
+						{/* 20240620時点でハンバーガーメニュー処理未実装 */}
 						<Bars3Icon className="h-7"></Bars3Icon>
 					</div>
 				</div>
