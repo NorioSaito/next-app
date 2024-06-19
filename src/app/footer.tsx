@@ -1,105 +1,106 @@
-'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Harftitle from './_components/common/HarfTitle';
-import Button from './_components/common/Button';
+import { PopoverGroup } from '@headlessui/react';
+import { Square2StackIcon } from '@heroicons/react/24/outline';
+import PATHS from '../constants/paths';
 
-export default function Footer() {
+function footer() {
+	const footerMenu = [
+		{ key: 'home', text: 'Home', path: PATHS.INDEX },
+		{ key: 'company', text: 'Company', path: PATHS.COMPANY },
+		{ key: 'services', text: 'Service', path: PATHS.SERVICES },
+		{ key: 'products', text: 'Products', path: PATHS.PRODUCTS },
+		{ key: 'education', text: 'Education', path: PATHS.EDUCATION },
+		{ key: 'news', text: 'News', path: PATHS.NEWS },
+		{ key: 'recruit', text: 'Recruit', path: PATHS.RECRUIT },
+		{ key: 'contact', text: 'Contact', path: PATHS.CONTACT },
+		{ key: 'privacypolicy', text: 'Privacy Policy', path: PATHS.PRIVACYPOLICY },
+	];
+
+	// const returnTop = () => {
+	// 	window.scrollTo({
+	// 	  top: 0,
+	// 	  behavior: 'smooth'
+	// 	})
+	//   }
+
 	return (
-		<footer className="grid grid-row-2 h-full">
-			{/* お問い合わせ、電話番号欄 */}
-			<section className="grid grid-cols-2 w-full">
-				<div className="grid text-center border border-black py-[15%]">
-					<Harftitle title="Contact" subTitle="お問い合わせ" text_position="center" />
-					<div className="my-[7%]">
-						<p>プロダクト開発、サービスについての</p>
-						<p>ご相談、ご質問などご気軽にお問い合わせください。</p>
-					</div>
-					<div className="grid justify-center">
-						<Button title="ニュース一覧へ" link=""></Button>
+		<footer className="bg-black  pt-8 h-[534px] flex">
+			<div className="w-1/2 pl-20">
+				<div className="relative flex ml-20">
+					<Image className="pt-4" src="Alogo.svg" alt="" width={346.71} height={270.3} />
+					<Image
+						className="absolute bottom-0 right-0"
+						src="footer_catchcopy.svg"
+						alt=""
+						width={329.29}
+						height={76}
+					/>
+				</div>
+				<div className="relative flex ml-20 mt-6 mr-4">
+					<Image src="footer_A-force.svg" alt="" width={198} height={47} />
+					<Image
+						className="ml-6"
+						src="footer_copyright.svg"
+						alt=""
+						width={339}
+						height={52}
+					/>
+					<Image
+						className="ml-6"
+						src="footer_privacy.svg"
+						alt=""
+						width={72}
+						height={85.15}
+					/>
+				</div>
+				<div className="ml-20 mt-2">
+					<Image src="footer_facebook.svg" alt="" width={40} height={40} />
+				</div>
+			</div>
+			<div className="w-1/2 flex flex-col justify-between pr-20">
+				<div className="relative flex justify-end pr-9">
+					<div className="relative flex flex-col">
+						<Image
+							className="absolute right-10 mt-4"
+							src="footer_chevronup.svg"
+							alt=""
+							width={25.41}
+							height={10.67}
+						></Image>
+						<p className="right-10 mt-8  text-white">Page Top</p>
 					</div>
 				</div>
-				<div className="grid text-center border border-black py-[15%]">
-					<Harftitle title="Phone" subTitle="お電話" text_position="center" />
-					<div>
-						<p>お電話でのお問い合わせはこちらからどうぞ</p>
-					</div>
-					<div>
-						<p className="text-4xl font-bold">03-5216-2868</p>
-					</div>
-				</div>
-			</section>
-			{/* ネイビーフッター部分 */}
-			<section className="grid grid-cols-6 bg-slate-800 col-sapn-2 px-[80px]">
-				<div className="col-span-5 grid grid-rows-3">
-					<div></div>
-					<div className="flex">
-						<Image src="A-force_horizon.svg" alt="" width={150} height={100} />
-						<p className="grid items-center mx-5 text-white">
-							Coppyright©2024 A-force All Rights Reserved.
-						</p>
-						<Image src="/p_mark (3).png" alt="" width={70} height={50}></Image>
-					</div>
-					<div>
-						<span className="">
-							<svg
-								className="h-8 w-8 text-slate-800 rounded-full"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="black"
-								fill="white"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								{' '}
-								<path stroke="none" d="M0 0h24v24H0z" />{' '}
-								<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-							</svg>
-						</span>
-					</div>
-				</div>
-				<div className="grid grid-rows-2 text-end">
-					<div className=""></div>
-					<div className="">
-						<div className="grid grid-rows-9 lg:gap-x-12 text-end">
-							<Link
-								href="/company"
-								className="text-sm font-semibold leading-6 text-white text-left"
-							>
-								Company
-							</Link>
-							<Link
-								href="/services"
-								className="text-sm font-semibold leading-6 text-white text-left"
-							>
-								Services
-							</Link>
-							<Link
-								href="/products"
-								className="text-sm font-semibold leading-6 text-white text-left"
-							>
-								Products
-							</Link>
-							<Link
-								href="/recruit"
-								className="text-sm font-semibold leading-6 text-white text-left"
-							>
-								Recruit
-							</Link>
-							<Link
-								href="/contact"
-								className="text-sm font-semibold leading-6 text-white text-left"
-							>
-								Contact
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
+				<nav className="relative flex justify-end">
+					<PopoverGroup className="absolute bottom-16 right-10 flex flex-col items-end text-white">
+						{footerMenu.map((item) =>
+							item.key === 'education' ? (
+								<Link
+									className="m-1 text-left w-full flex"
+									key={item.key}
+									href={item.path}
+									target="_blank"
+									rel="noopener"
+								>
+									{item.text}
+									<Square2StackIcon className="h-5"></Square2StackIcon>
+								</Link>
+							) : (
+								<Link
+									className="m-1 text-left w-full"
+									key={item.key}
+									href={item.path}
+								>
+									{item.text}
+								</Link>
+							),
+						)}
+					</PopoverGroup>
+				</nav>
+			</div>
 		</footer>
 	);
 }
+
+export default footer;

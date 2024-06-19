@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import Topheader from './topheader';
+import Footer from '../footer';
 
 export const metadata: Metadata = {
 	title: 'エイ・フォース株式会社',
@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			<body>
-				<Header />
+				<Topheader />
 				{children}
 				<Footer />
 			</body>

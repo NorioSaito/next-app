@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from '../header';
+import Footer from '../footer';
 
 export const metadata: Metadata = {
 	title: 'エイ・フォース株式会社',

@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from '../_components/Hero';
-import Card from '../_components/common/Card';
-import Harftitle from '../_components/common/HarfTitle';
-import NewsContent from '../_components/common/NewsContent';
-import Button from '../_components/common/Button';
-import Footer from '../footer';
+import Hero from '../../_components/Hero';
+import Card from '../../_components/common/Card';
+import Harftitle from '../../_components/common/HarfTitle';
+import NewsContent from '../../_components/common/NewsContent';
+import Button from '../../_components/common/Button';
+import Footer from '../../footer';
 
 // リクルートサイトのページ
 function Recruit() {
