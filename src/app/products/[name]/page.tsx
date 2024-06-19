@@ -96,11 +96,11 @@ function ProductDetail({ params }: { params: { name: string } }) {
 		<div className="mx-20">
 			<section>
 				<div className="mb-10">
-					<h1 className="text-4xl">{product.name}</h1>
+					<h1 className="text-[4rem]">{product.name}</h1>
 					<Breadcrumb />
 				</div>
 
-				<p className="text-4xl font-extrabold w-1/2">{product.text}</p>
+				<p className="text-[4rem] font-extrabold w-1/2">{product.text}</p>
 			</section>
 			<section className="mt-10 border-y divide-y">
 				{product.features.map((feature, index) => (
@@ -108,14 +108,18 @@ function ProductDetail({ params }: { params: { name: string } }) {
 						<div className="py-10 grid grid-flow-col">
 							<div className="flex">
 								{/* 機能名 */}
-								<div className="text-3xl flex-1">{feature.name}</div>
+								<div className="text-[2rem] flex-1">{feature.name}</div>
 								<div className="flex flex-col flex-1">
 									{feature.details.map((detail) => (
 										<div key={detail.subject}>
 											{/* 詳細タイトル */}
-											<div className="text-2xl mb-5">{detail.subject}</div>
+											<div className="text-[1.5rem] mb-5">
+												{detail.subject}
+											</div>
 											{/* 説明 */}
-											<div className="mb-10">{detail.description}</div>
+											<div className="text-[1rem] mb-10">
+												{detail.description}
+											</div>
 										</div>
 									))}
 								</div>
