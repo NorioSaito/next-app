@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
 import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import { useAnimate } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 import PATHS from '../constants/paths';
 
 const headerMenu = [
@@ -55,46 +55,49 @@ export default function Header() {
 					</button>
 				</div>
 				<PopoverGroup className="hidden lg:flex lg:gap-x-12">
-					{headerMenu.map((item) => (item.key === 'services' ? (
-						<div
-							key={item.key}
-							onMouseEnter={onHoverStartHandler}
-							className="relative"
-						>
+					{headerMenu.map((item) =>
+						item.key === 'services' ? (
+							<div
+								key={item.key}
+								onMouseEnter={onHoverStartHandler}
+								className="relative"
+							>
+								<Link
+									href={item.path}
+									className="text-sm font-semibold leading-6 text-gray-900 z-50"
+								>
+									{item.text}
+								</Link>
+								<div
+									onMouseLeave={onHoverEndHandler}
+									className={`absolute left-1/2 z-10 mt-[-
+										20px] flex w-60 -translate-x-1/2 px-4 pt-[30px] ${isHover ? '' : 'hidden'}`}
+								>
+									<div
+										className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
+										ref={scope}
+									>
+										<div className="p-4">
+											<div className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+												<Link href="#">コンサルティング事業</Link>
+											</div>
+											<div className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+												<Link href="#">SI 事業</Link>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						) : (
 							<Link
+								key={item.key}
 								href={item.path}
 								className="text-sm font-semibold leading-6 text-gray-900 z-50"
 							>
 								{item.text}
 							</Link>
-							<div
-								onMouseLeave={onHoverEndHandler}
-								className={`absolute left-1/2 z-10 mt-[-20px] flex w-60 -translate-x-1/2 px-4 pt-[30px] ${isHover ? '' : 'hidden'}`}
-							>
-								<div
-									className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5"
-									ref={scope}
-								>
-									<div className="p-4">
-										<div className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-											<Link href="#">コンサルティング事業</Link>
-										</div>
-										<div className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-											<Link href="#">SI 事業</Link>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					) : (
-						<Link
-							key={item.key}
-							href={item.path}
-							className="text-sm font-semibold leading-6 text-gray-900 z-50"
-						>
-							{item.text}
-						</Link>
-					)))}
+						),
+					)}
 				</PopoverGroup>
 			</nav>
 			<Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
