@@ -4,7 +4,7 @@ const PATHS = {
 	SERVICES: '/services',
 	PRODUCTS: '/products',
 	EDUCATION: '/',
-	NEWS: '/',
+	NEWS: 'https://a-force.themedia.jp/',
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',
 	PRIVACYPOLICY: '/privacy',
