@@ -1,6 +1,6 @@
-import Hero from './_components/Hero';
-import OnclickSample from './_components/OnclickSample';
-import ScssSample from './_components/ScssSample';
+import Hero from '../_components/Hero';
+import OnclickSample from '../_components/OnclickSample';
+import ScssSample from '../_components/ScssSample';
 
 export default function Home() {
 	return (

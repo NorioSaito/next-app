@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from '../_components/Hero';
+// import Hero from '../_components/Hero';
 
 function Services() {
 	return (
 		<div>
-			<Hero title="Services" text="サービス" />
+			{/* <Hero title="Services" text="サービス" /> */}
 			<div className="ml-16 my-14">
 				<h1 className="text-3xl">見出し</h1>
 			</div>

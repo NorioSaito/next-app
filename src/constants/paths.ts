@@ -4,6 +4,7 @@ const PATHS = {
 	SERVICES: '/services',
 	PRODUCTS: '/products',
 	EDUCATION: '/',
+	NEWS: '/',
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',
 	PRIVACYPOLICY: '/privacy',
