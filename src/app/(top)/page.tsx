@@ -98,7 +98,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="mb-20 px-20 pt-20">
-				<div className="flex rounded-tr-lg border border-black">
+				<div className="flex rounded-tr-lg mb-20 border border-black">
 					<div className="w-1/2 p-20">
 						<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
 						<h2 className="my-10 text-4xl" >Salesforce</h2>
@@ -115,6 +115,67 @@ export default function Home() {
 							<Image className="px-8" src="/top_Salesforce.jpg" alt="Salesforceロゴ" width={320} height={81}></Image>
 						</div>
 					</div>
+				</div>
+				<div className="flex justify-center space-x-20">
+					<div className="w-1/2 flex rounded-tr-lg  border border-black">
+						<div className="w-1/2 p-10">
+							<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+							<h2 className="my-10 text-4xl">InforM3</h2>
+							<h3>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</h3>
+							<div className="flex justify-end items-end pt-10">
+								<Link href="/">詳しく見る</Link>
+								<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+							</div>
+						</div>
+						<div className="w-1/2 p-10">
+							<div className="rounded-lg h-72 w-72 ml-auto border border-black">
+							</div>
+						</div>
+					</div>
+					<div className="w-1/2 flex rounded-tr-lg border border-black">
+						<div className="w-1/2 p-10">
+							<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+							<h2 className="my-10 text-4xl">InforM3</h2>
+							<h3>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</h3>
+							<div className="flex justify-end items-end pt-10">
+								<Link href="/">詳しく見る</Link>
+								<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+							</div>
+						</div>
+						<div className="w-1/2 p-10">
+							<div className="rounded-lg h-72 w-72 ml-auto border border-black">
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* 20240620時点でボタンは仮置きです。 */}
+				<div className="flex items-center justify-center">
+					<button onClick={() => {}}
+						className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black rounded-full hover:bg-yellow-300">
+						<span className="flex-grow text-left pl-6">製品一覧へ</span>
+						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
+					</button>
+				</div>
+			</section>
+			<section className="bg-yellow-400 px-20">
+				<div className="flex justify-center items-center z-10">
+					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64}></Image>
+				</div>
+			</section>
+			<section className="bg-gray-950 px-20 pt-20">
+				<div className="flex">
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h3 className="pl-4 text-white">採用情報</h3>
+				</div>
+				<div className="pt-10 text-8xl text-white">
+					<h1>Recruit</h1>
+				</div>
+				<div className='ml-auto'>
+					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
 				</div>
 			</section>
 		</main>
