@@ -10,12 +10,12 @@ function HerfTittle(props: { title: string; subTitle: string; text_position: str
 	return (
 		<div className="items-center">
 			<div className="grid grid-rows-2">
-				<div className={`text-${props.text_position} text-lg md:text-base`}>
-					<span className="pr-[1%] text-orange-500">●</span>
+				<div className={`text-${props.text_position} text-lg md:text-[2.4rem]`}>
+					<span className="pr-[8px] text-af-orange">●</span>
 					{props.subTitle}
 				</div>
 				<h2
-					className={`text-${props.text_position} text-outline-black text-2xl font-bold md:text-6xl`}
+					className={`text-${props.text_position} text-outline-black text-2xl font-bold md:pt-[32px] text-[6.4rem]`}
 				>
 					{props.title}
 				</h2>

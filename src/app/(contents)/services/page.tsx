@@ -5,8 +5,8 @@ import Image from 'next/image';
 function Services() {
 	return (
 		<div>
-			<div className="pagetitle ml-24 mt-36">
-				<h1 className="text-6xl">Service</h1>
+			<div className="pagetitle ml-[8rem] mt-[207px]">
+				<h1 className="text-[6.4rem]">Service</h1>
 			</div>
 			<div className="breadcrumb ml-24 mt-4">
 				<p>ここにパンくずリストを実装</p>
