@@ -15,7 +15,11 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			fontSize: {
-				base: '1.6rem',
+				base: '1.6rem', // 基本フォントサイズ
+				'af-xs': '1rem', // 16px
+				'af-sm': '1.5rem', // 24px
+				'af-md': '2rem', // 32px
+				'af-lg': '4rem', // 64px
 			},
 			colors: {
 				'af-orange': '#FF5C00', // オレンジ
@@ -24,7 +28,7 @@ const config: Config = {
 				'af-gray': '#F9F9F9', // グレー
 				'af-blue': '#0057FF', // ブルー
 				'af-yellow': '#FFD400', // 黄色
-				'af-green': '#EBFF00', // 緑（色が黄色と同じ）
+				'af-green': '#EBFF00', // 緑
 			},
 		},
 	},
