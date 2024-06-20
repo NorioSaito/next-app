@@ -15,7 +15,6 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			fontSize: {
-				base: '1.6rem', // 基本フォントサイズ
 				'af-xs': '1rem', // 16px
 				'af-sm': '1.5rem', // 24px
 				'af-md': '2rem', // 32px
