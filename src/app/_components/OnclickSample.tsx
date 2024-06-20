@@ -13,7 +13,9 @@ function OnclickSample() {
 	return (
 		<div>
 			{/* button タグの onClick 属性に宣言した関数を設定する */}
-			<button onClick={handleClick}>クリック</button>
+			<button onClick={handleClick} className="text-base">
+				クリック
+			</button>
 		</div>
 	);
 }

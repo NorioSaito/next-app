@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import type { PluginAPI } from 'tailwindcss/types/config';
 
 const config: Config = {
 	content: [
@@ -23,23 +22,11 @@ const config: Config = {
 				'af-yellow': '#FFD400', // 黄色
 				'af-green': '#EBFF00', // 緑（色が黄色と同じ）
 			},
+			fontSize: {
+				base: '1.6rem',
+			},
 		},
 	},
-	plugins: [
-		function ({ addUtilities }: PluginAPI) {
-			const newUtilities = {
-				'.text-outline-black': {
-					color: 'white',
-					textShadow: `
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000`,
-				},
-			};
-			addUtilities(newUtilities);
-		},
-	],
 };
 
 export default config;
