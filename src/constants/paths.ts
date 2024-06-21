@@ -8,6 +8,11 @@ const PATHS = {
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',
 	PRIVACYPOLICY: '/privacy',
+
+	// トップページ ニュースリンク
+	NEWS1: '/',
+	NEWS2: '/',
+	NEWS3: '/',
 };
 
 export default PATHS;

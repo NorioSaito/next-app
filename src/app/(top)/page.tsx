@@ -5,8 +5,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRightIcon } from '@heroicons/react/16/solid';
 import { motion } from 'framer-motion';
+import PATHS from '../../constants/paths';
 
 export default function Home() {
+	// news一覧。paths.tsxにて遷移先未設定。
+	const newslist = [
+		{
+			key: 'news1', title: '2024年の選考がスタートしました', tagtitle: '採用情報', date: '2024.04.01', path: PATHS.NEWS1,
+		},
+		{
+			key: 'news2', title: '2番目のニュース', tagtitle: '採用情報', date: '2024.04.01', link: '/', path: PATHS.NEWS2,
+		},
+		{
+			key: 'news3', title: '3番目のニュース', tagtitle: '採用情報', date: '2024.04.01', link: '/', path: PATHS.NEWS3,
+		},
+	];
+
 	return (
 		<main className="">
 			<section className="flex items-start mx-20">
@@ -175,7 +189,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* 採用情報 */}
-			<section className="bg-gray-950 px-20 pt-20">
+			<section className="bg-gray-950 px-20 pt-20 pb-12">
 				<div className="flex">
 					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
 					<h3 className="pl-4 text-white">採用情報</h3>
@@ -202,14 +216,68 @@ export default function Home() {
 					</h4>
 					{/* ボタンは仮置きです。 */}
 					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 mt-10 border bg-white rounded-full text-black">
+						className="flex items-center h-20 w-80 mt-8 border bg-white rounded-full text-black">
 						<span className="flex-grow text-left pl-12">採用情報へ</span>
 						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 					</button>
 				</div>
 			</section>
 			{/* お知らせ */}
-
+			<section className="flex px-20 pt-20">
+				<div className="w-1/2">
+					<div className="flex mb-8">
+						<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
+						<h3 className="pl-4">お知らせ</h3>
+					</div>
+					<Image src="top_news.svg" alt='news' width={180} height={64}></Image>
+				</div>
+				{/* ニュースリスト */}
+				<div className="grid w-1/2 ">
+					{newslist.map((item) => (
+						<div key={item.key} className="grid grid-cols-4 gap-3">
+							<div className='col-span-3 my-8'>
+								<Link href={item.path} >{item.title}</Link>
+								<h3 className="border border-black rounded-lg w-20 h-6 my-2">{item.tagtitle}</h3>
+							</div>
+							<div className="col-span-1 flex items-center justify-center">
+								<h3 className="font-bold">{item.date}</h3>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+			<section className="flex justify-end items-end px-20 py-20">
+				<button onClick={() => {}}
+					className="flex items-center h-20 w-80 border border-black bg-white rounded-full text-black">
+					<span className="flex-grow text-left pl-12">ニュース一覧へ</span>
+					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
+				</button>
+			</section>
+			{/* セミナー情報 */}
+			<section className="px-20 pt-20">
+				<div className="flex mb-8">
+					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
+					<h3 className="pl-4">セミナー情報</h3>
+				</div>
+				<Image className="mb-8" src="top_seminar.svg" alt='news' width={280} height={64}></Image>
+				<div className="flex space-x-10 mb-48">
+					<div className="w-1/2">
+						{/* リンク先未設定 */}
+						<Link href="/">
+							<div className="bg-gray-300 border rounded-lg h-64">
+								CELF
+							</div>
+						</Link>
+					</div>
+					<div className="w-1/2">
+						<Link href="/">
+							<div className="bg-gray-300 border rounded-lg h-64">
+								ITエース
+							</div>
+						</Link>
+					</div>
+				</div>
+			</section>
 		</main>
 	);
 }
