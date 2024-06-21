@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,15 +20,15 @@ function footer() {
 		{ key: 'privacypolicy', text: 'Privacy Policy', path: PATHS.PRIVACYPOLICY },
 	];
 
-	// const returnTop = () => {
-	// 	window.scrollTo({
-	// 	  top: 0,
-	// 	  behavior: 'smooth'
-	// 	})
-	//   }
+	const returnTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
 
 	return (
-		<footer className="bg-black  pt-8 h-[534px] flex">
+		<footer className="bg-af-black  pt-8 h-[534px] flex">
 			<div className="w-1/2 pl-20">
 				<div className="relative flex ml-20">
 					<Image className="pt-4" src="Alogo.svg" alt="" width={346.71} height={270.3} />
@@ -41,15 +43,19 @@ function footer() {
 					<Image src="footer_facebook.svg" alt="" width={40} height={40} />
 				</div>
 			</div>
+			{/* ページ最上部へ戻すボタン */}
 			<div className="w-1/2 flex flex-col justify-between pr-20">
 				<div className="relative flex justify-end pr-9">
-					<div className="relative flex flex-col" >
-						<Image className="absolute right-10 mt-4" src="footer_chevronup.svg" alt="" width={25.41} height={10.67}></Image>
-						<p className="right-10 mt-8  text-white">Page Top</p>
+					<div className="relative flex flex-col items-center" >
+						<button onClick={returnTop} className="focus:outline-none">
+							<Image src="footer_chevronup.svg" alt="" width={25.41} height={10.67}></Image>
+							<p className="mt-2 text-af-white">Page Top</p>
+						</button>
 					</div>
 				</div>
+				{/* ナビゲーションメニュー */}
 				<nav className="relative flex justify-end">
-					<PopoverGroup className="absolute bottom-16 right-10 flex flex-col items-end text-white">
+					<PopoverGroup className="absolute bottom-16 right-10 flex flex-col items-end text-af-white">
 						{footerMenu.map((item) => (item.key === 'education' ? (
 							<Link className="m-1 text-left w-full flex" key={item.key} href={item.path} target="_blank" rel='noopener'>
 								{item.text}

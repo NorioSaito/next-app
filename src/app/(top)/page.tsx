@@ -23,6 +23,7 @@ export default function Home() {
 
 	return (
 		<main className="">
+			{/* ヒーローイメージ */}
 			<section className="flex items-start mx-20">
 				<Image className="pb-24" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
 				<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
@@ -35,7 +36,7 @@ export default function Home() {
 					<Image src="top_catchcopy.svg" alt="ここいちばんで頼りになる、エースの集団" width={468} height={24}></Image>
 				</div>
 			</section>
-
+			{/* 会社案内 */}
 			<section className="flex flex-col items-center justify-center mx-20 pt-64">
 				<div className="flex">
 					<Image className="" src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
@@ -51,7 +52,7 @@ export default function Home() {
 				</h3>
 				{/* 20240620時点でボタンは仮置きです。 */}
 				<button onClick={() => {}}
-					className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black rounded-full hover:bg-yellow-300">
+					className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-af-black hover:bg-gradient-to-r from-white to-yellow-300 text-af-black rounded-full hover:bg-yellow-300">
 					<span className="flex-grow text-left pl-6">サービスへ</span>
 					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 				</button>
@@ -63,7 +64,8 @@ export default function Home() {
 					<Image src="top_yellowshape.svg" alt="" width={240} height={240}></Image>
 				</div>
 			</section>
-			<section className="bg-gray-950 px-20 pt-20">
+			{/* 事業概要（Service） */}
+			<section className="bg-af-black px-20 pt-20">
 				<div className="flex">
 					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
 					<h2 className="pl-2 text-white">事業概要</h2>
@@ -79,7 +81,7 @@ export default function Home() {
 				{/* 20240620時点でボタンは仮置きです。 */}
 				<div className="flex items-center justify-center">
 					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 my-10 border bg-white rounded-full">
+						className="flex items-center h-20 w-80 my-10 border bg-af-white rounded-full">
 						<span className="flex-grow text-left pl-12">サービスへ</span>
 						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 					</button>
@@ -94,9 +96,9 @@ export default function Home() {
 			</section>
 			{/* CELF */}
 			<section className="mb-8 px-20 pt-16">
-				<div className="flex rounded-tr-lg border border-black">
+				<div className="flex rounded-tr-lg border border-af-black">
 					<div className="w-1/2 p-20">
-						<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+						<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
 						<h2 className="my-10 text-4xl" >CELF（スプレッドシート型WEBアプリ + RPA）</h2>
 						<h3>
 							「CELF」は、基幹システム外において、EXCEL等で行っている属人化した業務を、エンドユーザーでもWEBアプリとして作成できるソリューションです。
@@ -107,7 +109,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
-						<div className="flex items-center justify-center rounded-lg h-96 w-96 m-8 border border-black">
+						<div className="flex items-center justify-center rounded-lg h-96 w-96 m-8 border border-af-black">
 							<Image className="px-8" src="/top_CELF.jpg" alt="CELFロゴ" width={320} height={81}></Image>
 						</div>
 					</div>
@@ -115,9 +117,9 @@ export default function Home() {
 			</section>
 			{/* Salesforce */}
 			<section className="mb-8 px-20 pt-8">
-				<div className="flex rounded-tr-lg border border-black">
+				<div className="flex rounded-tr-lg border border-af-black">
 					<div className="w-1/2 p-20">
-						<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+						<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
 						<h2 className="my-10 text-4xl" >Salesforce</h2>
 						<h3>
 							コロナ禍、各企業は営業やマーケティングのあり方が、大幅に変わりつつあります。 対面営業からインサイドセールスへと、成長は止められない！<br/>
@@ -129,7 +131,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
-						<div className="flex items-center justify-center rounded-lg h-96 w-96 m-8 border border-black">
+						<div className="flex items-center justify-center rounded-lg h-96 w-96 m-8 border border-af-black">
 							<Image className="px-8" src="/top_Salesforce.jpg" alt="Salesforceロゴ" width={320} height={81}></Image>
 						</div>
 					</div>
@@ -138,9 +140,9 @@ export default function Home() {
 			{/* InforM3 */}
 			<section className="mb-24 px-20 pt-8">
 				<div className="flex justify-center space-x-20">
-					<div className="w-1/2 flex rounded-tr-lg  border border-black">
+					<div className="w-1/2 flex rounded-tr-lg  border border-af-black">
 						<div className="w-1/2 p-10">
-							<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+							<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
 							<h2 className="my-10 text-4xl">InforM3</h2>
 							<h3>
 								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -151,13 +153,13 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="w-1/2 p-10">
-							<div className="rounded-lg h-72 w-72 ml-auto border border-black">
+							<div className="rounded-lg h-72 w-72 ml-auto border border-af-black">
 							</div>
 						</div>
 					</div>
-					<div className="w-1/2 flex rounded-tr-lg border border-black">
+					<div className="w-1/2 flex rounded-tr-lg border border-af-black">
 						<div className="w-1/2 p-10">
-							<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
+							<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
 							<h2 className="my-10 text-4xl">InforM3</h2>
 							<h3>
 								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -168,7 +170,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="w-1/2 p-10">
-							<div className="rounded-lg h-72 w-72 ml-auto border border-black">
+							<div className="rounded-lg h-72 w-72 ml-auto border border-af-black">
 							</div>
 						</div>
 					</div>
@@ -177,19 +179,19 @@ export default function Home() {
 			{/* 20240620時点でボタンは仮置きです。 */}
 			<div className="flex items-center justify-center mb-40">
 				<button onClick={() => {}}
-					className="flex items-center transition-all duration-300 h-20 w-80 border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black rounded-full hover:bg-yellow-300">
+					className="flex items-center transition-all duration-300 h-20 w-80 border border-af-black hover:bg-gradient-to-r from-white to-yellow-300 text-af-black rounded-full hover:bg-yellow-300">
 					<span className="flex-grow text-left pl-6">製品一覧へ</span>
 					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 				</button>
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
-			<section className="bg-yellow-400 px-20">
+			<section className="bg-af-yellow px-20">
 				<div className="flex justify-center items-center z-10">
 					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64}></Image>
 				</div>
 			</section>
 			{/* 採用情報 */}
-			<section className="bg-gray-950 px-20 pt-20 pb-12">
+			<section className="bg-af-black px-20 pt-20 pb-12">
 				<div className="flex">
 					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
 					<h3 className="pl-4 text-white">採用情報</h3>
@@ -216,7 +218,7 @@ export default function Home() {
 					</h4>
 					{/* ボタンは仮置きです。 */}
 					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 mt-8 border bg-white rounded-full text-black">
+						className="flex items-center h-20 w-80 mt-8 border bg-af-white rounded-full text-af-black">
 						<span className="flex-grow text-left pl-12">採用情報へ</span>
 						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 					</button>
@@ -248,7 +250,7 @@ export default function Home() {
 			</section>
 			<section className="flex justify-end items-end px-20 py-20">
 				<button onClick={() => {}}
-					className="flex items-center h-20 w-80 border border-black bg-white rounded-full text-black">
+					className="flex items-center h-20 w-80 border border-black bg-af-white rounded-full text-black">
 					<span className="flex-grow text-left pl-12">ニュース一覧へ</span>
 					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 				</button>
@@ -264,14 +266,14 @@ export default function Home() {
 					<div className="w-1/2">
 						{/* リンク先未設定 */}
 						<Link href="/">
-							<div className="bg-gray-300 border rounded-lg h-64">
+							<div className="bg-af-gray border rounded-lg h-64">
 								CELF
 							</div>
 						</Link>
 					</div>
 					<div className="w-1/2">
 						<Link href="/">
-							<div className="bg-gray-300 border rounded-lg h-64">
+							<div className="bg-af-gray border rounded-lg h-64">
 								ITエース
 							</div>
 						</Link>
