@@ -5,7 +5,7 @@ import Accordion from '../../_components/common/Accordion';
 
 function Company() {
 	return (
-		<body>
+		<div>
 			<div className="mx-[8rem]">
 				<div className="pagetitle mt-[207px]">
 					<h1 className="text-[6.4rem]">Company</h1>
@@ -130,7 +130,7 @@ function Company() {
 				</section>
 				<section className="mt-[7rem]">
 					<div className="flex">
-						<div className="w-1/2 mr-[181px] tracking-wider">
+						<div className="w-1/2 mr-auto tracking-wider">
 							<h2 className="text-[4rem]">
 								テキストテキストテキストテキスト
 							</h2>
@@ -146,7 +146,7 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 								<p className="text-[1.6rem] text-af-orange">Sugahara Toshiya</p>
 							</div>
 						</div>
-						<div className='w-[463] h-[618]'>
+						<div>
 							<Image src="/sugawara_photo.jpg" alt="" width={463} height={618} />
 						</div>
 					</div>
@@ -214,25 +214,67 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 				</section>
 				<section className="mt-[7rem]">
 					<div className="flex">
-						<div className="w-[777px] pr-[100px] tracking-wider">
-					<div className='grid-rows-10'>
-						<div className="flex items-center">
-							<p className='ml-[103px] mr-[20px] text-[2.4rem]'>会社名</p>
-							<p className='text-[1.6rem]'>エイ・フォース株式会社</p>
+						<div className="w-[730px] mr-auto tracking-wide">
+							<div className='grid-rows-10'>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>会社名</p>
+									<p className='text-[1.6rem]'>エイ・フォース株式会社</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>所在地</p>
+									<p className='text-[1.6rem]'>東京都千代田区飯田橋4-8-13 山商ビル 4F</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>設立</p>
+									<p className='text-[1.6rem]'>2003年11月</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>資本金</p>
+									<p className='text-[1.6rem]'>1,100万円</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>売上</p>
+									<p className='text-[1.6rem]'>5.5億円（2023年6月末）</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>代表</p>
+									<p className='text-[1.6rem]'>菅原　俊哉</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>従業員</p>
+									<p className='text-[1.6rem]'>従業員 53名（2023年11月）</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>許認可</p>
+									<p className='text-[1.6rem]'>プライバシーマーク 10824384(04)</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>所属団体</p>
+									<p className='text-[1.6rem]'>UOSグループ、IT交流会（ITIA)、公益社団法人　麹町法人会</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
+								<div className="flex items-center">
+									<p className='ml-[103px] w-[180px] text-[2.4rem]'>顧問</p>
+									<p className='text-[1.6rem]'>奥田　久美　　（労務関係顧問）　元東京労働局長</p>
+								</div>
+								<div className="my-[24px] h-px bg-slate-200"></div>
 							</div>
 						</div>
-						<div className="my-[24px] h-px bg-slate-200"></div>
-						</div>
-						<div className='w-[463] h-[618]'>
+						<div>
 							<Image src="/sugawara_photo.jpg" alt="" width={463} height={618} />
 						</div>
 					</div>
 				</section>
-
-
-
 			</div>
-		</body>
+		</div>
 	);
 }
 

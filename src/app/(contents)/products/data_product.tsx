@@ -1,14 +1,14 @@
 // eslint-disable-next-line import/prefer-default-export
 export const products = [
 	{
-		id: 1,
-		title: 'Product A',
+		id: 'celf',
+		title: 'CELF',
 		image: 'A-force_horizon.svg',
 		attributes: ['Category 1', 'Type A'],
 	},
 	{
-		id: 2,
-		title: 'Product B',
+		id: 'salesforce',
+		title: 'SalesForce',
 		image: 'A-force_horizon.svg',
 		attributes: ['Category 2'],
 	},

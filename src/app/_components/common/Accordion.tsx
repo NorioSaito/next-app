@@ -172,12 +172,12 @@ return (
 								<p className='text-[1.6rem]'>・salesforce / Pardotの導入及びパートナー開始</p>
 							</div>
 						</div>
-						<div className="my-[24px] h-px bg-slate-200"></div>
+						<div className="mt-[24px] mb-[35px] h-px bg-slate-200"></div>
 
           </div>
         </>
       )}
-      <div className=' flex justify-end'>
+      <div className='flex justify-end'>
         <a onClick={handleToggle} className={`${style.btn} ${style.bgleft} grid grid-cols-3 rounded-full pl-4 pr-2 py-2 block`}>
           <div className="col-span-2 text-af-xs flex items-center justify-center">{isOpen ? '閉じる' : 'すべて見る'}</div>
           <div className="grid items-center contents-center justify-end">
