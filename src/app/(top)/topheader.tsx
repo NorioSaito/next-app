@@ -23,9 +23,9 @@ function Topheader() {
 	return (
 
 		<header>
-			<nav className="flex px-20 py-2">
+			<nav className="flex px-20 py-16">
 				<div className="w-1/2">
-					<Link href={PATHS.INDEX} className="-m-1.5 p-1.5">
+					<Link href={PATHS.INDEX} className="m-1.5 p-1.5">
 						<span className="sr-only">Your Company</span>
 						<Image src="A-force_horizon.svg" alt="エイ・フォース株式会社" width={187} height={47}></Image>
 					</Link>
@@ -34,14 +34,14 @@ function Topheader() {
 					<PopoverGroup>
 						{topHeaderMenu.map((item) => (item.key === 'education' || item.key === 'news' ? (
 							<div key={item.key}>
-								<Link href={item.path} className="flex items-center space-x-1 text-left">
+								<Link href={item.path} className="flex items-center space-x-1 text-left text-af-xs">
 									<span>{item.text}</span>
-									<Square2StackIcon className="h-4"></Square2StackIcon>
+									<Square2StackIcon className="h-4 w-4"></Square2StackIcon>
 								</Link>
 							</div>
 						) : (
 							<div key={item.key}>
-								<Link href={item.path}>
+								<Link href={item.path} className="text-af-xs">
 									{item.text}
 								</Link>
 							</div>
@@ -49,7 +49,7 @@ function Topheader() {
 					</PopoverGroup>
 					<div>
 						{/* 20240620時点でハンバーガーメニュー処理未実装 */}
-						<Bars3Icon className="h-7"></Bars3Icon>
+						<Bars3Icon className="h-8"></Bars3Icon>
 					</div>
 				</div>
 			</nav>

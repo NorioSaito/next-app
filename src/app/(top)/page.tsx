@@ -24,27 +24,29 @@ export default function Home() {
 	return (
 		<main className="">
 			{/* ヒーローイメージ */}
-			<section className="flex items-start mx-20">
-				<Image className="pb-24" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
-				<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
-				<div className="flex-col">
-					<h1>Shining</h1>
-					<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
-					<Image className="" src="top_criticaltimes.svg" alt="critical times" width={628} height={128}></Image>
+			<section className="mx-32">
+				<div className="flex items-start">
+					<Image className="pb-24" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
+					<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+					<div className="flex-col">
+						<h1>Shining</h1>
+						<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
+						<Image className="" src="top_criticaltimes.svg" alt="critical times" width={628} height={128}></Image>
+					</div>
 				</div>
-				<div className="absolute left-0 bottom-0 mb-10 ml-20">
+				<div className="">
 					<Image src="top_catchcopy.svg" alt="ここいちばんで頼りになる、エースの集団" width={468} height={24}></Image>
 				</div>
 			</section>
 			{/* 会社案内 */}
 			<section className="flex flex-col items-center justify-center mx-20 pt-64">
 				<div className="flex">
-					<Image className="" src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-					<h2 className="pl-2">会社案内</h2>
+					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h2 className="pl-2 text-af-sm">会社案内</h2>
 				</div>
 				<Image className="mt-8 mb-16" src="top_ourmission.svg" alt="our mission" width={380} height={96}></Image>
 				<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
-				<h3 className="pt-20">
+				<h3 className="pt-20 text-af-xs">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
@@ -56,24 +58,27 @@ export default function Home() {
 					<span className="flex-grow text-left pl-6">サービスへ</span>
 					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 				</button>
-				<div className="flex items-center justify-center space-x-20 mx-20 mt-10 mb-40">
-					<Image src="top_9circle.svg" alt="" width={240} height={240}></Image>
-					<Image src="/top_lecturehand.jpg" alt="" width={240} height={240}></Image>
-					<Image src="top_orangeshape.svg" alt="" width={240} height={240}></Image>
-					<Image src="/top_cityview.jpg" alt="" width={240} height={240}></Image>
-					<Image src="top_yellowshape.svg" alt="" width={240} height={240}></Image>
+				<div className="flex items-center justify-center space-x-10 mt-10 mb-44">
+					<motion.div
+						initial={{ x: '-100%' }}
+						animate={{ x: '100%' }}
+						transition={{
+							duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'loop',
+						}} >
+						<Image src="top_ourmissionshapes.svg" alt="" width={1300} height={240}></Image>
+					</motion.div>
 				</div>
 			</section>
 			{/* 事業概要（Service） */}
 			<section className="bg-af-black px-20 pt-20">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-					<h2 className="pl-2 text-white">事業概要</h2>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h2 className="pl-2 text-af-sm text-af-white">事業概要</h2>
 				</div>
-				<div className="pt-10 text-8xl text-white">
+				<div className="text-af-lg text-af-white">
 					<h1>Service</h1>
 				</div>
-				<h3 className="pt-10 text-white">
+				<h3 className="pt-10 text-af-xs text-af-white">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/><br/>
 					★ベン図の実装難しいので一旦飛ばしてます。
@@ -87,10 +92,11 @@ export default function Home() {
 					</button>
 				</div>
 			</section>
-			<section className="flex flex-col items-center justify-center mx-20 my-10 pt-40">
+			{/* 取扱製品一覧 */}
+			<section className="flex flex-col items-center justify-center mx-20 mt-40">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-					<h2 className="pl-2">取扱製品一覧</h2>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h2 className="pl-2 text-af-sm">取扱製品一覧</h2>
 				</div>
 				<Image className="mt-8 mb-16" src="top_products.svg" alt="products" width={380} height={96}></Image>
 			</section>
@@ -99,13 +105,13 @@ export default function Home() {
 				<div className="flex rounded-tr-lg border border-af-black">
 					<div className="w-1/2 p-20">
 						<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
-						<h2 className="my-10 text-4xl" >CELF（スプレッドシート型WEBアプリ + RPA）</h2>
-						<h3>
+						<h2 className="my-8 text-af-sm" >CELF（スプレッドシート型WEBアプリ + RPA）</h2>
+						<h3 className="text-af-xs">
 							「CELF」は、基幹システム外において、EXCEL等で行っている属人化した業務を、エンドユーザーでもWEBアプリとして作成できるソリューションです。
 						</h3>
 						<div className="flex justify-end items-end pt-10">
-							<Link href="/">詳しく見る</Link>
-							<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+							<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+							<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
 						</div>
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
@@ -120,14 +126,14 @@ export default function Home() {
 				<div className="flex rounded-tr-lg border border-af-black">
 					<div className="w-1/2 p-20">
 						<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
-						<h2 className="my-10 text-4xl" >Salesforce</h2>
-						<h3>
+						<h2 className="my-8 text-af-sm" >Salesforce</h2>
+						<h3 className="text-af-xs">
 							コロナ禍、各企業は営業やマーケティングのあり方が、大幅に変わりつつあります。 対面営業からインサイドセールスへと、成長は止められない！<br/>
 							私たちは、運用者が必要とする、トレーニングとサービスを提供をいたします。
 						</h3>
 						<div className="flex justify-end items-end pt-10">
-							<Link href="/">詳しく見る</Link>
-							<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+							<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+							<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
 						</div>
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
@@ -143,13 +149,13 @@ export default function Home() {
 					<div className="w-1/2 flex rounded-tr-lg  border border-af-black">
 						<div className="w-1/2 p-10">
 							<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
-							<h2 className="my-10 text-4xl">InforM3</h2>
-							<h3>
+							<h2 className="my-10 text-af-sm">InforM3</h2>
+							<h3 className="text-af-xs">
 								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 							</h3>
 							<div className="flex justify-end items-end pt-10">
-								<Link href="/">詳しく見る</Link>
-								<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+								<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+								<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
 							</div>
 						</div>
 						<div className="w-1/2 p-10">
@@ -158,15 +164,15 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="w-1/2 flex rounded-tr-lg border border-af-black">
-						<div className="w-1/2 p-10">
+						<div className="w-1/2 p-10 mb-11">
 							<h3 className="border border-af-black rounded-lg w-28 p-1">★タグ未実装</h3>
-							<h2 className="my-10 text-4xl">InforM3</h2>
-							<h3>
+							<h2 className="my-10 text-af-sm">InforM3</h2>
+							<h3 className="text-af-xs">
 								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 							</h3>
 							<div className="flex justify-end items-end pt-10">
-								<Link href="/">詳しく見る</Link>
-								<ChevronRightIcon className="flex justify-center w-4 h-6 text-orange-500"></ChevronRightIcon>
+								<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+								<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
 							</div>
 						</div>
 						<div className="w-1/2 p-10">
@@ -193,10 +199,10 @@ export default function Home() {
 			{/* 採用情報 */}
 			<section className="bg-af-black px-20 pt-20 pb-12">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-					<h3 className="pl-4 text-white">採用情報</h3>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h3 className="pl-2 text-af-sm text-af-white">採用情報</h3>
 				</div>
-				<div className="pt-10 text-8xl text-white">
+				<div className="mt-2.5 text-af-lg text-af-white">
 					<h1>Recruit</h1>
 				</div>
 				<motion.div
@@ -207,39 +213,39 @@ export default function Home() {
 					}} >
 					<Image src="top_recruit5shapes.svg" alt="" width={1443} height={312}></Image>
 				</motion.div>
-				<div className='flex justify-end pr-64'>
+				<div className='flex justify-end pr-64 pt-1.5'>
 					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
 				</div>
 				<div>
-					<h4 className="leading-loose text-white">
+					<h4 className="leading-loose text-af-sm text-af-white">
 						未知の領域に挑戦し、自己成長したい方。<br/>
 						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>
 						エイ・フォースは、そんなビジョンを共有できる仲間をもとめています。
 					</h4>
 					{/* ボタンは仮置きです。 */}
 					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 mt-8 border bg-af-white rounded-full text-af-black">
+						className="flex items-center h-20 w-80 mt-10 mb-12 border bg-af-white rounded-full text-af-black">
 						<span className="flex-grow text-left pl-12">採用情報へ</span>
 						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 					</button>
 				</div>
 			</section>
 			{/* お知らせ */}
-			<section className="flex px-20 pt-20">
+			<section className="flex mt-72 px-20">
 				<div className="w-1/2">
 					<div className="flex mb-8">
-						<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-						<h3 className="pl-4">お知らせ</h3>
+						<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+						<h3 className="pl-2 text-af-sm">お知らせ</h3>
 					</div>
 					<Image src="top_news.svg" alt='news' width={180} height={64}></Image>
 				</div>
 				{/* ニュースリスト */}
 				<div className="grid w-1/2 ">
 					{newslist.map((item) => (
-						<div key={item.key} className="grid grid-cols-4 gap-3">
+						<div key={item.key} className="grid grid-cols-4 gap-3 text-af-xs">
 							<div className='col-span-3 my-8'>
 								<Link href={item.path} >{item.title}</Link>
-								<h3 className="border border-black rounded-lg w-20 h-6 my-2">{item.tagtitle}</h3>
+								<h3 className="border border-black rounded-lg my-2 w-32">{item.tagtitle}</h3>
 							</div>
 							<div className="col-span-1 flex items-center justify-center">
 								<h3 className="font-bold">{item.date}</h3>
@@ -258,23 +264,23 @@ export default function Home() {
 			{/* セミナー情報 */}
 			<section className="px-20 pt-20">
 				<div className="flex mb-8">
-					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
-					<h3 className="pl-4">セミナー情報</h3>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<h3 className="pl-2 text-af-sm">セミナー情報</h3>
 				</div>
 				<Image className="mb-8" src="top_seminar.svg" alt='news' width={280} height={64}></Image>
 				<div className="flex space-x-10 mb-48">
 					<div className="w-1/2">
 						{/* リンク先未設定 */}
 						<Link href="/">
-							<div className="bg-af-gray border rounded-lg h-64">
-								CELF
+							<div className="flex justify-center items-center bg-af-gray border rounded-lg h-64">
+								<p className="text-af-md">CELF</p>
 							</div>
 						</Link>
 					</div>
 					<div className="w-1/2">
 						<Link href="/">
-							<div className="bg-af-gray border rounded-lg h-64">
-								ITエース
+							<div className="flex justify-center items-center bg-af-gray border rounded-lg h-64">
+								<p className="text-af-md">ITエース</p>
 							</div>
 						</Link>
 					</div>

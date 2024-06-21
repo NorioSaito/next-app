@@ -46,10 +46,10 @@ function footer() {
 			{/* ページ最上部へ戻すボタン */}
 			<div className="w-1/2 flex flex-col justify-between pr-20">
 				<div className="relative flex justify-end pr-9">
-					<div className="relative flex flex-col items-center" >
-						<button onClick={returnTop} className="focus:outline-none">
+					<div className="relative " >
+						<button onClick={returnTop} className="flex flex-col items-center">
 							<Image src="footer_chevronup.svg" alt="" width={25.41} height={10.67}></Image>
-							<p className="mt-2 text-af-white">Page Top</p>
+							<p className="mt-2 text-af-xs text-af-white">Page Top</p>
 						</button>
 					</div>
 				</div>
@@ -57,12 +57,12 @@ function footer() {
 				<nav className="relative flex justify-end">
 					<PopoverGroup className="absolute bottom-16 right-10 flex flex-col items-end text-af-white">
 						{footerMenu.map((item) => (item.key === 'education' ? (
-							<Link className="m-1 text-left w-full flex" key={item.key} href={item.path} target="_blank" rel='noopener'>
+							<Link className="m-1 text-left text-af-xs w-full flex" key={item.key} href={item.path} target="_blank" rel='noopener'>
 								{item.text}
-								<Square2StackIcon className="h-5"></Square2StackIcon>
+								<Square2StackIcon className="h-10"></Square2StackIcon>
 							</Link>
 						) : (
-							<Link className="m-1 text-left w-full" key={item.key} href={item.path}>
+							<Link className="m-1 text-left text-af-xs w-full" key={item.key} href={item.path}>
 								{item.text}
 							</Link>
 						)))}
