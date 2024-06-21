@@ -26,8 +26,17 @@ export default function Home() {
 			{/* ヒーローイメージ */}
 			<section className="mx-32">
 				<div className="flex items-start">
-					<Image className="pb-24" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
-					<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 5 }}>
+						<Image className="pb-24 z-10" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
+					</motion.div>
+					<motion.div
+						animate={{ rotate: 360 }}
+						transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}>
+						<Image className="pb z-30" src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+					</motion.div>
 					<div className="flex-col">
 						<h1>Shining</h1>
 						<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
