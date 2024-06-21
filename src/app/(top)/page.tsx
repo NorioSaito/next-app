@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRightIcon } from '@heroicons/react/16/solid';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 	return (
@@ -23,10 +24,10 @@ export default function Home() {
 
 			<section className="flex flex-col items-center justify-center mx-20 pt-64">
 				<div className="flex">
-					<Image className="pb-20" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
-					<h3 className="pl-4">会社案内</h3>
+					<Image className="" src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
+					<h2 className="pl-2">会社案内</h2>
 				</div>
-				<Image className="pb-16" src="top_ourmission.svg" alt="our mission" width={380} height={96}></Image>
+				<Image className="mt-8 mb-16" src="top_ourmission.svg" alt="our mission" width={380} height={96}></Image>
 				<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
 				<h3 className="pt-20">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
@@ -50,8 +51,8 @@ export default function Home() {
 			</section>
 			<section className="bg-gray-950 px-20 pt-20">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
-					<h3 className="pl-4 text-white">事業概要</h3>
+					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
+					<h2 className="pl-2 text-white">事業概要</h2>
 				</div>
 				<div className="pt-10 text-8xl text-white">
 					<h1>Service</h1>
@@ -64,20 +65,21 @@ export default function Home() {
 				{/* 20240620時点でボタンは仮置きです。 */}
 				<div className="flex items-center justify-center">
 					<button onClick={() => {}}
-						className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-white hover:bg-gradient-to-r from-black to-yellow-300  rounded-full hover:bg-yellow-300">
-						<span className="flex-grow text-left text-white pl-6">サービスへ</span>
+						className="flex items-center h-20 w-80 my-10 border bg-white rounded-full">
+						<span className="flex-grow text-left pl-12">サービスへ</span>
 						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
 					</button>
 				</div>
 			</section>
-			<section className="flex flex-col items-center justify-center mx-20 my-10 pt-48">
+			<section className="flex flex-col items-center justify-center mx-20 my-10 pt-40">
 				<div className="flex">
-					<Image className="pb-20" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
-					<h3 className="pl-4">取扱製品一覧</h3>
+					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
+					<h2 className="pl-2">取扱製品一覧</h2>
 				</div>
-				<Image src="top_products.svg" alt="products" width={380} height={96}></Image>
+				<Image className="mt-8 mb-16" src="top_products.svg" alt="products" width={380} height={96}></Image>
 			</section>
-			<section className="px-20 pt-20">
+			{/* CELF */}
+			<section className="mb-8 px-20 pt-16">
 				<div className="flex rounded-tr-lg border border-black">
 					<div className="w-1/2 p-20">
 						<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
@@ -97,13 +99,15 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="mb-20 px-20 pt-20">
-				<div className="flex rounded-tr-lg mb-20 border border-black">
+			{/* Salesforce */}
+			<section className="mb-8 px-20 pt-8">
+				<div className="flex rounded-tr-lg border border-black">
 					<div className="w-1/2 p-20">
 						<h3 className="border border-black rounded-lg w-28 p-1">★タグ未実装</h3>
 						<h2 className="my-10 text-4xl" >Salesforce</h2>
 						<h3>
-							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							コロナ禍、各企業は営業やマーケティングのあり方が、大幅に変わりつつあります。 対面営業からインサイドセールスへと、成長は止められない！<br/>
+							私たちは、運用者が必要とする、トレーニングとサービスを提供をいたします。
 						</h3>
 						<div className="flex justify-end items-end pt-10">
 							<Link href="/">詳しく見る</Link>
@@ -116,6 +120,9 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+			</section>
+			{/* InforM3 */}
+			<section className="mb-24 px-20 pt-8">
 				<div className="flex justify-center space-x-20">
 					<div className="w-1/2 flex rounded-tr-lg  border border-black">
 						<div className="w-1/2 p-10">
@@ -152,32 +159,57 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				{/* 20240620時点でボタンは仮置きです。 */}
-				<div className="flex items-center justify-center">
-					<button onClick={() => {}}
-						className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black rounded-full hover:bg-yellow-300">
-						<span className="flex-grow text-left pl-6">製品一覧へ</span>
-						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-					</button>
-				</div>
 			</section>
+			{/* 20240620時点でボタンは仮置きです。 */}
+			<div className="flex items-center justify-center mb-40">
+				<button onClick={() => {}}
+					className="flex items-center transition-all duration-300 h-20 w-80 border border-black hover:bg-gradient-to-r from-white to-yellow-300 text-black rounded-full hover:bg-yellow-300">
+					<span className="flex-grow text-left pl-6">製品一覧へ</span>
+					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
+				</button>
+			</div>
+			{/* AFORCEAFORCEAFORCEAFORCE */}
 			<section className="bg-yellow-400 px-20">
 				<div className="flex justify-center items-center z-10">
 					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64}></Image>
 				</div>
 			</section>
+			{/* 採用情報 */}
 			<section className="bg-gray-950 px-20 pt-20">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image src="top_orangepoint.svg" alt="" width={8} height={8}></Image>
 					<h3 className="pl-4 text-white">採用情報</h3>
 				</div>
 				<div className="pt-10 text-8xl text-white">
 					<h1>Recruit</h1>
 				</div>
-				<div className='ml-auto'>
+				<motion.div
+					initial={{ x: '-100%' }}
+					animate={{ x: '100%' }}
+					transition={{
+						duration: 10, ease: 'linear', repeat: Infinity, repeatType: 'loop',
+					}} >
+					<Image src="top_recruit5shapes.svg" alt="" width={1443} height={312}></Image>
+				</motion.div>
+				<div className='flex justify-end pr-64'>
 					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
 				</div>
+				<div>
+					<h4 className="leading-loose text-white">
+						未知の領域に挑戦し、自己成長したい方。<br/>
+						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>
+						エイ・フォースは、そんなビジョンを共有できる仲間をもとめています。
+					</h4>
+					{/* ボタンは仮置きです。 */}
+					<button onClick={() => {}}
+						className="flex items-center h-20 w-80 mt-10 border bg-white rounded-full text-black">
+						<span className="flex-grow text-left pl-12">採用情報へ</span>
+						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
+					</button>
+				</div>
 			</section>
+			{/* お知らせ */}
+
 		</main>
 	);
 }
