@@ -56,38 +56,38 @@ function footer() {
 					<div className="relative flex ml-20">
 						<Image
 							className="pt-4"
-							src="Alogo.svg"
+							src="/Alogo.svg"
 							alt=""
 							width={346.71}
 							height={270.3}
 						/>
 						<Image
 							className="absolute bottom-0 right-0"
-							src="footer_catchcopy.svg"
+							src="/footer_catchcopy.svg"
 							alt=""
 							width={329.29}
 							height={76}
 						/>
 					</div>
 					<div className="relative flex ml-20 mt-6 mr-4">
-						<Image src="footer_A-force.svg" alt="" width={198} height={47} />
+						<Image src="/footer_A-force.svg" alt="" width={198} height={47} />
 						<Image
 							className="ml-6"
-							src="footer_copyright.svg"
+							src="/footer_copyright.svg"
 							alt=""
 							width={339}
 							height={52}
 						/>
 						<Image
 							className="ml-6"
-							src="footer_privacy.svg"
+							src="/footer_privacy.svg"
 							alt=""
 							width={72}
 							height={85.15}
 						/>
 					</div>
 					<div className="ml-20 mt-2">
-						<Image src="footer_facebook.svg" alt="" width={40} height={40} />
+						<Image src="/footer_facebook.svg" alt="" width={40} height={40} />
 					</div>
 				</div>
 				<div className="w-1/2 flex flex-col justify-between pr-20">
@@ -95,7 +95,7 @@ function footer() {
 						<div className="relative flex flex-col">
 							<Image
 								className="absolute right-10 mt-4"
-								src="footer_chevronup.svg"
+								src="/footer_chevronup.svg"
 								alt=""
 								width={25.41}
 								height={10.67}
