@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ChevronRightIcon } from '@heroicons/react/16/solid';
 import { motion } from 'framer-motion';
 import PATHS from '../../constants/paths';
+import Button from '../_components/common/Button';
 
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
@@ -61,12 +62,7 @@ export default function Home() {
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 				</h3>
-				{/* 20240620時点でボタンは仮置きです。 */}
-				<button onClick={() => {}}
-					className="flex items-center transition-all duration-300 h-20 w-80 my-20 border border-af-black hover:bg-gradient-to-r from-white to-yellow-300 text-af-black rounded-full hover:bg-yellow-300">
-					<span className="flex-grow text-left pl-6">サービスへ</span>
-					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-				</button>
+				<Button title="サービスへ" link="/services"/>
 				<div className="flex items-center justify-center space-x-10 mt-10 mb-44">
 					<motion.div
 						initial={{ x: '-100%' }}
@@ -92,13 +88,8 @@ export default function Home() {
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/><br/>
 					★ベン図の実装難しいので一旦飛ばしてます。
 				</h3>
-				{/* 20240620時点でボタンは仮置きです。 */}
 				<div className="flex items-center justify-center">
-					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 my-10 border bg-af-white rounded-full">
-						<span className="flex-grow text-left pl-12">サービスへ</span>
-						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-					</button>
+					<Button title="サービスへ" link="/services"/>
 				</div>
 			</section>
 			{/* 取扱製品一覧 */}
@@ -193,11 +184,7 @@ export default function Home() {
 			</section>
 			{/* 20240620時点でボタンは仮置きです。 */}
 			<div className="flex items-center justify-center mb-40">
-				<button onClick={() => {}}
-					className="flex items-center transition-all duration-300 h-20 w-80 border border-af-black hover:bg-gradient-to-r from-white to-yellow-300 text-af-black rounded-full hover:bg-yellow-300">
-					<span className="flex-grow text-left pl-6">製品一覧へ</span>
-					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-				</button>
+				<Button title="製品一覧へ" link="/products"/>
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
 			<section className="bg-af-yellow px-20">
@@ -231,12 +218,7 @@ export default function Home() {
 						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>
 						エイ・フォースは、そんなビジョンを共有できる仲間をもとめています。
 					</h4>
-					{/* ボタンは仮置きです。 */}
-					<button onClick={() => {}}
-						className="flex items-center h-20 w-80 mt-10 mb-12 border bg-af-white rounded-full text-af-black">
-						<span className="flex-grow text-left pl-12">採用情報へ</span>
-						<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-					</button>
+					<Button title="採用情報へ" link="/recruit"/>
 				</div>
 			</section>
 			{/* お知らせ */}
@@ -264,11 +246,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="flex justify-end items-end px-20 py-20">
-				<button onClick={() => {}}
-					className="flex items-center h-20 w-80 border border-black bg-af-white rounded-full text-black">
-					<span className="flex-grow text-left pl-12">ニュース一覧へ</span>
-					<Image className="mr-2 mt-1 mb-1" src="top_orangebuttonicon.svg" alt="" width={45} height={45} ></Image>
-				</button>
+				<Button title="ニュース一覧へ" link="https://a-force.themedia.jp/"/>
 			</section>
 			{/* セミナー情報 */}
 			<section className="px-20 pt-20">
