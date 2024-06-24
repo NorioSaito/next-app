@@ -7,16 +7,16 @@ function Hero(props: { title: string; text: string }) {
 	return (
 		<section className="grid h-64 bg-neutral-600 content-center">
 			<motion.p
-				className="text-5xl font-bold text-white"
-				initial={{ x: '10vw', y: '-2vw', opacity: 0 }}
-				animate={{ x: '15vw', y: '-2vw', opacity: 1 }}
+				className="text-5xl font-bold text-white w-[80%]"
+				initial={{ x: '0', y: '-20%', opacity: 0 }}
+				animate={{ x: '20%', y: '-20%', opacity: 1 }}
 				transition={{ duration: 1.5 }}
 			>
 				{props.title}
 			</motion.p>
 			<motion.section
-				initial={{ y: '3vw', opacity: 0 }}
-				animate={{ y: '0vw', opacity: 1 }}
+				initial={{ y: '40%', opacity: 0 }}
+				animate={{ y: '0', opacity: 1 }}
 				transition={{ duration: 1, delay: 1 }}
 				className="ml-64"
 			>
