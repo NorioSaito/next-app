@@ -61,7 +61,7 @@ export default function Home() {
 					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm">会社案内</h2>
 				</div>
-				<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold" />
+				<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold animate" />
 				<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
 				<h3 className="pt-20 text-af-xs">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
@@ -87,12 +87,78 @@ export default function Home() {
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm text-af-white">事業概要</h2>
 				</div>
-				<AnimatedSectionTitle text="Service" className="text-outline-black text-af-lg font-bold" />
+				<AnimatedSectionTitle text="Service" className="text-outline-black text-af-lg font-bold animate" />
 				<h3 className="pt-10 text-af-xs text-af-white">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/><br/>
 					★ベン図の実装難しいので一旦飛ばしてます。
 				</h3>
+				<div className="flex h-screen overflow-hidden">
+					{/* 左側固定コンテンツ（ベン図） */}
+					<div className="flex-1 h-full overflow-y-auto">
+						<div className="p-8">
+							<h2 className="text-af-white" >ここにベン図を配置</h2>
+						</div>
+					</div>
+					{/* 右側スクロールコンテンツ */}
+					<div className="flex-1 h-full overflow-y-auto">
+						{/* SI事業 */}
+						<div className="mb-12">
+							<div className="flex flex-col pt-16 pl-14 pr-8 border rounded-lg bg-af-white">
+								<div className="flex">
+									<Image src="top_serviceIcon_SI.svg" alt="" width={40} height={40}></Image>
+									<h2 className="pl-2 text-af-md">SI事業</h2>
+								</div>
+								<h3 className="pt-6 text-af-xs">
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+								</h3>
+								<div className="flex justify-end items-end pt-28 pb-12 pr-14">
+									<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+									<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
+								</div>
+							</div>
+						</div>
+						{/* コンサルティング事業 */}
+						<div className="mb-12">
+							<div className="flex flex-col pt-16 pl-14 pr-8 border rounded-lg bg-af-white">
+								<div className="flex">
+									<Image src="top_serviceIcon_Consult.svg" alt="" width={40} height={40}></Image>
+									<h2 className="pl-2 text-af-md">コンサルティング事業</h2>
+								</div>
+								<h3 className="pt-6 text-af-xs">
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+								</h3>
+								<div className="flex justify-end items-end pt-28 pb-12 pr-14">
+									<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+									<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
+								</div>
+							</div>
+						</div>
+						{/* 教育事業 */}
+						<div className="mb-12">
+							<div className="flex flex-col pt-16 pl-14 pr-8 border rounded-lg bg-af-white">
+								<div className="flex">
+									<Image src="top_serviceIcon_Edu.svg" alt="" width={40} height={40}></Image>
+									<h2 className="pl-2 text-af-md">教育事業</h2>
+								</div>
+								<h3 className="pt-6 text-af-xs">
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+								</h3>
+								<div className="flex justify-end items-end pt-28 pb-12 pr-14">
+									<Link className="text-af-xs text-af-orange" href="/">詳しく見る</Link>
+									<ChevronRightIcon className="flex justify-center w-10 h-15 text-af-orange"></ChevronRightIcon>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
 				<div className="flex items-center justify-center">
 					<Button title="サービスへ" link="/services"/>
 				</div>
