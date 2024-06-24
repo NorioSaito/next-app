@@ -13,10 +13,10 @@ const handleToggle = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
 };
 
 return (
-      <div className={`${style.accordionContent} ${isOpen ? 'open' : ''} w-full`}>
+      <div className={`${style.accordionContent} ${isOpen ? "open" : ""} w-full`}>
       {isOpen && (
         <>
-        <div className='grid-rows-17'>
+        <div className="grid-rows-17">
           <div className="flex items-center">
             <div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
             <p className="mr-[110px] text-af-sm">2008年</p>
@@ -76,11 +76,11 @@ return (
           <div className="my-[24px] h-px bg-slate-200"></div>
           <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2013年</p>
-							<p className='w-[90px] text-[2rem]'>11月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・業務拡大に伴い本社を移転</p>
-								<p className='mt-[10px] text-af-xs'>・教育事業の開始（”ITエース養成塾”を開設）</p>
+							<p className="mr-[20px] text-af-sm">2013年</p>
+							<p className="w-[90px] text-[2rem]">11月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・業務拡大に伴い本社を移転</p>
+								<p className="mt-[10px] text-af-xs">・教育事業の開始（”ITエース養成塾”を開設）</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
@@ -103,73 +103,73 @@ return (
           <div className="my-[24px] h-px bg-slate-200"></div>
           <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2016年</p>
-							<p className='w-[90px] text-[2rem]'>3月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・プライバシーマーク取得</p>
+							<p className="mr-[20px] text-af-sm">2016年</p>
+							<p className="w-[90px] text-[2rem]">3月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・プライバシーマーク取得</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-orange flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2016年</p>
-							<p className='w-[90px] text-[2rem]'>8月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・DevOps協議会への加盟と参加</p>
+							<p className="mr-[20px] text-af-sm">2016年</p>
+							<p className="w-[90px] text-[2rem]">8月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・DevOps協議会への加盟と参加</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-yellow flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2017年</p>
-							<p className='w-[90px] text-[2rem]'>1月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・教育事業にAIコース等を開講</p>
+							<p className="mr-[20px] text-af-sm">2017年</p>
+							<p className="w-[90px] text-[2rem]">1月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・教育事業にAIコース等を開講</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2017年</p>
-							<p className='w-[90px] text-[2rem]'>12月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・SCSKのCELF（EXCELベースのWEBアプリケーション開発ソリューション）の販売代理店契約締結</p>
+							<p className="mr-[20px] text-af-sm">2017年</p>
+							<p className="w-[90px] text-[2rem]">12月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・SCSKのCELF（EXCELベースのWEBアプリケーション開発ソリューション）の販売代理店契約締結</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-orange flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2018年</p>
-							<p className='w-[90px] text-[2rem]'>1月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・AIソリューション　BOTの受注</p>
+							<p className="mr-[20px] text-af-sm">2018年</p>
+							<p className="w-[90px] text-[2rem]">1月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・AIソリューション　BOTの受注</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-yellow flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2018年</p>
-							<p className='w-[90px] text-[2rem]'>7月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・CELFの顧客向けセミナー開始</p>
+							<p className="mr-[20px] text-af-sm">2018年</p>
+							<p className="w-[90px] text-[2rem]">7月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・CELFの顧客向けセミナー開始</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2019年</p>
-							<p className='w-[90px] text-[2rem]'>10月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・UNIFINITYの販売・開発パートナー契約の締結</p>
+							<p className="mr-[20px] text-af-sm">2019年</p>
+							<p className="w-[90px] text-[2rem]">10月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・UNIFINITYの販売・開発パートナー契約の締結</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
             <div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-orange flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2020年</p>
-							<p className='w-[90px] text-[2rem]'>7月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・salesforce / Pardotの導入及びパートナー開始</p>
+							<p className="mr-[20px] text-af-sm">2020年</p>
+							<p className="w-[90px] text-[2rem]">7月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・salesforce / Pardotの導入及びパートナー開始</p>
 							</div>
 						</div>
 						<div className="mt-[24px] mb-[35px] h-px bg-slate-200"></div>
@@ -177,14 +177,14 @@ return (
           </div>
         </>
       )}
-      <div className='flex justify-end'>
+      <div className="flex justify-end">
         <a onClick={handleToggle} className={`${style.btn} ${style.bgleft} grid grid-cols-3 rounded-full pl-4 pr-2 py-2 block`}>
-          <div className="col-span-2 text-af-xs flex items-center justify-center">{isOpen ? '閉じる' : 'すべて見る'}</div>
+          <div className="col-span-2 text-af-xs flex items-center justify-center">{isOpen ? "閉じる" : "すべて見る"}</div>
           <div className="grid items-center contents-center justify-end">
             <div className="font-bold w-[45px] h-[45px] rounded-full bg-af-orange flex items-center justify-center">
             {isOpen ? 
-              <ChevronUpIcon className='text-white w-[12px] h-[12px] ' /> : 
-              <ChevronDownIcon className='text-white w-[12px] h-[12px] ' />}
+              <ChevronUpIcon className="text-white w-[12px] h-[12px] " /> : 
+              <ChevronDownIcon className="text-white w-[12px] h-[12px] " />}
             </div>
           </div>
         </a>

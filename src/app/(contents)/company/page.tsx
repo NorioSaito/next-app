@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Harftitle from '../../_components/common/HarfTitle';
 import Accordion from '../../_components/common/Accordion';
-import Button from '../../_components/common/Button';
+import style from '../../assets/css/common.module.css';
+import { MapPinIcon } from '@heroicons/react/24/outline';
 
 function Company() {
 	return (
@@ -16,7 +17,7 @@ function Company() {
 				</div>
 				<section className="mt-[56px] relative">
 					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
-					<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' >
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
 						<Image src="/company_herotext.svg" alt="" width={400} height={214} />
 					</div>
 				</section>
@@ -37,7 +38,7 @@ function Company() {
 					お客様、社会、そして社員のすべてがともに成長し<br/>
 					豊かさを享受できる未来をめざしてあゆみつづけます。
 					</p>
-					<div className='pt-[80px] flex items-center justify-center'>
+					<div className="pt-[80px] flex items-center justify-center">
 						<Image src="/company_img1.jpg" alt="" width={309} height={225} />
 					</div>
 				</section>
@@ -48,25 +49,25 @@ function Company() {
 						<Harftitle title="Vision" subTitle="行動理念" text_position="start"></Harftitle>
 					</div>
 					<div className="py-[66px] grid-cols-5 justify-start">
-						<div className='mb-[40px] flex text-af-sm'>
-							<p className='text-white mr-[50px]'>01</p>
-							<p className=''>期待を超えるサービスでお客様に感動をお届けする</p>
+						<div className="mb-[40px] flex text-af-sm">
+							<p className="text-white mr-[50px]">01</p>
+							<p className="">期待を超えるサービスでお客様に感動をお届けする</p>
 						</div>
-						<div className='mb-[40px] flex text-af-sm'>
-							<p className='text-white mr-[50px]'>02</p>
-							<p className=''>お客様と一生おつき合いできる関係づくりを目指す</p>
+						<div className="mb-[40px] flex text-af-sm">
+							<p className="text-white mr-[50px]">02</p>
+							<p className="">お客様と一生おつき合いできる関係づくりを目指す</p>
 						</div>
-						<div className='mb-[40px] flex text-af-sm'>
-							<p className='text-white mr-[50px]'>03</p>
-							<p className=''>世の中に意味のある商品を創造・提供する</p>
+						<div className="mb-[40px] flex text-af-sm">
+							<p className="text-white mr-[50px]">03</p>
+							<p className="">世の中に意味のある商品を創造・提供する</p>
 						</div>
-						<div className='mb-[40px] flex text-af-sm'>
-							<p className='text-white mr-[50px]'>04</p>
-							<p className=''>常に社員が進化しながら夢をもって働ける職場をつくる</p>
+						<div className="mb-[40px] flex text-af-sm">
+							<p className="text-white mr-[50px]">04</p>
+							<p className="">常に社員が進化しながら夢をもって働ける職場をつくる</p>
 						</div>
-						<div className='flex text-af-sm'>
-							<p className='text-white mr-[50px]'>05</p>
-							<p className=''>成長を糧に、豊かな人生を実現できる組織を目指す</p>
+						<div className="flex text-af-sm">
+							<p className="text-white mr-[50px]">05</p>
+							<p className="">成長を糧に、豊かな人生を実現できる組織を目指す</p>
 						</div>
 					</div>
 				</div>
@@ -77,7 +78,7 @@ function Company() {
 						<div className="grid grid-rows-2">
 							<div className={`text-start text-lg md:text-af-sm`}>
 								<span className="pr-[8px] text-af-orange">●</span>
-								<a className='text-white'>行動理念</a>
+								<a className="text-white">行動理念</a>
 							</div>
 							<h2 className={`text-start text-outline-black text-2xl font-bold md:pt-[32px] text-af-lg`}>
 								Values
@@ -87,40 +88,40 @@ function Company() {
 				</div>
 				<div className="pt-[70px] flex items-center justify-center">
 					<div className="w-[250px] h-[250px] rounded-full bg-af-green flex items-center justify-center">
-						<div className='text-white text-center'>
-							<h3 className='text-af-sm font-bold' >RESPECTING</h3>
-							<p className='my-[15px] text-[2rem] tracking-wide'>敬意を払う・共感する</p>
-							<p className='text-af-xs tracking-wide'>お客様・仲間・家族・環境</p>
+						<div className="text-white text-center">
+							<h3 className="text-af-sm font-bold" >RESPECTING</h3>
+							<p className="my-[15px] text-[2rem] tracking-wide">敬意を払う・共感する</p>
+							<p className="text-af-xs tracking-wide">お客様・仲間・家族・環境</p>
 						</div>
 					</div>
 					<div className="mx-[80px] w-[250px] h-[250px] rounded-full bg-af-green flex items-center justify-center">
-						<div className='text-white text-center'>
-							<h3 className='text-af-sm font-bold' >EVOLVING</h3>
-							<p className='my-[15px] text-[2rem] tracking-wide'>進化・発展する</p>
-							<p className='text-af-xs tracking-wide'>生涯学習と常に挑戦を</p>
+						<div className="text-white text-center">
+							<h3 className="text-af-sm font-bold" >EVOLVING</h3>
+							<p className="my-[15px] text-[2rem] tracking-wide">進化・発展する</p>
+							<p className="text-af-xs tracking-wide">生涯学習と常に挑戦を</p>
 						</div>
 					</div>
 					<div className="w-[250px] h-[250px] rounded-full bg-af-green flex items-center justify-center">
-						<div className='text-white text-center'>
-							<h3 className='text-af-sm font-bold' >ENJOYING</h3>
-							<p className='my-[15px] text-[2rem] tracking-wide'>人生を楽しむ</p>
-							<p className='text-af-xs tracking-wide'>自己実現・他己実現</p>
+						<div className="text-white text-center">
+							<h3 className="text-af-sm font-bold" >ENJOYING</h3>
+							<p className="my-[15px] text-[2rem] tracking-wide">人生を楽しむ</p>
+							<p className="text-af-xs tracking-wide">自己実現・他己実現</p>
 						</div>
 					</div>
 				</div>
 				<div className="pt-[40px] pb-[85px] flex items-center justify-center">
 					<div className="w-[250px] h-[250px] rounded-full bg-af-green flex items-center justify-center">
-						<div className='text-white text-center'>
-							<h3 className='text-af-sm font-bold' >COMPLETING</h3>
-							<p className='my-[15px] text-[2rem] tracking-wide'>責任を持つ・完遂する</p>
-							<p className='text-af-xs tracking-wide'>品質・納期<br/>あと数%の努力を</p>
+						<div className="text-white text-center">
+							<h3 className="text-af-sm font-bold" >COMPLETING</h3>
+							<p className="my-[15px] text-[2rem] tracking-wide">責任を持つ・完遂する</p>
+							<p className="text-af-xs tracking-wide">品質・納期<br/>あと数%の努力を</p>
 						</div>
 					</div>
 					<div className="ml-[80px] w-[250px] h-[250px] rounded-full bg-af-green flex items-center justify-center">
-						<div className='text-white text-center'>
-							<h3 className='text-af-sm font-bold' >TRUSTING</h3>
-							<p className='my-[15px] text-[2rem] tracking-wide'>信頼を築く</p>
-							<p className='text-af-xs tracking-wide'>気配りと一歩先の行動を</p>
+						<div className="text-white text-center">
+							<h3 className="text-af-sm font-bold" >TRUSTING</h3>
+							<p className="my-[15px] text-[2rem] tracking-wide">信頼を築く</p>
+							<p className="text-af-xs tracking-wide">気配りと一歩先の行動を</p>
 						</div>
 					</div>
 				</div>
@@ -156,56 +157,56 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 					<Harftitle title="History" subTitle="沿革" text_position="center"></Harftitle>
 				</section>
 				<section className="mt-[70px]">
-					<div className='grid-rows-5'>
+					<div className="grid-rows-5">
 						<div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-orange flex items-center justify-center"></div>
-							<p className='mr-[20px] text-af-sm'>2003年</p>
-							<p className='w-[90px] text-[2rem]'>11月</p>
-							<div className='grid-rows-2'>
-								<p className='text-af-xs'>・IT業界向けに新規顧客獲得を目的とした営業コンサルのアウトソーシングサービスを主たる事業として設立</p>
-								<p className='mt-[10px] text-af-xs'>・大手ハードメーカーのネットワーク機器販売部門等の営業支援を行う</p>
+							<p className="mr-[20px] text-af-sm">2003年</p>
+							<p className="w-[90px] text-[2rem]">11月</p>
+							<div className="grid-rows-2">
+								<p className="text-af-xs">・IT業界向けに新規顧客獲得を目的とした営業コンサルのアウトソーシングサービスを主たる事業として設立</p>
+								<p className="mt-[10px] text-af-xs">・大手ハードメーカーのネットワーク機器販売部門等の営業支援を行う</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
 						<div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-yellow flex items-center justify-center"></div>
-							<p className='mr-[110px] text-af-sm'>2004年</p>
-							<div className='grid-rows-3'>
-								<p className=' text-af-xs'>・Web系システム開発サービスを開始</p>
-								<p className='mt-[10px] text-af-xs'>・住友電工情報システム(株)とWebアプリケーション開発基板パッケージソフト ”楽々Framework” , 検索エンジン ”QuickSolution” の販売代理店契約を締結</p>
-								<p className='mt-[10px] text-af-xs'>・JETRO開催による「CEATECジャパン」にて “BizMaching” コーデュネータを務める</p>
+							<p className="mr-[110px] text-af-sm">2004年</p>
+							<div className="grid-rows-3">
+								<p className=" text-af-xs">・Web系システム開発サービスを開始</p>
+								<p className="mt-[10px] text-af-xs">・住友電工情報システム(株)とWebアプリケーション開発基板パッケージソフト ”楽々Framework” , 検索エンジン ”QuickSolution” の販売代理店契約を締結</p>
+								<p className="mt-[10px] text-af-xs">・JETRO開催による「CEATECジャパン」にて “BizMaching” コーデュネータを務める</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
 						<div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-green flex items-center justify-center"></div>
-							<p className='mr-[110px] text-af-sm'>2005年</p>
-							<div className='grid-rows-2'>
-								<p className=' text-af-xs'>・大阪事務所開設</p>
-								<p className='mt-[10px] text-af-xs'>・(株)システムインテグレータのECサイト構築パッケージ “SI Web Shopping” の販売代理店契約を締結</p>
+							<p className="mr-[110px] text-af-sm">2005年</p>
+							<div className="grid-rows-2">
+								<p className=" text-af-xs">・大阪事務所開設</p>
+								<p className="mt-[10px] text-af-xs">・(株)システムインテグレータのECサイト構築パッケージ “SI Web Shopping” の販売代理店契約を締結</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
 						<div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-orange flex items-center justify-center"></div>
-							<p className='mr-[110px] text-af-sm'>2006年</p>
-							<div className='grid-rows-2'>
-								<p className=' text-af-xs'>・IBM系の開発会社群「UOSグループ」に加盟</p>
-								<p className='mt-[10px] text-af-xs'>・仏Planisware社とプロジェクト管理ソフト ”OPX2” の販売代理店契約を締結</p>
+							<p className="mr-[110px] text-af-sm">2006年</p>
+							<div className="grid-rows-2">
+								<p className=" text-af-xs">・IBM系の開発会社群「UOSグループ」に加盟</p>
+								<p className="mt-[10px] text-af-xs">・仏Planisware社とプロジェクト管理ソフト ”OPX2” の販売代理店契約を締結</p>
 							</div>
 						</div>
 						<div className="my-[24px] h-px bg-slate-200"></div>
 						<div className="flex items-center">
 							<div className="mx-[30px] w-[30px] h-[30px] rounded-full bg-af-yellow flex items-center justify-center"></div>
-							<p className='mr-[110px] text-af-sm'>2007年</p>
-							<div className='grid-rows-2'>
-								<p className=' text-af-xs'>・(株)NTTデータ イントラマートのWebアプリケーションフレームワーク “intra-mart” の販売代理店・開発パートナとなる</p>
-								<p className='mt-[10px] text-af-xs'>・中国のアウトソーサーと協業しオフシェア開発を開始</p>
+							<p className="mr-[110px] text-af-sm">2007年</p>
+							<div className="grid-rows-2">
+								<p className=" text-af-xs">・(株)NTTデータ イントラマートのWebアプリケーションフレームワーク “intra-mart” の販売代理店・開発パートナとなる</p>
+								<p className="mt-[10px] text-af-xs">・中国のアウトソーサーと協業しオフシェア開発を開始</p>
 							</div>
 						</div>
 						<div className="mt-[24px] h-px bg-slate-200"></div>
 					</div>
-					<div className='pt-[35px]'>
+					<div className="pt-[35px]">
 						<Accordion />
 					</div>
 				</section>
@@ -215,55 +216,55 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 				<section className="mt-[70px]">
 					<div className="flex">
 						<div className="w-[730px] mr-auto tracking-wide">
-							<div className='grid-rows-10'>
+							<div className="grid-rows-10">
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>会社名</p>
-									<p className='text-af-xs'>エイ・フォース株式会社</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">会社名</p>
+									<p className="text-af-xs">エイ・フォース株式会社</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>所在地</p>
-									<p className='text-af-xs'>東京都千代田区飯田橋4-8-13 山商ビル 4F</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">所在地</p>
+									<p className="text-af-xs">東京都千代田区飯田橋4-8-13 山商ビル 4F</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>設立</p>
-									<p className='text-af-xs'>2003年11月</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">設立</p>
+									<p className="text-af-xs">2003年11月</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>資本金</p>
-									<p className='text-af-xs'>1,100万円</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">資本金</p>
+									<p className="text-af-xs">1,100万円</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>売上</p>
-									<p className='text-af-xs'>5.5億円（2023年6月末）</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">売上</p>
+									<p className="text-af-xs">5.5億円（2023年6月末）</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>代表</p>
-									<p className='text-af-xs'>菅原　俊哉</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">代表</p>
+									<p className="text-af-xs">菅原　俊哉</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>従業員</p>
-									<p className='text-af-xs'>従業員 53名（2023年11月）</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">従業員</p>
+									<p className="text-af-xs">従業員 53名（2023年11月）</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>許認可</p>
-									<p className='text-af-xs'>プライバシーマーク 10824384(04)</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">許認可</p>
+									<p className="text-af-xs">プライバシーマーク 10824384(04)</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>所属団体</p>
-									<p className='text-af-xs'>UOSグループ、IT交流会（ITIA)、公益社団法人　麹町法人会</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">所属団体</p>
+									<p className="text-af-xs">UOSグループ、IT交流会（ITIA)、公益社団法人　麹町法人会</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 								<div className="flex items-center">
-									<p className='ml-[103px] w-[180px] text-af-sm'>顧問</p>
-									<p className='text-af-xs'>奥田　久美　　（労務関係顧問）　元東京労働局長</p>
+									<p className="ml-[103px] w-[180px] text-af-sm">顧問</p>
+									<p className="text-af-xs">奥田　久美　　（労務関係顧問）　元東京労働局長</p>
 								</div>
 								<div className="my-[24px] h-px bg-slate-200"></div>
 							</div>
@@ -280,7 +281,7 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 					<div className="flex">
 						<div className="mt-[70px] mr-auto tracking-wide">
 							<div>
-								<p className='text-af-xs'>JR飯田橋駅 東口より徒歩2分
+								<p className="text-af-xs">JR飯田橋駅 東口より徒歩2分
 								<br/>
 								営団地下鉄・都営地下鉄　飯田橋駅 A4出口より徒歩1分
 								<br/>
@@ -291,8 +292,19 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 								<br/>
 								１階に珈琲館のあるビルになります。</p>
 							</div>
-							<div className='mt-[42px]'>
-								<Button title="Google Mapで見る" link="https://maps.app.goo.gl/K7b77JtEnWkoc8fD6"></Button>
+							<div className="mt-[42px]">
+								<a
+									href={"https://maps.app.goo.gl/K7b77JtEnWkoc8fD6"}
+									target="_blank"
+									className={`${style.btn} ${style.bgleft} grid grid-cols-3 w-15 border text-black rounded-full pl-4 pr-2 py-2`}
+								>
+									<div className="col-span-2 text-af-xs flex items-center justify-center">{"Google Mapで見る"}</div>
+									<div className="grid items-center contents-cente justify-end">
+										<div className="font-bold w-[45px] h-[45px] rounded-full bg-af-orange flex items-center justify-center">
+											<MapPinIcon className="text-white w-[20px] h-[120px] " />
+										</div>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div className="mt-[50px]">
@@ -306,7 +318,7 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 				<section>
 					<div className="mt-[100px] mb-[161px] ml-[10px] tracking-wide leading-[2] flex">
 						<div className="mr-[180px]">
-							<p className='text-af-xs'>株式会社イーベース・ソリューションズ<br/>
+							<p className="text-af-xs">株式会社イーベース・ソリューションズ<br/>
 								株式会社インターネットイニシアティブ<br/>
 								インフォアジャパン株式会社<br/>
 								株式会社インフォディオ<br/>
@@ -328,7 +340,7 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 							</p>
 						</div>
 						<div>
-							<p className='text-af-xs'>商船三井システムズ株式会社（商船三井）<br/>
+							<p className="text-af-xs">商船三井システムズ株式会社（商船三井）<br/>
 								東急不動産株式会社<br/>
 								株式会社東急コミュニティー<br/>
 								清水建設株式会社<br/>
