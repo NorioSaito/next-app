@@ -61,7 +61,12 @@ export default function Home() {
 					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm">会社案内</h2>
 				</div>
-				<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold animate" />
+				<motion.section
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: false, amount: 0.5 }}>
+					<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold animate" />
+				</motion.section>
 				<motion.div
 					initial={{ scale: 0, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}

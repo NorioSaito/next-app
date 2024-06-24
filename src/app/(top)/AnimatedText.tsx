@@ -1,3 +1,4 @@
+// TOPページのヒーローイメージにアニメーションを付けるためのコンポーネント
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -15,7 +16,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
 			opacity: 1,
 			transition: {
 				// 描画速度変更
-				staggerChildren: 0.2,
+				staggerChildren: 0.3,
 			},
 		},
 	};
@@ -26,7 +27,6 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
 			opacity: 1,
 			y: 0,
 		},
-
 	};
 
 	return (
