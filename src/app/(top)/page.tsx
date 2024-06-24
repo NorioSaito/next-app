@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import PATHS from '../../constants/paths';
 import Button from '../_components/common/Button';
 import AnimatedText from './AnimatedText';
+import AnimatedSectionTitle from './AnimatedSectionTitle';
 
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
@@ -60,7 +61,7 @@ export default function Home() {
 					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm">会社案内</h2>
 				</div>
-				<Image className="mt-8 mb-16" src="top_ourmission.svg" alt="our mission" width={380} height={96}></Image>
+				<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold" />
 				<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
 				<h3 className="pt-20 text-af-xs">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
@@ -86,9 +87,7 @@ export default function Home() {
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm text-af-white">事業概要</h2>
 				</div>
-				<div className="text-af-lg text-af-white">
-					<h1>Service</h1>
-				</div>
+				<AnimatedSectionTitle text="Service" className="text-outline-black text-af-lg font-bold" />
 				<h3 className="pt-10 text-af-xs text-af-white">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/><br/>
@@ -104,7 +103,7 @@ export default function Home() {
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h2 className="pl-2 text-af-sm">取扱製品一覧</h2>
 				</div>
-				<Image className="mt-8 mb-16" src="top_products.svg" alt="products" width={380} height={96}></Image>
+				<AnimatedSectionTitle text="Products" className="mt-4 mb-16 text-outline-black text-af-lg font-bold" />
 			</section>
 			{/* CELF */}
 			<section className="mb-8 px-20 pt-16">
@@ -188,7 +187,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{/* 20240620時点でボタンは仮置きです。 */}
 			<div className="flex items-center justify-center mb-40">
 				<Button title="製品一覧へ" link="/products"/>
 			</div>
@@ -204,9 +202,7 @@ export default function Home() {
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h3 className="pl-2 text-af-sm text-af-white">採用情報</h3>
 				</div>
-				<div className="mt-2.5 text-af-lg text-af-white">
-					<h1>Recruit</h1>
-				</div>
+				<AnimatedSectionTitle text="Recruit" className="mt-2.5 text-outline-black text-af-lg font-bold" />
 				<motion.div
 					initial={{ x: '-100%' }}
 					animate={{ x: '100%' }}
@@ -234,7 +230,7 @@ export default function Home() {
 						<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 						<h3 className="pl-2 text-af-sm">お知らせ</h3>
 					</div>
-					<Image src="top_news.svg" alt='news' width={180} height={64}></Image>
+					<AnimatedSectionTitle text="News" className="mt-4 mb-16 text-outline-black text-af-lg font-bold" />
 				</div>
 				{/* ニュースリスト */}
 				<div className="grid w-1/2 ">
@@ -260,7 +256,7 @@ export default function Home() {
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
 					<h3 className="pl-2 text-af-sm">セミナー情報</h3>
 				</div>
-				<Image className="mb-8" src="top_seminar.svg" alt='news' width={280} height={64}></Image>
+				<AnimatedSectionTitle text="Seminar" className="mt-4 mb-16 text-outline-black text-af-lg font-bold" />
 				<div className="flex space-x-10 mb-48">
 					<div className="w-1/2">
 						{/* リンク先未設定 */}
