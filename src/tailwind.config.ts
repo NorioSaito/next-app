@@ -19,6 +19,7 @@ const config: Config = {
 				'af-sm': '2.4rem', // 24px
 				'af-md': '3.2rem', // 32px
 				'af-lg': '6.4rem', // 64px
+				'af-xl': '8.0rem', // 80px
 			},
 			colors: {
 				'af-orange': '#FF5C00', // オレンジ

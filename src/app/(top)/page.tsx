@@ -7,6 +7,7 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid';
 import { motion } from 'framer-motion';
 import PATHS from '../../constants/paths';
 import Button from '../_components/common/Button';
+import AnimatedText from './AnimatedText';
 
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
@@ -31,18 +32,23 @@ export default function Home() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 5 }}>
-						<Image className="pb-24 z-10" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
-					</motion.div>
-					<motion.div
-						animate={{ rotate: 360 }}
-						transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}>
-						<Image className="pb z-30" src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+						<Image className="pb-24" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
 					</motion.div>
 					<div className="flex-col">
-						<h1>Shining</h1>
-						<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
+						<motion.div
+							animate={{ rotate: 360 }}
+							transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}>
+							<Image className="pb" src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+						</motion.div>
+					</div>
+					<div className="flex-col">
+						<div className="flex">
+							<AnimatedText text="Shining" className="text-af-xl font-bold text-af-black"/>
+							<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
+						</div>
 						<Image className="" src="top_criticaltimes.svg" alt="critical times" width={628} height={128}></Image>
 					</div>
+
 				</div>
 				<div className="">
 					<Image src="top_catchcopy.svg" alt="ここいちばんで頼りになる、エースの集団" width={468} height={24}></Image>
