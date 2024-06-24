@@ -1,6 +1,6 @@
 // TOPページのヒーローイメージにアニメーションを付けるためのコンポーネント
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface AnimatedTextProps {
   text: string;
@@ -8,10 +8,14 @@ interface AnimatedTextProps {
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
-	const letters = text.split('');
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		setIsVisible(true);
+	}, []);
 
 	const containerVariants = {
-		hidden: { opacity: 1 },
+		hidden: { opacity: 0 },
 		visible: {
 			opacity: 1,
 			transition: {
@@ -34,11 +38,11 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
 			className={className}
 			variants={containerVariants}
 			initial="hidden"
-			animate="visible"
+			animate={isVisible ? 'visible' : 'hidden'}
 		>
-			{letters.map((letter, index) => (
+			{text.split('').map((char, index) => (
 				<motion.span key={index} variants={letterVariants}>
-					{letter}
+					{char === ' ' ? '\u00A0' : char}
 				</motion.span>
 			))}
 		</motion.div>

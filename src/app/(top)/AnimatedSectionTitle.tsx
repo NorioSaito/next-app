@@ -11,7 +11,7 @@ const AnimatedSectionTitle: React.FC<AnimatedSectionTitleProps> = ({ text, class
 	const letters = text.split('');
 
 	const containerVariants = {
-		hidden: { opacity: 1 },
+		hidden: { opacity: 0 },
 		visible: {
 			opacity: 1,
 			transition: {
@@ -21,11 +21,10 @@ const AnimatedSectionTitle: React.FC<AnimatedSectionTitleProps> = ({ text, class
 	};
 
 	const letterVariants = {
-		hidden: { opacity: 0, y: 50 },
+		hidden: { opacity: 0, y: 20 },
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { duration: 0.5 },
 		},
 	};
 
@@ -37,9 +36,9 @@ const AnimatedSectionTitle: React.FC<AnimatedSectionTitleProps> = ({ text, class
 			whileInView="visible"
 			viewport={{ once: false, amount: 0.3 }}
 		>
-			{letters.map((letter, index) => (
+			{letters.map((char, index) => (
 				<motion.span key={index} variants={letterVariants}>
-					{letter}
+					{char}
 				</motion.span>
 			))}
 		</motion.div>

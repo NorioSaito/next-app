@@ -10,6 +10,10 @@ import Button from '../_components/common/Button';
 import AnimatedText from './AnimatedText';
 import AnimatedSectionTitle from './AnimatedSectionTitle';
 
+<motion.svg>
+	<motion.path />
+</motion.svg>;
+
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
 	const newslist = [
@@ -47,7 +51,7 @@ export default function Home() {
 							<AnimatedText text="Shining" className="text-af-xl font-bold text-af-black"/>
 							<Image className="" src="top_ace.svg" alt="ace" width={189.21} height={80.84}></Image>
 						</div>
-						<Image className="" src="top_criticaltimes.svg" alt="critical times" width={628} height={128}></Image>
+						<AnimatedText text="Critical&nbsp;Times." className="text-af-xl font-bold text-af-black"/>
 					</div>
 
 				</div>
@@ -73,6 +77,7 @@ export default function Home() {
 					transition={{ duration: 2 }}>
 					<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
 				</motion.div>
+
 				<h3 className="pt-20 text-af-xs">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
@@ -268,9 +273,13 @@ export default function Home() {
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
 			<section className="bg-af-yellow px-20">
-				<div className="flex justify-center items-center z-10">
+				<motion.div className="flex justify-center items-center z-10"
+					style={{ width: '100vw', overflow: 'hidden' }}
+					initial={{ x: '-100%' }} // 初期位置は画面左外
+					animate={{ x: '100%' }} // 画面右外に移動
+					transition={{ duration: 15, ease: 'linear', repeat: Infinity }}>
 					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64}></Image>
-				</div>
+				</motion.div>
 			</section>
 			{/* 採用情報 */}
 			<section className="bg-af-black px-20 pt-20 pb-12">
