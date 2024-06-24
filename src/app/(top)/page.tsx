@@ -62,7 +62,12 @@ export default function Home() {
 					<h2 className="pl-2 text-af-sm">会社案内</h2>
 				</div>
 				<AnimatedSectionTitle text="Our&nbsp;Mission" className="mt-4 mb-16 text-outline-black text-af-lg font-bold animate" />
-				<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
+				<motion.div
+					initial={{ scale: 0, opacity: 0 }}
+					animate={{ scale: 1, opacity: 1 }}
+					transition={{ duration: 2 }}>
+					<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
+				</motion.div>
 				<h3 className="pt-20 text-af-xs">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
