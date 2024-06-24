@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-gradient-to-r {
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #0000FF, #00FF00);
+}
+
+.bg-gradient-to-r:hover {
+  background-position: right center;
+}
