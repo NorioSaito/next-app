@@ -1,6 +1,7 @@
 import React from 'react';
-/* import Breadcrumb from '../_components/breadcrumb'; */
+import Breadcrumb from '../../_components/common/breadcrumb_trail';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Services() {
 	return (
@@ -9,7 +10,7 @@ function Services() {
 				<h1 className="text-[6.4rem]">Service</h1>
 			</div>
 			<div className="breadcrumb ml-24 mt-4">
-				<p>ここにパンくずリストを実装</p>
+				<Breadcrumb />
 			</div>
 			<div className="section ml-24 mt-24">
 				<h1 className="sectiontitle text-5xl font-bold leading-normal tracking-wider w-1/3">
@@ -33,9 +34,14 @@ function Services() {
 						<p className="SIservicetitle text-sm mt-6">
 							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 						</p>
-						<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 mt-6">
-							SI事業詳細へ移動するボタン
-						</button>
+						<Link
+							href="/services/si"
+							className="text-sm font-semibold leading-6 text-black flex items-center">
+							<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 mt-6">
+								SI事業詳細へ移動するボタン
+							</button>
+						</Link>
+
 						<div className="mt-6 h-px bg-gray-300"></div>
 						<div className="SIservicecontents">
 							<p className="text-sm mt-6">主なサービス内容</p>

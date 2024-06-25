@@ -4,6 +4,7 @@ import Harftitle from '../../_components/common/HarfTitle';
 import Accordion from '../../_components/common/Accordion';
 import style from '../../assets/css/common.module.css';
 import { MapPinIcon } from '@heroicons/react/24/outline';
+import Breadcrumb from '../../_components/common/breadcrumb_trail';
 
 function Company() {
 	return (
@@ -13,7 +14,7 @@ function Company() {
 					<h1 className="text-af-lg">Company</h1>
 				</div>
 				<div className="breadcrumb mt-[30px]">
-					<p>ここにパンくずリストを実装</p>
+					<Breadcrumb />
 				</div>
 				<section className="mt-[56px] relative">
 					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
