@@ -50,7 +50,7 @@ function Recruit() {
 						<NewsContent title="2024年新年ご挨拶" subTitle="会社情報" date={myDate} />
 					</div>
 					<div className="grid justify-end">
-						<Button title="A-force" link="/recruit/employee_introductions"></Button>
+						<Button title="A-force" link="/"></Button>
 					</div>
 				</div>
 			</section>
@@ -81,6 +81,9 @@ function Recruit() {
 						link=""
 					/>
 				</section>
+			</div>
+			<div className="py-[80px] grid justify-center">
+				<Button title="社員紹介へ" link="/recruit/employee_introductions"></Button>
 			</div>
 			<Footer />
 		</>

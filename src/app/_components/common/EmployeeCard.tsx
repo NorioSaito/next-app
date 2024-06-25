@@ -6,7 +6,7 @@ function EmployeeCard(props: { imageUrl: string; occupation: string; title: stri
 	return (
         <div className="grid-cols-4 justify-start">
             <a href={props.link}>
-                <img src={props.imageUrl} alt="" className="w-[400px] h-[272px] border border-af-black rounded-[16px]" />
+                <img src={props.imageUrl} alt="" className="w-[400px] h-[272px] border border-af-black rounded-[16px] hover:scale-105" />
             </a>
             <button className="w-[100px] mt-[15px] rounded-full px-2 border border-af-black flex align-center justify-start md:text-base">
                 <span className="text-af-green font-bold text-[8px]">●</span>

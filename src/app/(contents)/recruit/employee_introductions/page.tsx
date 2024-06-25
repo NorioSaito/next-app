@@ -1,8 +1,6 @@
 /* 社員紹介TOP画面 */
 
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import BreadcrumaTrail from '../../../_components/common/breadcrumb_trail';
 import EmployeeCard from '../../../_components/common/EmployeeCard';
 
@@ -23,13 +21,13 @@ function Employee_Introductions() {
                 エイ・フォースで働く社員について、仕事内容、やりがい、今までのキャリアなどをインタビューしました。
 				</p>
 			</section>
-			<section className="mt-[100px] mb-[200px]">
+			<section className="mt-[100px] pb-[200px]">
 				<div className="grid-cols-2">
-                    <div className="flex align-center justify-center">
+                    <div className="flex justify-center">
                         <div>
-                            <EmployeeCard imageUrl="/A-force_horizon.svg" occupation="開発職" title="社員インタビュー#01" entryYear="2019" link="/recruit" />
+                            <EmployeeCard imageUrl="/A-force_horizon.svg" occupation="開発職" title="社員インタビュー#01" entryYear="2019" link="/recruit/employee_introductions/employee_details" />
                         </div>
-                        <div className="px-[35px]">
+                        <div className="px-[40px]">
                             <EmployeeCard imageUrl="/A-force_horizon.svg" occupation="営業職" title="社員インタビュー#02" entryYear="2018" link="/recruit" />
                         </div>
                         <div>
