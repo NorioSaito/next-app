@@ -4,8 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PopoverGroup } from '@headlessui/react';
-import { Bars3Icon, Square2StackIcon } from '@heroicons/react/24/outline';
+import { Square2StackIcon } from '@heroicons/react/24/outline';
 import PATHS from '../../constants/paths';
+import HamburgerMenu from './HamburgerMenu';
 
 function Topheader() {
 	// const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ function Topheader() {
 					</PopoverGroup>
 					<div>
 						{/* 20240620時点でハンバーガーメニュー処理未実装 */}
-						<Bars3Icon className="h-8"></Bars3Icon>
+						<HamburgerMenu />
 					</div>
 				</div>
 			</nav>
