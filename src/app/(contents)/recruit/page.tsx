@@ -50,7 +50,7 @@ function Recruit() {
 						<NewsContent title="2024年新年ご挨拶" subTitle="会社情報" date={myDate} />
 					</div>
 					<div className="grid justify-end">
-						<Button title="A-force" link=""></Button>
+						<Button title="A-force" link="/recruit/employee_introductions"></Button>
 					</div>
 				</div>
 			</section>
