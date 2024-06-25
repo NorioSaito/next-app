@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 interface AnimatedTextProps {
-  text: string;
-  className?: string;
+  text: string; // 表示テキスト
+  delayTime: number; // 遅延時間
+  className?: string; // デザイン
 }
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delayTime, className }) => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	useEffect(() => {
@@ -18,10 +19,6 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
 		hidden: { opacity: 0 },
 		visible: {
 			opacity: 1,
-			transition: {
-				// 描画速度変更
-				staggerChildren: 0.3,
-			},
 		},
 	};
 
@@ -41,7 +38,11 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
 			animate={isVisible ? 'visible' : 'hidden'}
 		>
 			{text.split('').map((char, index) => (
-				<motion.span key={index} variants={letterVariants}>
+				// delay→各文字の遅延時間を計算
+				<motion.span
+					key={index}
+					variants={letterVariants}
+					transition={{ delay: delayTime + index * 0.1 }}>
 					{char === ' ' ? '\u00A0' : char}
 				</motion.span>
 			))}
