@@ -309,7 +309,7 @@ IT業界ではこの当たり前の行動ができず、納期ギリギリ・品
 							</div>
 						</div>
 						<div className="mt-[50px]">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.0193660954355!2d139.74359407525145!3d35.70137932886784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c442059e221%3A0x7f5b46abf1c4b1c2!2z44Ko44Kk772l44OV44Kp44O844K544ix!5e0!3m2!1sja!2sjp!4v1719194225249!5m2!1sja!2sjp" width="600" height="450" style={{width: "720px", height: "380px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.0193660954355!2d139.74359407525145!3d35.70137932886784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f4.1!3m3!1m2!1s0x60188c442059e221%3A0x7f5b46abf1c4b1c2!2z44Ko44Kk772l44OV44Kp44O844K544ix!5e0!3m2!1sja!2sjp!4v1719194225249!5m2!1sja!2sjp" style={{width: "720px", height: "380px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</section>
