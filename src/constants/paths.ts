@@ -3,7 +3,7 @@ const PATHS = {
 	COMPANY: '/company',
 	SERVICES: '/services',
 	PRODUCTS: '/products',
-	EDUCATION: '/',
+	EDUCATION: '/education',
 	NEWS: 'https://a-force.themedia.jp/',
 	RECRUIT: '/recruit',
 	CONTACT: '/contact',

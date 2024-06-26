@@ -50,13 +50,13 @@ export default function Header() {
 						</Link>
 						<div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block rounded-lg">
 							<Link
-								href="/contact"
+								href="/services/si"
 								className="block px-4 py-2 text-black text-sm font-normal hover:bg-gray-100 rounded-t-lg"
 							>
 								SI事業
 							</Link>
 							<Link
-								href="/"
+								href="/services/consulting"
 								className="block px-4 py-2 text-black text-sm font-normal hover:bg-gray-100 rounded-b-lg"
 							>
 								コンサルティング事業
@@ -66,7 +66,7 @@ export default function Header() {
 					<Link href="/products" className="text-sm font-semibold leading-6 text-black">
 						Products
 					</Link>
-					<Link href="/products" className="text-sm font-semibold leading-6 text-black">
+					<Link href="/education" className="text-sm font-semibold leading-6 text-black">
 						Education
 					</Link>
 					<Link href="/products" className="text-sm font-semibold leading-6 text-black">

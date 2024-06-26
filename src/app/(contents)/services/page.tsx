@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from '@/app/_components/button';
 import Breadcrumb from '../../_components/common/breadcrumb_trail';
 
 function Services() {
@@ -12,20 +13,22 @@ function Services() {
 			<div className="breadcrumb ml-24 mt-4">
 				<Breadcrumb />
 			</div>
-			<div className="section ml-24 mt-24">
-				<h1 className="sectiontitle text-5xl font-bold leading-normal tracking-wider w-1/3">
+			<section className="section1 mt-[80px]">
+				<h1 className="section1-title text-af-lg font-bold leading-[1.6] tracking-wider w-[486px]">
 					テキストテキストテキストテキスト
 				</h1>
-				<p className="sectiontext mt-6 text-sm leading-normal tracking-wide w-3/5">
-					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				<p className="section1-text text-af-xs mt-[24px] leading-[1.6] tracking-wider w-[714px]">
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 				</p>
-			</div>
-			<div className="SIservice mx-24 mt-24">
+			</section>
+			<section className="SIservice mt-[142px]">
 				<p>(01)</p>
 				<div className="SIservicecontents flex">
-					<div className="SIservicesection w-1/2 h-8 mt-6 flex">
-						<Image src="SIservicetitle.svg" alt="" width={28} height={28} />
-						<h2 className="SIservicetitle ml-2 text-2xl font-bold">SI事業</h2>
+					<div className="w-1/2 h-[40px] mt-[20px] flex">
+						<Image src="SIservicetitle.svg" alt="" width={40} height={40} />
+						<h2 className="SIservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
+							SI事業
+						</h2>
 					</div>
 					<div className="SIservicesection w-1/2 mt-6">
 						<h2 className="SIservicetexttitle text-xl font-bold">
@@ -52,108 +55,70 @@ function Services() {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="Consultingservice mx-24 mt-24">
+			</section>
+			<div className="my-[80px] h-px bg-gray-300"></div>
+			<section className="Consultingservice">
 				<p>(02)</p>
 				<div className="Consultingservicecontents flex">
-					<div className="Consultingservicesection h-8 w-1/2 mt-6 flex">
-						<Image src="Consaltingservicetitle.svg" alt="" width={28} height={28} />
-						<h2 className="Consultingservicetitle ml-2 text-2xl font-bold">
+					<div className="w-1/2 h-[40px] mt-[20px] flex">
+						<Image src="Consaltingservicetitle.svg" alt="" width={40} height={40} />
+						<h2 className="SIservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
 							コンサルティング事業
 						</h2>
 					</div>
-					<div className="Consultingservicesection w-1/2 mt-6">
-						<h2 className="Consultingservicetexttitle text-xl font-bold">
+					<div className="w-1/2 mt-[25px]">
+						<h2 className="Consaltingservicetexttitle text-af-sm font-bold leading-[1.6] tracking-wider">
 							テキストテキストテキスト
 						</h2>
-						<p className="Consultingservicetitle text-sm mt-6">
+						<p className="Consaltingservicetext text-af-xs mt-[41px] leading-[1.6] tracking-wider">
 							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 						</p>
-						<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 mt-6">
-							コンサルティング事業詳細へ移動するボタン
-						</button>
-						<div className="mt-6 h-px bg-gray-300"></div>
-						<div className="SIservicecontents">
-							<p className="text-sm mt-6">主なサービス内容</p>
-							<p className="text-sm mt-2">
+						<div className="pt-[50px] flex justify-end">
+							<Button
+								title="コンサルティング事業へ"
+								link="/services/consulting"
+							></Button>
+						</div>
+						<div className="my-[32px] h-px bg-gray-300"></div>
+						<div>
+							<p className="text-af-xs tracking-wider">主なサービス内容</p>
+							<p className="text-af-xs mt-[16px] tracking-wider">
 								テキスト/テキスト/テキスト/テキスト/テキスト
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="Educationservice mx-24 mt-24">
+			</section>
+			<div className="my-[80px] h-px bg-gray-300"></div>
+			<section className="Educationservice pb-[312px]">
 				<p>(03)</p>
 				<div className="Educationservicecontents flex">
-					<div className="Educationservicesection h-8 w-1/2 mt-6 flex">
-						<Image src="Educationservicetitle.svg" alt="" width={28} height={28} />
-						<h2 className="Educationservicetitle ml-2 text-2xl font-bold">教育事業</h2>
+					<div className="w-1/2 h-[40px] mt-[20px] flex">
+						<Image src="Educationservicetitle.svg" alt="" width={40} height={40} />
+						<h2 className="Educationservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
+							教育事業
+						</h2>
 					</div>
-					<div className="Educationservicesection w-1/2 mt-6">
-						<h2 className="Educationservicetexttitle text-xl font-bold">
+					<div className="w-1/2 mt-[25px]">
+						<h2 className="Educationservicetexttitle text-af-sm font-bold leading-[1.6] tracking-wider">
 							テキストテキストテキスト
 						</h2>
-						<p className="Educationservicetitle text-sm mt-6">
+						<p className="Educationservicetext text-af-xs mt-[41px] leading-[1.6] tracking-wider">
 							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 						</p>
-						<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 mt-6">
-							教育事業詳細へ移動するボタン
-						</button>
-						<div className="mt-6 h-px bg-gray-300"></div>
-						<div className="SIservicecontents">
-							<p className="text-sm mt-6">主なサービス内容</p>
-							<p className="text-sm mt-2">
+						<div className="pt-[50px] flex justify-end">
+							<Button title="教育事業へ" link="/education"></Button>
+						</div>
+						<div className="my-[32px] h-px bg-gray-300"></div>
+						<div>
+							<p className="text-af-xs tracking-wider">主なサービス内容</p>
+							<p className="text-af-xs mt-[16px] tracking-wider">
 								テキスト/テキスト/テキスト/テキスト/テキスト
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="Othercontents mt-36 flex">
-				<div className="Contactsection w-1/2 bg-gray-200 border border-black flex items-center justify-center">
-					<div className="grid-cols-4 w-1/2">
-						<div className="Contacttitle mt-16 flex items-center justify-center">
-							<div className="mr-1 w-3 h-3 rounded-full bg-orange-500"></div>
-							<div>お問い合わせ</div>
-						</div>
-						<div className="mt-6 flex justify-center">
-							<Image src="Contact.svg" alt="" width={200} height={400} />
-						</div>
-						<div className="Contacttext mt-6 flex justify-center">
-							<p className="text-sm">
-								プロダクト開発、サービスについての
-								<br></br>
-								ご相談、ご質問などお気軽にお問い合わせください。
-							</p>
-						</div>
-						<div className="flex justify-center mt-6 mb-16">
-							<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 ">
-								お問い合わせへ移動するボタン
-							</button>
-						</div>
-					</div>
-				</div>
-				<div className="Phonesection w-1/2 bg-gray-200 border-t border-r border-b border-black  flex items-center justify-center">
-					<div className="grid-cols-4 w-1/2">
-						<div className="Phonetitle mt-16 flex items-center justify-center">
-							<div className="mr-1 w-3 h-3 rounded-full bg-orange-500"></div>
-							<div>お電話</div>
-						</div>
-						<div className="mt-6 flex justify-center">
-							<Image src="Phone.svg" alt="" width={150} height={400} />
-						</div>
-						<div className="Phonetext mt-6 flex justify-center">
-							<p className="text-sm">お電話でのお問い合わせはこちらからどうぞ。</p>
-						</div>
-						<div className="Phonenumber flex justify-center mt-6 mb-16">
-							<p className="text-4xl font-bold">03-5216-2868</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="footer h-64">
-				<p>ここにフッターを配置</p>
-			</div>
+			</section>
 		</div>
 	);
 }
