@@ -1,7 +1,7 @@
 import React from 'react';
-import Breadcrumb from '../../_components/common/breadcrumb_trail';
 import Image from 'next/image';
 import Link from 'next/link';
+import Breadcrumb from '../../_components/common/breadcrumb_trail';
 
 function Services() {
 	return (
@@ -36,7 +36,8 @@ function Services() {
 						</p>
 						<Link
 							href="/services/si"
-							className="text-sm font-semibold leading-6 text-black flex items-center">
+							className="text-sm font-semibold leading-6 text-black flex items-center"
+						>
 							<button className="bg-gray-500 hover:bg-gray-400 text-white rounded px-4 py-2 mt-6">
 								SI事業詳細へ移動するボタン
 							</button>

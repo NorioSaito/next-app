@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
-
 const Breadcrumb = () => {
 	const pathname = usePathname();
 
@@ -13,6 +12,18 @@ const Breadcrumb = () => {
 	}
 
 	const pathArray = pathname.split('/').filter((path) => path);
+
+	const pathMapping: { [key: string]: string } = {
+		company: 'Company',
+		service: 'Service',
+		si: 'SI事業',
+		consulting: 'コンサルティング事業',
+		education: '教育事業',
+		contact: 'Contact',
+		recruit: 'Recruit',
+		employee_introductions: '社員紹介TOP',
+		employee_details: '社員紹介詳細',
+	};
 
 	return (
 		<nav aria-label="breadcrumb">
@@ -26,17 +37,21 @@ const Breadcrumb = () => {
 				{pathArray.map((path, index) => {
 					const href = `/${pathArray.slice(0, index + 1).join('/')}`;
 					const isLastItem = index === pathArray.length - 1;
+					const displayName = pathMapping[path] || decodeURIComponent(path);
 					return (
 						<li key={href} className="flex items-center">
 							{!isLastItem ? (
 								<>
-									<Link href={href} className="text-af-black text-[16px] hover:underline">
-										{decodeURIComponent(path)}
+									<Link
+										href={href}
+										className="text-af-black text-[16px] hover:underline"
+									>
+										{displayName}
 									</Link>
 									<ChevronRightIcon className="mx-2 w-[16px] h-[16px] text-af-black" />
 								</>
 							) : (
-								<span className="text-af-black text-[16px]">{decodeURIComponent(path)}</span>
+								<span className="text-af-black text-[16px]">{displayName}</span>
 							)}
 						</li>
 					);
