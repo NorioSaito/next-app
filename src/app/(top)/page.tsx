@@ -9,6 +9,7 @@ import PATHS from '../../constants/paths';
 import Button from '../_components/common/Button';
 import AnimatedText from './AnimatedText';
 import AnimatedSectionTitle from './AnimatedSectionTitle';
+import AnimatedRecruiteImg from './AnimatedRecruitImg';
 
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
@@ -33,13 +34,13 @@ export default function Home() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 5 }}>
-						<Image className="pb-[69px]" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402}></Image>
+						<Image className="pb-[69px]" src="top_Alogo.svg" alt="エイ・フォース株式会社" width={487} height={402} />
 					</motion.div>
 					<div className="flex-col">
 						<motion.div
 							animate={{ rotate: 360 }}
 							transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}>
-							<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143}></Image>
+							<Image src="top_logomark.svg" alt="エイ・フォースロゴ" width={144} height={143} />
 						</motion.div>
 					</div>
 					<div className="flex-col">
@@ -128,13 +129,13 @@ export default function Home() {
 
 				</div>
 				<div className="">
-					<Image src="top_catchcopy.svg" alt="ここいちばんで頼りになる、エースの集団" width={468} height={24}></Image>
+					<Image src="top_catchcopy.svg" alt="ここいちばんで頼りになる、エースの集団" width={468} height={24} />
 				</div>
 			</section>
 			{/* 会社案内 */}
 			<section className="flex flex-col items-center justify-center mx-[80px] pt-[232px]">
 				<div className="flex">
-					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm">会社案内</h2>
 				</div>
 				<motion.section
@@ -147,7 +148,7 @@ export default function Home() {
 					initial={{ scale: 0, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}
 					transition={{ duration: 2 }}>
-					<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317}></Image>
+					<Image src="top_ourmissiontitle.svg" alt="お客様の成功と笑顔を広げ、社会、社員を豊かに" width={703} height={317} />
 				</motion.div>
 
 				<h3 className="pt-[56px] text-af-xs">
@@ -166,36 +167,41 @@ export default function Home() {
 						transition={{
 							duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'loop',
 						}} >
-						<Image src="top_ourmissionshapes.svg" alt="" width={1300} height={240}></Image>
+						<div className="flex space-x-[40px]">
+							<Image src="top_green9circle.svg" alt="" width={240} height={240} />
+							<Image src="/top_lecturehand.jpg" alt="" width={240} height={240} />
+							<Image src="top_orangeshape.svg" alt="" width={240} height={240} />
+							<Image src="/top_cityview.jpg" alt="" width={240} height={240} />
+							<Image src="top_yellowshape.svg" alt="" width={240} height={240} />
+						</div>
 					</motion.div>
 				</div>
 			</section>
 			{/* 事業概要（Service） */}
 			<section className="bg-af-black px-[80px] pt-[68px] rounded-tl-[48px]">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm text-af-white">事業概要</h2>
 				</div>
 				<AnimatedSectionTitle text="Service" className="text-outline-black text-af-lg font-bold animate" />
-				<h3 className="pt-[32px] text-af-xs text-af-white">
+				<h3 className="pt-[82px] text-af-xs text-af-white">
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/>
 					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br/><br/>
-					★ベン図の実装難しいので一旦飛ばしてます。
 				</h3>
 				<div className="flex h-screen overflow-hidden">
 					{/* 左側固定コンテンツ（ベン図） */}
-					<div className="flex-1 h-full overflow-y-auto">
-						<div className="p-[32px]">
-							<h2 className="text-af-white" >ここにベン図を配置</h2>
+					<div className="flex-1 h-full pt-[96px] overflow-y-auto">
+						<div className="">
+							<Image src="top_venn_diagram.svg" alt="" width={447.55} height={424.12}/>
 						</div>
 					</div>
 					{/* 右側スクロールコンテンツ */}
-					<div className="flex-1 h-full overflow-y-auto servicecontents">
+					<div className="flex-1 h-full pt-[96px] overflow-y-auto servicecontents">
 						{/* SI事業 */}
 						<div className="mb-[48px]">
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
-									<Image src="top_serviceIcon_SI.svg" alt="" width={40} height={40}></Image>
+									<Image src="top_serviceIcon_SI.svg" alt="" width={40} height={40} />
 									<h2 className="pl-[8px] text-af-md">SI事業</h2>
 								</div>
 								<h3 className="pt-[23px] text-af-xs">
@@ -213,7 +219,7 @@ export default function Home() {
 						<div className="mb-[48px]">
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
-									<Image src="top_serviceIcon_Consult.svg" alt="" width={40} height={40}></Image>
+									<Image src="top_serviceIcon_Consult.svg" alt="" width={40} height={40} />
 									<h2 className="pl-[8px] text-af-md">コンサルティング事業</h2>
 								</div>
 								<h3 className="pt-[23px] text-af-xs">
@@ -231,7 +237,7 @@ export default function Home() {
 						<div className="mb-12">
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
-									<Image src="top_serviceIcon_Edu.svg" alt="" width={40} height={40}></Image>
+									<Image src="top_serviceIcon_Edu.svg" alt="" width={40} height={40} />
 									<h2 className="pl-[8px] text-af-md">教育事業</h2>
 								</div>
 								<h3 className="pt-[23px] text-af-xs">
@@ -255,7 +261,7 @@ export default function Home() {
 			{/* 取扱製品一覧 */}
 			<section className="flex flex-col items-center justify-center mx-[80px] mt-[161px]">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm">取扱製品一覧</h2>
 				</div>
 				<AnimatedSectionTitle text="Products" className="mt-[32px] mb-[64px] text-outline-black text-af-lg font-bold" />
@@ -279,7 +285,7 @@ export default function Home() {
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
 						<div className="flex items-center justify-center rounded-lg h-[408px] w-[408px] m-[31px] border border-af-black">
-							<Image className="px-[32px]" src="/top_CELF.jpg" alt="CELFロゴ" width={320} height={81}></Image>
+							<Image className="px-[32px]" src="/top_CELF.jpg" alt="CELFロゴ" width={320} height={81} />
 						</div>
 					</div>
 				</div>
@@ -310,7 +316,7 @@ export default function Home() {
 					</div>
 					<div className="w-1/2 flex items-center justify-end">
 						<div className="flex items-center justify-center rounded-lg h-[408px] w-[408px] m-[31px] border border-af-black">
-							<Image className="px-[32px]" src="/top_Salesforce.jpg" alt="Salesforceロゴ" width={320} height={81}></Image>
+							<Image className="px-[32px]" src="/top_Salesforce.jpg" alt="Salesforceロゴ" width={320} height={81} />
 						</div>
 					</div>
 				</div>
@@ -364,19 +370,22 @@ export default function Home() {
 				<Button title="製品一覧へ" link="/products"/>
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
-			<section className="bg-af-yellow px-[80px]">
-				<motion.div className="flex justify-center items-center z-10"
+			<section className="relative bg-af-yellow h-[960px]">
+				<motion.div className="flex justify-center items-center absolute z-10"
 					style={{ width: '100vw', overflow: 'hidden' }}
 					initial={{ x: '-100%' }} // 初期位置は画面左外
 					animate={{ x: '100%' }} // 画面右外に移動
 					transition={{ duration: 15, ease: 'linear', repeat: Infinity }}>
-					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64}></Image>
+					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64} />
 				</motion.div>
+				<div className="absolute z-40">
+					<AnimatedRecruiteImg />
+				</div>
 			</section>
 			{/* 採用情報 */}
 			<section className="bg-af-black px-[80px] pt-[116px] pb-[48px]">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h3 className="pl-[8px] text-af-sm text-af-white">採用情報</h3>
 				</div>
 				<AnimatedSectionTitle text="Recruit" className="mt-[9px] text-outline-black text-af-lg font-bold" />
@@ -386,13 +395,13 @@ export default function Home() {
 					transition={{
 						duration: 10, ease: 'linear', repeat: Infinity, repeatType: 'loop',
 					}} >
-					<Image src="top_recruit5shapes.svg" alt="" width={1443} height={312}></Image>
+					<Image src="top_recruit5shapes.svg" alt="" width={1443} height={312} />
 				</motion.div>
 				<div className='flex justify-end pr-[266.48px] pt-[5px]'>
-					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
+					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77} />
 				</div>
 				<div>
-					<h4 className="leading-loose text-af-sm text-af-white">
+					<h4 className="leading-loose text-af-sm text-af-white mb-[39px]">
 						未知の領域に挑戦し、自己成長したい方。<br/>
 						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>
 						エイ・フォースは、そんなビジョンを共有できる仲間をもとめています。
@@ -404,7 +413,7 @@ export default function Home() {
 			<section className="flex mt-[276px] px-[80px]">
 				<div className="w-1/2">
 					<div className="flex mb-[32px]">
-						<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+						<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 						<h3 className="pl-[8px] text-af-sm">お知らせ</h3>
 					</div>
 					<AnimatedSectionTitle text="News" className="mt-[32px] text-outline-black text-af-lg font-bold" />
@@ -433,7 +442,7 @@ export default function Home() {
 			{/* セミナー情報 */}
 			<section className="px-[80px] pt-[80px]">
 				<div className="flex mb-[32px]">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16}></Image>
+					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h3 className="pl-[8px] text-af-sm">セミナー情報</h3>
 				</div>
 				<AnimatedSectionTitle text="Seminar" className="mb-[32px] text-outline-black text-af-lg font-bold" />
