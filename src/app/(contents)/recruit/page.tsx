@@ -85,6 +85,9 @@ function Recruit() {
 			<div className="py-[80px] grid justify-center">
 				<Button title="社員紹介TOPへ" link="/recruit/employee_introductions"></Button>
 			</div>
+			<div className="pb-[80px] grid justify-center">
+				<Button title="新卒採用募集要項へ" link="/recruit/new_graduate_recruitment"></Button>
+			</div>
 			<Footer />
 		</>
 	);
