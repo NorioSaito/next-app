@@ -15,10 +15,10 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			fontSize: {
-				'af-xs': '1rem', // 16px
-				'af-sm': '1.5rem', // 24px
-				'af-md': '2rem', // 32px
-				'af-lg': '4rem', // 64px
+				'af-xs': '1.6rem', // 16px
+				'af-sm': '2.4rem', // 24px
+				'af-md': '3.2rem', // 32px
+				'af-lg': '6.4rem', // 64px
 			},
 			colors: {
 				'af-orange': '#FF5C00', // オレンジ
