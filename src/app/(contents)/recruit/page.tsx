@@ -83,7 +83,7 @@ function Recruit() {
 				</section>
 			</div>
 			<div className="py-[80px] grid justify-center">
-				<Button title="社員紹介へ" link="/recruit/employee_introductions"></Button>
+				<Button title="社員紹介TOPへ" link="/recruit/employee_introductions"></Button>
 			</div>
 			<Footer />
 		</>
