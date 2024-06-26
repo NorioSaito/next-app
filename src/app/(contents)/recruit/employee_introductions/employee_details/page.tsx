@@ -41,7 +41,7 @@ const Employee_Details: React.FC = () => {
 					<h1 className="text-af-lg">タイトルタイトルタイトルタイトル</h1>
 				</div>
 				<section className="flex items-center justify-center">
-					<div className="w-[400px] mt-[72px] border border-af-black rounded-[16px] tracking-wide">
+					<div className="w-[400px] mt-[72px] border border-af-black rounded-[16px] tracking-wide bg-[#ffffff]">
 						<h2 className="my-[26px] text-af-sm font-bold text-center">目次</h2>
 						<div className="px-[40px] mb-[26px] grid-cols-6 ">
 							<div className="flex items-center">
@@ -72,7 +72,7 @@ const Employee_Details: React.FC = () => {
 					</div>
 				</section>
 				<section>
-					<div className="w-full mt-[168px] py-[80px] border border-af-black rounded-[16px] grid-cols-5">
+					<div className="w-full mt-[168px] py-[80px] border border-af-black rounded-[16px] grid-cols-5 bg-[#ffffff]">
 						<div className="flex items-center justify-center">
 							<div className="w-[751px] mb-[26px] grid-cols-3 justify-start">
 								<div className="flex items-center justify-start">
