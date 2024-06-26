@@ -71,8 +71,8 @@ export default function Home() {
 											transition={{
 												duration: 2,
 												ease: 'easeInOut',
-												repeat: Infinity,
-												repeatType: 'loop',
+												// repeat: Infinity,
+												// repeatType: 'loop',
 												repeatDelay: 1,
 												delay: 2,
 											}}
@@ -88,8 +88,8 @@ export default function Home() {
 											transition={{
 												duration: 2,
 												ease: 'easeInOut',
-												repeat: Infinity,
-												repeatType: 'loop',
+												// repeat: Infinity,
+												// repeatType: 'loop',
 												repeatDelay: 1,
 												delay: 2,
 											}}
@@ -105,8 +105,8 @@ export default function Home() {
 											transition={{
 												duration: 2,
 												ease: 'easeInOut',
-												repeat: Infinity,
-												repeatType: 'loop',
+												// repeat: Infinity,
+												// repeatType: 'loop',
 												repeatDelay: 1,
 												delay: 2,
 											}}

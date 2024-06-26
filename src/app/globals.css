@@ -7,8 +7,8 @@ html {
      overflow-x: hidden; /*横スクロールバーを非表示にする */
 }
 
-/* 以下、TOPページ事業概要セクション内で使用 */
-.servicecontents {
+/* 以下、TOPページ事業概要セクション内とハンバーガーメニューで使用 */
+.servicecontents, .HamburgerMenu {
     /* WebKitベースのブラウザ（Google ChromeやSafari）でスクロールバーを非表示にする */
     scrollbar-width: none; /* Firefox では非対応 */
     -ms-overflow-style: none; /* IE/Edge では非対応 */
