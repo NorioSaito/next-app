@@ -4,13 +4,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 type Props = {
   images: React.ReactNode[];
   className?: string;
+  itemWidth: number;
+  itemHeight: number;
 }
 
-const InfiniteAutoplayImage: React.FC<Props> = ({ images, className }) => {
+const InfiniteAutoplayImage: React.FC<Props> = ({
+	images, className, itemWidth, itemHeight,
+}) => {
 	const ref = useRef<HTMLDivElement>(null);
 
-	// 1つの画像の横の長さ
-	const itemWidth = 240;
+	// // 1つの画像の横の長さ
+	// const itemWidth = 240;
 	// 画像間の間隔
 	const gap = 40;
 	// 画像の横幅と、画像間の合計値
@@ -34,7 +38,7 @@ const InfiniteAutoplayImage: React.FC<Props> = ({ images, className }) => {
 	}, [ref.current]);
 
 	return (
-		<div className="relative overflow-hidden" ref={ref}>
+		<div className={`relative overflow-hidden ${className}`} ref={ref}>
 			<AnimatePresence>
 				<motion.div
 					// アニメーションの変化終了時点の最終移動差分
@@ -64,7 +68,7 @@ const InfiniteAutoplayImage: React.FC<Props> = ({ images, className }) => {
 							<div
 								key={index}
 								className="relative"
-								style={{ width: `${itemWidth}px`, height: `${itemWidth}px` }}
+								style={{ width: `${itemWidth}px`, height: `${itemHeight}px`, overflow: 'hidden' }}
 							>
 								{block}
 							</div>

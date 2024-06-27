@@ -26,6 +26,39 @@ export default function Home() {
 		},
 	];
 
+	// 会社案内セクション スライダー画像
+	const ourMissionItemWidth = 240;
+	const ourMissionItemHeight = 240;
+	const ourMissionImages = [
+		<Image key="image1" src="top_green9circle.svg" alt="" width={ourMissionItemWidth} height={ourMissionItemHeight} />,
+		<Image key="image2" src="/top_lecturehand.jpg" alt="" width={ourMissionItemWidth} height={ourMissionItemHeight} />,
+		<Image key="image3" src="top_orangeshape.svg" alt="" width={ourMissionItemWidth} height={ourMissionItemHeight} />,
+		<Image key="image4" src="/top_cityview.jpg" alt="" width={ourMissionItemWidth} height={ourMissionItemHeight} />,
+		<Image key="image5" src="top_yellowshape.svg" alt="" width={ourMissionItemWidth} height={ourMissionItemHeight} />,
+	];
+
+	// 採用情報セクション スライダー画像
+	const recruitItemWidth = 264;
+	const recruitItemHeight = 282;
+	const recruitImages = [
+		<Image key="image6" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image7" src="top_recruitCircle.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image8" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image9" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image10" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+	];
+
+	// 黄色背景部AFORCE文字列画像
+	const aforceStringWidth = 247;
+	const aforceStringHeight = 64;
+	const aforceStringImage = [
+		<Image key="image11" src="top_A-force_string.svg" alt="" width={aforceStringWidth} height={aforceStringHeight} />,
+		<Image key="image12" src="top_A-force_string.svg" alt="" width={aforceStringWidth} height={aforceStringHeight} />,
+		<Image key="image13" src="top_A-force_string.svg" alt="" width={aforceStringWidth} height={aforceStringHeight} />,
+		<Image key="image14" src="top_A-force_string.svg" alt="" width={aforceStringWidth} height={aforceStringHeight} />,
+		<Image key="image15" src="top_A-force_string.svg" alt="" width={aforceStringWidth} height={aforceStringHeight} />,
+	];
+
 	return (
 		<main className="">
 			{/* ヒーローイメージ */}
@@ -163,14 +196,7 @@ export default function Home() {
 				</div>
 				<div className="flex items-center justify-center mt-[85px] mb-[172px] space-x-[40px]">
 					<InfiniteAutoplayImage
-						className="space-x-[40px]"
-						images={[
-							<Image key="image1" src="top_green9circle.svg" alt="" width={240} height={240} />,
-							<Image key="image2" src="/top_lecturehand.jpg" alt="" width={240} height={240} />,
-							<Image key="image3" src="top_orangeshape.svg" alt="" width={240} height={240} />,
-							<Image key="image4" src="/top_cityview.jpg" alt="" width={240} height={240} />,
-							<Image key="image5" src="top_yellowshape.svg" alt="" width={240} height={240} />,
-						]}/>
+						className="space-x-[40px]" images={ourMissionImages} itemWidth={ourMissionItemWidth} itemHeight={ourMissionItemHeight}/>
 				</div>
 			</section>
 			{/* 事業概要（Service） */}
@@ -366,37 +392,24 @@ export default function Home() {
 				<Button title="製品一覧へ" link="/products"/>
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
-			<section className="relative bg-af-yellow h-[960px]">
-				<motion.div className="flex justify-center items-center absolute z-10"
-					style={{ width: '100vw', overflow: 'hidden' }}
-					initial={{ x: '-100%' }} // 初期位置は画面左外
-					animate={{ x: '100%' }} // 画面右外に移動
-					transition={{ duration: 15, ease: 'linear', repeat: Infinity }}>
-					<Image src="top_orangeAforce.svg" alt="" width={1440} height={64} />
-				</motion.div>
-				<div className="absolute z-40">
-					<AnimatedRecruiteImg />
+			<section className="relative bg-af-yellow h-[960px] flex justify-center items-center">
+				<div className="relative flex justify-center items-center">
+					<InfiniteAutoplayImage className="flex justify-center items-center z-10" images={aforceStringImage} itemWidth={aforceStringWidth} itemHeight={aforceStringHeight} />
+					<div className="absolute z-40">
+						<AnimatedRecruiteImg />
+					</div>
 				</div>
 			</section>
 			{/* 採用情報 */}
-			<section className="bg-af-black px-[80px] pt-[116px] pb-[48px]">
-				<div className="flex">
+			<section className="bg-af-black pt-[116px] pb-[48px]">
+				<div className="flex px-[80px]">
 					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h3 className="pl-[8px] text-af-sm text-af-white">採用情報</h3>
 				</div>
-				<AnimatedSectionTitle text="Recruit" className="mt-[9px] text-outline-black text-af-lg font-bold" />
-				<div className='flex justify-end'>
-					<InfiniteAutoplayImage
-						className="space-x-[40px]"
-						images={[
-							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
-							<Image key="image7" src="top_recruitCircle.svg" alt="" width={264} height={282} />,
-							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
-							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
-							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
-						]}/>
-				</div>
-				<div>
+				<AnimatedSectionTitle text="Recruit" className="px-[80px] mt-[9px] text-outline-black text-af-lg font-bold" />
+				<InfiniteAutoplayImage
+					className="" images={recruitImages} itemWidth={recruitItemWidth} itemHeight={recruitItemHeight} />
+				<div className="px-[80px]">
 					<h4 className="leading-loose text-af-sm text-af-white mb-[39px]">
 						未知の領域に挑戦し、自己成長したい方。<br/>
 						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>
