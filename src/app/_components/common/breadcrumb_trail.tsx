@@ -24,7 +24,8 @@ const Breadcrumb = () => {
         recruit: 'Recruit',
         employee_introductions: '社員紹介TOP',
         employee_details: '社員紹介詳細',
-		new_graduate_recruitment: '新卒採用募集要項'
+		new_graduate_recruitment: '新卒採用募集要項',
+		culture: 'はたらく環境・文化を知る'
     };
 
 	return (

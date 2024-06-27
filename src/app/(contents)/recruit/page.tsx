@@ -88,6 +88,10 @@ function Recruit() {
 			<div className="pb-[80px] grid justify-center">
 				<Button title="新卒採用募集要項へ" link="/recruit/new_graduate_recruitment"></Button>
 			</div>
+			<div className="pb-[80px] grid justify-center">
+				<Button title="はたらく環境・文化を知る" link="/recruit/culture"></Button>
+			</div>
+
 			<Footer />
 		</>
 	);

@@ -1,4 +1,4 @@
-/* 新卒採用募集要項画面 */
+/* Culture画面 */
 
 import React from 'react';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ function New_graduate_recruitment() {
 		<div>
 			<div className="mx-[80px]">
 				<div className="pagetitle mt-[207px]">
-					<h1 className="text-af-lg">新卒採用募集要項</h1>
+					<h1 className="text-af-lg">はたらく環境・文化を知る</h1>
 				</div>
 				<div className="breadcrumb mt-[30px]">
 					<BreadcrumaTrail />
@@ -19,10 +19,7 @@ function New_graduate_recruitment() {
 				<section className="mt-[56px] relative">
 					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
 				</section>
-				<div className="mt-[64px] font-bold leading-[1.6] tracking-wide flex justify-center">
-					<h1 className="w-[480px] text-[4.8rem]">タイトルタイトルタイトルタイトルタイトルタイトル</h1>
-				</div>
-                <div className="mt-[22px] leading-[64px] tracking-widest flex justify-center">
+                <div className="mt-[240px] leading-[64px] tracking-widest flex justify-center">
 					<h1 className="w-[973px] text-af-sm">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</h1>
 				</div>
 				<section className="mt-[72px]">
