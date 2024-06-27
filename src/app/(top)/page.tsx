@@ -10,6 +10,7 @@ import Button from '../_components/common/Button';
 import AnimatedText from './AnimatedText';
 import AnimatedSectionTitle from './AnimatedSectionTitle';
 import AnimatedRecruiteImg from './AnimatedRecruitImg';
+import InfiniteAutoplayImage from './InfiniteAutoplayImage';
 
 export default function Home() {
 	// news一覧。paths.tsxにて遷移先未設定。
@@ -160,21 +161,16 @@ export default function Home() {
 				<div className="pt-[74px] pb-[85px]">
 					<Button title="サービスへ" link="/services"/>
 				</div>
-				<div className="flex items-center justify-center mt-[85px] mb-[172px]">
-					<motion.div
-						initial={{ x: '-100%' }}
-						animate={{ x: '100%' }}
-						transition={{
-							duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'loop',
-						}} >
-						<div className="flex space-x-[40px]">
-							<Image src="top_green9circle.svg" alt="" width={240} height={240} />
-							<Image src="/top_lecturehand.jpg" alt="" width={240} height={240} />
-							<Image src="top_orangeshape.svg" alt="" width={240} height={240} />
-							<Image src="/top_cityview.jpg" alt="" width={240} height={240} />
-							<Image src="top_yellowshape.svg" alt="" width={240} height={240} />
-						</div>
-					</motion.div>
+				<div className="flex items-center justify-center mt-[85px] mb-[172px] space-x-[40px]">
+					<InfiniteAutoplayImage
+						className="space-x-[40px]"
+						images={[
+							<Image key="image1" src="top_green9circle.svg" alt="" width={240} height={240} />,
+							<Image key="image2" src="/top_lecturehand.jpg" alt="" width={240} height={240} />,
+							<Image key="image3" src="top_orangeshape.svg" alt="" width={240} height={240} />,
+							<Image key="image4" src="/top_cityview.jpg" alt="" width={240} height={240} />,
+							<Image key="image5" src="top_yellowshape.svg" alt="" width={240} height={240} />,
+						]}/>
 				</div>
 			</section>
 			{/* 事業概要（Service） */}
@@ -389,16 +385,16 @@ export default function Home() {
 					<h3 className="pl-[8px] text-af-sm text-af-white">採用情報</h3>
 				</div>
 				<AnimatedSectionTitle text="Recruit" className="mt-[9px] text-outline-black text-af-lg font-bold" />
-				<motion.div
-					initial={{ x: '-100%' }}
-					animate={{ x: '100%' }}
-					transition={{
-						duration: 10, ease: 'linear', repeat: Infinity, repeatType: 'loop',
-					}} >
-					<Image src="top_recruit5shapes.svg" alt="" width={1443} height={312} />
-				</motion.div>
-				<div className='flex justify-end pr-[266.48px] pt-[5px]'>
-					<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77} />
+				<div className='flex justify-end'>
+					<InfiniteAutoplayImage
+						className="space-x-[40px]"
+						images={[
+							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
+							<Image key="image7" src="top_recruitCircle.svg" alt="" width={264} height={282} />,
+							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
+							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
+							<Image key="image6" src="top_recruitSquare.svg" alt="" width={264} height={282} />,
+						]}/>
 				</div>
 				<div>
 					<h4 className="leading-loose text-af-sm text-af-white mb-[39px]">
