@@ -41,11 +41,11 @@ export default function Home() {
 	const recruitItemWidth = 264;
 	const recruitItemHeight = 282;
 	const recruitImages = [
-		<Image key="image6" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image6" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} className="mt-[30px]" />,
 		<Image key="image7" src="top_recruitCircle.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
-		<Image key="image8" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image8" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} className="mt-[30px]" />,
 		<Image key="image9" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
-		<Image key="image10" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} />,
+		<Image key="image10" src="top_recruitSquare.svg" alt="" width={recruitItemWidth} height={recruitItemHeight} className="mt-[30px]" />,
 	];
 
 	// 黄色背景部AFORCE文字列画像
@@ -167,7 +167,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* 会社案内 */}
-			<section className="flex flex-col items-center justify-center mx-[80px] pt-[232px]">
+			<section className="flex flex-col items-center justify-center  pt-[232px]">
 				<div className="flex">
 					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm">会社案内</h2>
@@ -194,7 +194,7 @@ export default function Home() {
 				<div className="pt-[74px] pb-[85px]">
 					<Button title="サービスへ" link="/services"/>
 				</div>
-				<div className="flex items-center justify-center mt-[85px] mb-[172px] space-x-[40px]">
+				<div className="flex items-center justify-center mb-[172px]">
 					<InfiniteAutoplayImage
 						className="space-x-[40px]" images={ourMissionImages} itemWidth={ourMissionItemWidth} itemHeight={ourMissionItemHeight}/>
 				</div>
@@ -410,6 +410,9 @@ export default function Home() {
 				<InfiniteAutoplayImage
 					className="" images={recruitImages} itemWidth={recruitItemWidth} itemHeight={recruitItemHeight} />
 				<div className="px-[80px]">
+					<div className='flex justify-end pr-64 pt-1.5'>
+						<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
+					</div>
 					<h4 className="leading-loose text-af-sm text-af-white mb-[39px]">
 						未知の領域に挑戦し、自己成長したい方。<br/>
 						ITを活用して社会に貢献し、社会を豊かにしたい方。<br/>

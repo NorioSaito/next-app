@@ -44,6 +44,16 @@ const AnimatedRecruitImg: React.FC = () => {
 			>
 				<Image src="/top_workwithusImg.jpg" alt="" width={1440} height={960} className="object-cover"/>
 			</motion.div>
+			{isInView && (
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1.0, delay: 1.5 }}
+					className="absolute z-20"
+				>
+					<Image src="top_workwithus.svg" alt="Overlay Image" width={428.53} height={138.77} className="object-cover"/>
+				</motion.div>
+			)}
 		</div>
 	);
 };
