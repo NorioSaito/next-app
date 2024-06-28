@@ -1,4 +1,5 @@
 // 白抜き文字のセクションタイトルにアニメーションを付与するコンポーネント
+import { Transition } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -25,6 +26,7 @@ const AnimatedSectionTitle: React.FC<AnimatedSectionTitleProps> = ({ text, class
 		visible: {
 			opacity: 1,
 			y: 0,
+			Transition: { duration: 0.5 },
 		},
 	};
 
@@ -37,7 +39,7 @@ const AnimatedSectionTitle: React.FC<AnimatedSectionTitleProps> = ({ text, class
 			viewport={{ once: false, amount: 0.3 }}
 		>
 			{letters.map((char, index) => (
-				<motion.span key={index} variants={letterVariants}>
+				<motion.span key={index} variants={letterVariants} className="inline-block">
 					{char}
 				</motion.span>
 			))}
