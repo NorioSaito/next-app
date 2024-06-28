@@ -194,10 +194,10 @@ export default function Home() {
 				<div className="pt-[74px] pb-[85px]">
 					<Button title="サービスへ" link="/services"/>
 				</div>
-				<div className="flex items-center justify-center mb-[172px]">
-					<InfiniteAutoplayImage
-						className="space-x-[40px]" images={ourMissionImages} itemWidth={ourMissionItemWidth} itemHeight={ourMissionItemHeight}/>
-				</div>
+				{/* <div className="flex items-center justify-center mb-[172px]"> */}
+				<InfiniteAutoplayImage
+					className="mb-[172px]" images={ourMissionImages} itemWidth={ourMissionItemWidth} itemHeight={ourMissionItemHeight}/>
+				{/* </div> */}
 			</section>
 			{/* 事業概要（Service） */}
 			<section className="bg-af-black px-[80px] pt-[68px] rounded-tl-[48px]">
@@ -393,12 +393,12 @@ export default function Home() {
 			</div>
 			{/* AFORCEAFORCEAFORCEAFORCE */}
 			<section className="relative bg-af-yellow h-[960px] flex justify-center items-center">
-				<div className="relative flex justify-center items-center">
-					<InfiniteAutoplayImage className="flex justify-center items-center z-10" images={aforceStringImage} itemWidth={aforceStringWidth} itemHeight={aforceStringHeight} />
-					<div className="absolute z-40">
-						<AnimatedRecruiteImg />
-					</div>
+				{/* <div className="relative flex justify-center items-center"> */}
+				<InfiniteAutoplayImage className="" images={aforceStringImage} itemWidth={aforceStringWidth} itemHeight={aforceStringHeight} />
+				<div className="absolute z-40">
+					<AnimatedRecruiteImg />
 				</div>
+				{/* </div> */}
 			</section>
 			{/* 採用情報 */}
 			<section className="bg-af-black pt-[116px] pb-[48px]">
@@ -408,7 +408,7 @@ export default function Home() {
 				</div>
 				<AnimatedSectionTitle text="Recruit" className="px-[80px] mt-[9px] text-outline-black text-af-lg font-bold" />
 				<InfiniteAutoplayImage
-					className="" images={recruitImages} itemWidth={recruitItemWidth} itemHeight={recruitItemHeight} />
+					className="mt-[56px]" images={recruitImages} itemWidth={recruitItemWidth} itemHeight={recruitItemHeight} />
 				<div className="px-[80px]">
 					<div className='flex justify-end pr-64 pt-1.5'>
 						<Image src="top_workwithus.svg" alt="" width={428.53} height={138.77}></Image>
