@@ -33,8 +33,8 @@ function footer() {
 			<section className="grid grid-cols-1 md:grid-cols-2 w-full bg-af-gray">
 				<div className="grid gap-[32px] text-center border border-black py-[15%]">
 					<Harftitle title="Contact" subTitle="お問い合わせ" text_position="center" />
-					<div>
-						<p className="">プロダクト開発、サービスについての</p>
+					<div className="text-af-xs">
+						<p>プロダクト開発、サービスについての</p>
 						<p>ご相談、ご質問などご気軽にお問い合わせください。</p>
 					</div>
 					<div className="grid justify-center">
@@ -43,11 +43,11 @@ function footer() {
 				</div>
 				<div className="grid gap-[32px] text-center border border-black py-[15%]">
 					<Harftitle title="Phone" subTitle="お電話" text_position="center" />
-					<div>
-						<p>お電話でのお問い合わせはこちらからどうぞ</p>
+					<div className="flex justify-center items-center">
+						<p className="text-af-xs">お電話でのお問い合わせはこちらからどうぞ</p>
 					</div>
 					<div>
-						<p className="text-4xl font-bold">03-5216-2868</p>
+						<p className="text-[4.8rem] font-bold">03-5216-2868</p>
 					</div>
 				</div>
 			</section>

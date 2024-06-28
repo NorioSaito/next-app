@@ -2,16 +2,27 @@
 
 import React from 'react';
 
-// テキストの配置に関するpropsのパラメータ
+// テキストの配置に関するpropsのパラメータ(text_posision)
 // start:左寄せ
 // end:右寄せ
 // center:真ん中
-function HerfTittle(props: { title: string; subTitle: string; text_position: string }) {
+
+// サブタイトルのフォントカラー(sub_color)
+// black:af-black
+// white:af-white
+function HerfTittle(props: {
+	title: string;
+	subTitle: string;
+	text_position: string;
+	sub_color?: string;
+}) {
 	return (
 		<div className="items-center">
 			<div className="gap-[32px]">
-				<div className={`text-${props.text_position} md:text-af-sm`}>
-					<span className="pr-[8px] text-orange-500">●</span>
+				<div
+					className={`text-${props.text_position} text-af-${props.sub_color} md:text-af-sm`}
+				>
+					<span className="pr-[8px] text-af-orange">●</span>
 					{props.subTitle}
 				</div>
 				<h2
