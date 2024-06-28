@@ -437,7 +437,7 @@ export default function Home() {
 							<div className='col-span-3 my-[12px]'>
 								<Link href={item.path} >{item.title}</Link>
 								<button className="rounded-full flex items-center justify-center w-[80px] h-[24px] border border-af-black text-[12px] text-af-black md:text-base">
-									<span className="pr-[6px] text-lime-400 font-bold ">●</span>
+									<span className="pr-[6px] text-af-limegreen font-bold ">●</span>
 									{item.tagtitle}
 								</button>
 							</div>

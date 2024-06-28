@@ -29,6 +29,7 @@ const config: Config = {
 				'af-blue': '#0057FF', // ブルー
 				'af-yellow': '#FFD400', // 黄色
 				'af-green': '#EBFF00', // 緑
+				'af-limegreen': '#58D073', // ライムグリーン
 			},
 		},
 	},

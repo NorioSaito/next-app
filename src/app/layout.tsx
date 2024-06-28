@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import React from 'react';
 import Header from './header';
-import Footer from './footer';
+// import Footer from './footer';
 
 export const metadata: Metadata = {
 	title: 'エイ・フォース株式会社',
@@ -19,7 +19,7 @@ export default function RootLayout({
 			<body>
 				<Header />
 				{children}
-				<Footer />
+
 			</body>
 		</html>
 	);
