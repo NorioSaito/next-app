@@ -26,7 +26,7 @@ function HerfTittle(props: {
 					{props.subTitle}
 				</div>
 				<h2
-					className={`text-${props.text_position} text-outline-black font-bold md:text-af-lg`}
+					className={`text-${props.text_position} text-outline-black text-2xl font-bold md:pt-[32px] text-[6.4rem]`}
 				>
 					{props.title}
 				</h2>

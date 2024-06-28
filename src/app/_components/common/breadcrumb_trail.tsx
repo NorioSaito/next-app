@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const Breadcrumb = () => {
 	const pathname = usePathname();
@@ -12,29 +13,45 @@ const Breadcrumb = () => {
 
 	const pathArray = pathname.split('/').filter((path) => path);
 
+	const pathMapping: { [key: string]: string } = {
+		company: 'Company',
+		service: 'Service',
+		si: 'SI事業',
+		consulting: 'コンサルティング事業',
+		education: '教育事業',
+		contact: 'Contact',
+		recruit: 'Recruit',
+		employee_introductions: '社員紹介TOP',
+		employee_details: '社員紹介詳細',
+	};
+
 	return (
 		<nav aria-label="breadcrumb">
 			<ol className="flex items-center space-x-2">
 				<li className="flex items-center">
-					<Link href="/" className="text-orange-500 hover:underline">
+					<Link href="/" className="text-af-orange text-[16px] hover:underline">
 						HOME
 					</Link>
-					<span className="mx-2 text-orange-500">{'>'}</span>
+					<ChevronRightIcon className="mx-2 w-[16px] h-[16px] text-af-orange" />
 				</li>
 				{pathArray.map((path, index) => {
 					const href = `/${pathArray.slice(0, index + 1).join('/')}`;
 					const isLastItem = index === pathArray.length - 1;
+					const displayName = pathMapping[path] || decodeURIComponent(path);
 					return (
 						<li key={href} className="flex items-center">
 							{!isLastItem ? (
 								<>
-									<Link href={href} className="text-blue-600 hover:underline">
-										{decodeURIComponent(path)}
+									<Link
+										href={href}
+										className="text-af-black text-[16px] hover:underline"
+									>
+										{displayName}
 									</Link>
-									<span className="mx-2 text-gray-500">{'>'}</span>
+									<ChevronRightIcon className="mx-2 w-[16px] h-[16px] text-af-black" />
 								</>
 							) : (
-								<span className="text-gray-700">{decodeURIComponent(path)}</span>
+								<span className="text-af-black text-[16px]">{displayName}</span>
 							)}
 						</li>
 					);

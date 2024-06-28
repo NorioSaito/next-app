@@ -34,6 +34,7 @@ const config: Config = {
 			},
 			boxShadow: {
 				'af-door': '16px 16px 0px 0px', // ドア型のコンポーネントの影
+				'af-green': '#58D073', // 緑
 			},
 		},
 	},
