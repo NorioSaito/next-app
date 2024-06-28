@@ -28,6 +28,12 @@ const config: Config = {
 				'af-blue': '#0057FF', // ブルー
 				'af-yellow': '#FFD400', // 黄色
 				'af-green': '#EBFF00', // 緑
+				'af-cream': '#FAF7ED', // クリーム
+				'af-creamblue': '#599BFE', // クリームブルー
+				'af-deepgray': '#D9D9D9', // 濃いグレー
+			},
+			boxShadow: {
+				'af-door': '16px 16px 0px 0px', // ドア型のコンポーネントの影
 			},
 		},
 	},
