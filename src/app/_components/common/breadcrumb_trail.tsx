@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
-
 const Breadcrumb = () => {
 	const pathname = usePathname();
 
@@ -21,12 +20,12 @@ const Breadcrumb = () => {
 		consulting: 'コンサルティング事業',
 		education: '教育事業',
 		contact: 'Contact',
-        recruit: 'Recruit',
-        employee_introductions: '社員紹介TOP',
-        employee_details: '社員紹介詳細',
+		recruit: 'Recruit',
+		employee_introductions: '社員紹介TOP',
+		employee_details: '社員紹介詳細',
 		new_graduate_recruitment: '新卒採用募集要項',
-		culture: 'はたらく環境・文化を知る'
-    };
+		culture: 'はたらく環境・文化を知る',
+	};
 
 	return (
 		<nav aria-label="breadcrumb">
@@ -45,7 +44,10 @@ const Breadcrumb = () => {
 						<li key={href} className="flex items-center">
 							{!isLastItem ? (
 								<>
-									<Link href={href} className="text-af-black text-[16px] hover:underline">
+									<Link
+										href={href}
+										className="text-af-black text-[16px] hover:underline"
+									>
 										{displayName}
 									</Link>
 									<ChevronRightIcon className="mx-2 w-[16px] h-[16px] text-af-black" />

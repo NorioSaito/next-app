@@ -2,11 +2,11 @@ import React from 'react';
 /* import Breadcrumb from '../_components/breadcrumb'; */
 import Button from '../../../_components/common/Button';
 
-function SIServices() {
+function ConsultingServices() {
 	return (
 		<div className="px-[80px]">
 			<div className="pagetitle mt-[207px]">
-				<h1 className="text-af-lg">SI事業</h1>
+				<h1 className="text-af-lg">コンサルティング事業</h1>
 			</div>
 			<div className="breadcrumb mt-[24px]">
 				<p>ここにパンくずリストを実装</p>
@@ -132,4 +132,4 @@ function SIServices() {
 	);
 }
 
-export default SIServices;
+export default ConsultingServices;

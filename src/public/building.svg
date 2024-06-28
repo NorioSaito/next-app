@@ -1,0 +1,19 @@
+<svg width="73" height="106" viewBox="0 0 73 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="73" height="106" rx="2" fill="#FF7B31"/>
+<rect x="20" y="71" width="34" height="33" rx="2" fill="white"/>
+<rect x="21" y="27" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="38" y="27" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="21" y="43.5586" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="38" y="43.5586" width="15" height="14.5588" rx="2" fill="white"/>
+<mask id="mask0_1125_179" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="73" height="106">
+<rect width="73" height="106" rx="2" fill="#FFD400"/>
+<rect x="20" y="71" width="34" height="33" rx="2" fill="white"/>
+<rect x="21" y="27" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="38" y="27" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="21" y="43.5586" width="15" height="14.5588" rx="2" fill="white"/>
+<rect x="38" y="43.5586" width="15" height="14.5588" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_1125_179)">
+<rect x="-6" y="-8" width="87" height="15" fill="#599BFE"/>
+</g>
+</svg>
