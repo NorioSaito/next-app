@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { MapPinIcon } from '@heroicons/react/24/outline';
+import style from '@/public/styles/common.module.scss';
 import Harftitle from '../../_components/common/HarfTitle';
 import Accordion from '../../_components/common/Accordion';
-import style from '../../assets/css/common.module.css';
 import Breadcrumb from '../../_components/common/breadcrumb_trail';
 
 function Company() {

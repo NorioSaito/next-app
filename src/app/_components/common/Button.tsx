@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import style from '../../assets/css/common.module.css';
+import style from '@/public/styles/common.module.scss';
 
 function Button(props: { title: string; link: string }) {
 	return (

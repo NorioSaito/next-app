@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
-import style from '../../assets/css/common.module.css';
+import style from '@/public/styles/common.module.scss';
 
 const Accordion: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);

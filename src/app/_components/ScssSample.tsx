@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/public/scss/sample.module.scss';
+import styles from '@/public/styles/sample.module.scss';
 
 function ScssSample() {
 	return (

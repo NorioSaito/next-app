@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
-import style from '@/app/assets/css/common.module.css';
+import style from '@/public/styles/common.module.scss';
 
 function Button(props: { title: string; link: string }) {
 	return (
