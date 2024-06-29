@@ -18,7 +18,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"postCreateCommand": "npm install --prefix src && npm run dev --prefix src",
+	"postStartCommand": "npm install --prefix src && npm run dev --prefix src",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
