@@ -18,7 +18,7 @@ function Culture() {
 						<BreadcrumaTrail />
 					</div>
 					<section className="mt-[56px] relative">
-						<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
+						<Image src="/img/company_heroimg.jpg" alt="" width={1280} height={480} />
 					</section>
 					<div className="mt-[240px] leading-[64px] tracking-widest flex justify-center">
 						<h1 className="w-[973px] text-af-sm">
@@ -46,50 +46,50 @@ function Culture() {
 							<CultureItem
 								number="01"
 								text="ワークライフバランス重視"
-								imageUrl="/scales.svg"
-								imageWidth="90"
-								imageHight="103"
+								imageUrl="/img/scales.svg"
+								imageWidth={90}
+								imageHight={103}
 							/>
 							<div className="mx-[80px]">
 								<CultureItem
 									number="02"
 									text="若手が育ちやすい"
-									imageUrl="/scales.svg"
-									imageWidth="112"
-									imageHight="120"
+									imageUrl="/img/scales.svg"
+									imageWidth={112}
+									imageHight={120}
 								/>
 							</div>
 							<CultureItem
 								number="03"
 								text="どんどん昇進"
-								imageUrl="/stairs.svg"
-								imageWidth="90"
-								imageHight="103"
+								imageUrl="/img/stairs.svg"
+								imageWidth={90}
+								imageHight={103}
 							/>
 						</div>
 						<div className="pt-[43px] pb-[85px] flex items-center justify-center">
 							<CultureItem
 								number="04"
 								text="子どもがいても働きやすい"
-								imageUrl="/mother.svg"
-								imageWidth="90"
-								imageHight="103"
+								imageUrl="/img/mother.svg"
+								imageWidth={90}
+								imageHight={103}
 							/>
 							<div className="mx-[80px]">
 								<CultureItem
 									number="05"
 									text="健康第一"
-									imageUrl="/heart.svg"
-									imageWidth="112"
-									imageHight="120"
+									imageUrl="/img/heart.svg"
+									imageWidth={112}
+									imageHight={120}
 								/>
 							</div>
 							<CultureItem
 								number="06"
 								text="部活動"
 								imageUrl=""
-								imageWidth="90"
-								imageHight="103"
+								imageWidth={90}
+								imageHight={103}
 							/>
 						</div>
 					</div>
@@ -117,7 +117,12 @@ function Culture() {
 						</p>
 						<div>
 							<div className="h-[40px] mt-[20px] flex">
-								<Image src="/SIservicetitle.svg" alt="" width={40} height={40} />
+								<Image
+									src="/img/SIservicetitle.svg"
+									alt=""
+									width={40}
+									height={40}
+								/>
 								<h2 className="ml-[40px] text-af-md font-bold flex items-center justify-center">
 									研修制度
 								</h2>
@@ -141,7 +146,12 @@ function Culture() {
 						</div>
 						<div>
 							<div className="h-[40px] mt-[64px] flex">
-								<Image src="/SIservicetitle.svg" alt="" width={40} height={40} />
+								<Image
+									src="/img/SIservicetitle.svg"
+									alt=""
+									width={40}
+									height={40}
+								/>
 								<h2 className="ml-[40px] text-af-md font-bold flex items-center justify-center">
 									その他の教育支援施策
 								</h2>
@@ -150,7 +160,12 @@ function Culture() {
 								<div className="relative w-[373px] h-[373px] bg-white rounded-t-[186.5px] rounded-b-[16px] border border-af-black shadow-[16px_16px_0px_0px_#efe5c3] flex flex-col items-center justify-center tracking-wide">
 									<h1 className="text-af-sm font-bold">書籍</h1>
 									<div className="mt-[31px]">
-										<Image src="/scales.svg" alt="" width={90} height={103} />
+										<Image
+											src="/img/scales.svg"
+											alt=""
+											width={90}
+											height={103}
+										/>
 									</div>
 									<p className="w-[255px] mt-[45px] text-af-xs leading-[1.6]">
 										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -161,7 +176,12 @@ function Culture() {
 										ワークライフバランス重視
 									</h1>
 									<div className="mt-[31px]">
-										<Image src="/scales.svg" alt="" width={90} height={103} />
+										<Image
+											src="/img/scales.svg"
+											alt=""
+											width={90}
+											height={103}
+										/>
 									</div>
 									<p className="w-[255px] mt-[45px] text-af-xs leading-[1.6]">
 										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -172,7 +192,12 @@ function Culture() {
 										ワークライフバランス重視
 									</h1>
 									<div className="mt-[31px]">
-										<Image src="/scales.svg" alt="" width={90} height={103} />
+										<Image
+											src="/img/scales.svg"
+											alt=""
+											width={90}
+											height={103}
+										/>
 									</div>
 									<p className="w-[255px] mt-[45px] text-af-xs leading-[1.6]">
 										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -207,7 +232,7 @@ function Culture() {
 									<div className="w-full h-[180px] flex items-center justify-center">
 										<div>
 											<Image
-												src="/sexratio.svg"
+												src="/img/sexratio.svg"
 												alt=""
 												width={318}
 												height={160}
@@ -232,7 +257,7 @@ function Culture() {
 									<div className="w-full h-[180px] flex items-center justify-center">
 										<div>
 											<Image
-												src="/building.svg"
+												src="/img/building.svg"
 												alt=""
 												width={73}
 												height={106}

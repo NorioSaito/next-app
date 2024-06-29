@@ -34,7 +34,7 @@ const EmployeeDetails: React.FC = () => {
 					<BreadcrumaTrail />
 				</div>
 				<section className="mt-[56px] relative">
-					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
+					<Image src="/img/company_heroimg.jpg" alt="" width={1280} height={480} />
 				</section>
 				<div className="w-[480px] mt-[64px] font-bold leading-[1.6] tracking-wide">
 					<h1 className="text-af-lg">タイトルタイトルタイトルタイトル</h1>
@@ -129,7 +129,7 @@ const EmployeeDetails: React.FC = () => {
 								</div>
 								<div className="mt-[100px]">
 									<Image
-										src="/company_heroimg.jpg"
+										src="/img/company_heroimg.jpg"
 										alt=""
 										width={751}
 										height={294}
@@ -191,7 +191,7 @@ const EmployeeDetails: React.FC = () => {
 								</div>
 								<div className="mt-[100px]">
 									<Image
-										src="/company_heroimg.jpg"
+										src="/img/company_heroimg.jpg"
 										alt=""
 										width={751}
 										height={294}
@@ -253,7 +253,7 @@ const EmployeeDetails: React.FC = () => {
 								</div>
 								<div className="mt-[100px]">
 									<Image
-										src="/company_heroimg.jpg"
+										src="/img/company_heroimg.jpg"
 										alt=""
 										width={751}
 										height={294}
@@ -275,7 +275,7 @@ const EmployeeDetails: React.FC = () => {
 							<div className="relative mx-auto mt-[51px] w-[373px] h-[373px]">
 								<div className="absolute top-0 left-0 w-full h-full bg-[#EDD8D8] transform translate-x-[16px] translate-y-[16px] rounded-t-[186.5px] rounded-b-[16px] z-0"></div>
 								<Image
-									src="/A-force_horizon.svg"
+									src="/img/A-force_horizon.svg"
 									alt=""
 									width={373}
 									height={373}

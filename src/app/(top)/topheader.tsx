@@ -28,7 +28,7 @@ function Topheader() {
 					<Link href={PATHS.INDEX} className="m-1.5 p-1.5">
 						<span className="sr-only">Your Company</span>
 						<Image
-							src="A-force_horizon.svg"
+							src="/img/A-force_horizon.svg"
 							alt="エイ・フォース株式会社"
 							width={187}
 							height={47}

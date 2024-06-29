@@ -25,7 +25,7 @@ function Services() {
 				<p>(01)</p>
 				<div className="SIservicecontents flex">
 					<div className="w-1/2 h-[40px] mt-[20px] flex">
-						<Image src="SIservicetitle.svg" alt="" width={40} height={40} />
+						<Image src="/img/SIservicetitle.svg" alt="" width={40} height={40} />
 						<h2 className="SIservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
 							SI事業
 						</h2>
@@ -61,7 +61,12 @@ function Services() {
 				<p>(02)</p>
 				<div className="Consultingservicecontents flex">
 					<div className="w-1/2 h-[40px] mt-[20px] flex">
-						<Image src="Consaltingservicetitle.svg" alt="" width={40} height={40} />
+						<Image
+							src="/img/Consaltingservicetitle.svg"
+							alt=""
+							width={40}
+							height={40}
+						/>
 						<h2 className="SIservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
 							コンサルティング事業
 						</h2>
@@ -94,7 +99,7 @@ function Services() {
 				<p>(03)</p>
 				<div className="Educationservicecontents flex">
 					<div className="w-1/2 h-[40px] mt-[20px] flex">
-						<Image src="Educationservicetitle.svg" alt="" width={40} height={40} />
+						<Image src="/img/Educationservicetitle.svg" alt="" width={40} height={40} />
 						<h2 className="Educationservicetitle ml-[8px] text-af-md font-bold flex items-center justify-center">
 							教育事業
 						</h2>

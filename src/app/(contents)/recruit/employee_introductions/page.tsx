@@ -26,7 +26,7 @@ function EmployeeIntroductions() {
 					<div className="flex justify-center">
 						<div>
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="開発職"
 								title="社員インタビュー#01"
 								entryYear="2019"
@@ -35,7 +35,7 @@ function EmployeeIntroductions() {
 						</div>
 						<div className="px-[40px]">
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="営業職"
 								title="社員インタビュー#02"
 								entryYear="2018"
@@ -44,7 +44,7 @@ function EmployeeIntroductions() {
 						</div>
 						<div>
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="マネージャー職"
 								title="社員インタビュー#03"
 								entryYear="2010"
@@ -55,7 +55,7 @@ function EmployeeIntroductions() {
 					<div className="pt-[80px] flex align-center justify-center">
 						<div>
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="開発職"
 								title="社員インタビュー#04"
 								entryYear="2021"
@@ -64,7 +64,7 @@ function EmployeeIntroductions() {
 						</div>
 						<div className="px-[35px]">
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="開発職"
 								title="社員インタビュー#05"
 								entryYear="2023"
@@ -73,7 +73,7 @@ function EmployeeIntroductions() {
 						</div>
 						<div>
 							<EmployeeCard
-								imageUrl="/A-force_horizon.svg"
+								imageUrl="/img/A-force_horizon.svg"
 								occupation="開発職"
 								title="社員インタビュー#06"
 								entryYear="2022"

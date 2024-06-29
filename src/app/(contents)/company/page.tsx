@@ -17,9 +17,9 @@ function Company() {
 					<Breadcrumb />
 				</div>
 				<section className="mt-[56px] relative">
-					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
+					<Image src="/img/company_heroimg.jpg" alt="" width={1280} height={480} />
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-						<Image src="/company_herotext.svg" alt="" width={400} height={214} />
+						<Image src="/img/company_herotext.svg" alt="" width={400} height={214} />
 					</div>
 				</section>
 				<section className="mt-[104px]">
@@ -55,7 +55,7 @@ function Company() {
 						豊かさを享受できる未来をめざしてあゆみつづけます。
 					</p>
 					<div className="pt-[80px] flex items-center justify-center">
-						<Image src="/company_img1.jpg" alt="" width={309} height={225} />
+						<Image src="/img/company_img1.jpg" alt="" width={309} height={225} />
 					</div>
 				</section>
 			</div>
@@ -185,7 +185,7 @@ function Company() {
 							</div>
 						</div>
 						<div>
-							<Image src="/sugawara_photo.jpg" alt="" width={463} height={618} />
+							<Image src="/img/sugawara_photo.jpg" alt="" width={463} height={618} />
 						</div>
 					</div>
 				</section>
@@ -341,7 +341,7 @@ function Company() {
 							</div>
 						</div>
 						<div>
-							<Image src="/A-force_horizon.svg" alt="" width={463} height={618} />
+							<Image src="/img/A-force_horizon.svg" alt="" width={463} height={618} />
 						</div>
 					</div>
 				</section>

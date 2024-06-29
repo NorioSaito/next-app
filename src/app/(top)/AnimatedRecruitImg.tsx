@@ -45,7 +45,7 @@ const AnimatedRecruitImg: React.FC = () => {
 				transition={{ duration: 1.5 }}
 			>
 				<Image
-					src="/top_workwithusImg.jpg"
+					src="/img/top_workwithusImg.jpg"
 					alt=""
 					width={1440}
 					height={960}
@@ -60,7 +60,7 @@ const AnimatedRecruitImg: React.FC = () => {
 					className="absolute z-20"
 				>
 					<Image
-						src="top_workwithus.svg"
+						src="/img/top_workwithus.svg"
 						alt="Overlay Image"
 						width={428.53}
 						height={138.77}

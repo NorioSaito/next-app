@@ -16,7 +16,7 @@ function NewGraduateRecruitment() {
 					<BreadcrumaTrail />
 				</div>
 				<section className="mt-[56px] relative">
-					<Image src="/company_heroimg.jpg" alt="" width={1280} height={480} />
+					<Image src="/img/company_heroimg.jpg" alt="" width={1280} height={480} />
 				</section>
 				<div className="mt-[64px] font-bold leading-[1.6] tracking-wide flex justify-center">
 					<h1 className="w-[480px] text-[4.8rem]">
@@ -106,7 +106,7 @@ function NewGraduateRecruitment() {
 									<p>
 										・新卒初任給：年俸300万円（月基本22万円＋禁煙手当＋実家の場合）
 										<br />
-										　※院卒の場合、別途上増し基本給を設定しています。
+										※院卒の場合、別途上増し基本給を設定しています。
 									</p>
 									<p className="mt-[10px]">
 										・30歳モデル賃金：年俸：約500万円（残業、手当含む）
@@ -148,27 +148,29 @@ function NewGraduateRecruitment() {
 									<p>
 										・各種社会保険完備
 										<br />
-										　関東ITソフトウェア健保　https://www.its-kenpo.or.jp/index.html
+										関東ITソフトウェア健保
+										https://www.its-kenpo.or.jp/index.html
 									</p>
 									<p className="mt-[10px]">
 										・超過勤務手当（1日8時間超える場合は支給)
 									</p>
 									<p className="mt-[10px]">・通勤交通費（全額）</p>
 									<p className="mt-[10px]">
-										・住宅手当（5千円～2万円　実家の場合5千円、入社年数、年齢＋自己名義により決定）
+										・住宅手当（5千円～2万円
+										実家の場合5千円、入社年数、年齢＋自己名義により決定）
 									</p>
 									<p className="mt-[10px]">
 										・禁煙手当（月2.5万円）※禁煙推奨企業です
 									</p>
 									<p className="mt-[10px]">
-										・資格給（基本情報処理、応用情報処理　各5千円/月）
+										・資格給（基本情報処理、応用情報処理 各5千円/月）
 									</p>
 									<p className="mt-[10px]">
 										・スポーツクラブ手当（実費：月5千円まで）
 									</p>
 									<p className="mt-[10px]">・リモートワーク手当（月3千円）</p>
 									<p className="mt-[10px]">・通勤交通費（全額）</p>
-									<p className="mt-[10px]">・書籍・参考書　会社負担</p>
+									<p className="mt-[10px]">・書籍・参考書 会社負担</p>
 								</div>
 							</div>
 							<div className="my-[24px] h-px bg-slate-200"></div>
@@ -207,7 +209,7 @@ function NewGraduateRecruitment() {
 							</div>
 							<div className="w-[720px] h-[72px] border border-af-black rounded-[16px] bg-[#ffffff] flex items-center justify-center z-10">
 								<p className="text-af-xs font-bold tracking-wide">
-									3次面接：懇親　若手メンバーとマネージャークラスとの会食
+									3次面接：懇親 若手メンバーとマネージャークラスとの会食
 								</p>
 							</div>
 							<div className="w-[720px] h-[72px] border border-af-black rounded-[16px] bg-[#ffffff] flex items-center justify-center z-10">

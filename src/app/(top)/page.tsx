@@ -46,35 +46,35 @@ export default function Home() {
 	const ourMissionImages = [
 		<Image
 			key="image1"
-			src="top_green9circle.svg"
+			src="/img/top_green9circle.svg"
 			alt=""
 			width={ourMissionItemWidth}
 			height={ourMissionItemHeight}
 		/>,
 		<Image
 			key="image2"
-			src="/top_lecturehand.jpg"
+			src="/img/top_lecturehand.jpg"
 			alt=""
 			width={ourMissionItemWidth}
 			height={ourMissionItemHeight}
 		/>,
 		<Image
 			key="image3"
-			src="top_orangeshape.svg"
+			src="/img/top_orangeshape.svg"
 			alt=""
 			width={ourMissionItemWidth}
 			height={ourMissionItemHeight}
 		/>,
 		<Image
 			key="image4"
-			src="/top_cityview.jpg"
+			src="/img/top_cityview.jpg"
 			alt=""
 			width={ourMissionItemWidth}
 			height={ourMissionItemHeight}
 		/>,
 		<Image
 			key="image5"
-			src="top_yellowshape.svg"
+			src="/img/top_yellowshape.svg"
 			alt=""
 			width={ourMissionItemWidth}
 			height={ourMissionItemHeight}
@@ -87,7 +87,7 @@ export default function Home() {
 	const recruitImages = [
 		<Image
 			key="image6"
-			src="top_recruitSquare.svg"
+			src="/img/top_recruitSquare.svg"
 			alt=""
 			width={recruitItemWidth}
 			height={recruitItemHeight}
@@ -95,14 +95,14 @@ export default function Home() {
 		/>,
 		<Image
 			key="image7"
-			src="top_recruitCircle.svg"
+			src="/img/top_recruitCircle.svg"
 			alt=""
 			width={recruitItemWidth}
 			height={recruitItemHeight}
 		/>,
 		<Image
 			key="image8"
-			src="top_recruitSquare.svg"
+			src="/img/top_recruitSquare.svg"
 			alt=""
 			width={recruitItemWidth}
 			height={recruitItemHeight}
@@ -110,14 +110,14 @@ export default function Home() {
 		/>,
 		<Image
 			key="image9"
-			src="top_recruitSquare.svg"
+			src="/img/top_recruitSquare.svg"
 			alt=""
 			width={recruitItemWidth}
 			height={recruitItemHeight}
 		/>,
 		<Image
 			key="image10"
-			src="top_recruitSquare.svg"
+			src="/img/top_recruitSquare.svg"
 			alt=""
 			width={recruitItemWidth}
 			height={recruitItemHeight}
@@ -131,35 +131,35 @@ export default function Home() {
 	const aforceStringImage = [
 		<Image
 			key="image11"
-			src="top_A-force_string.svg"
+			src="/img/top_A-force_string.svg"
 			alt=""
 			width={aforceStringWidth}
 			height={aforceStringHeight}
 		/>,
 		<Image
 			key="image12"
-			src="top_A-force_string.svg"
+			src="/img/top_A-force_string.svg"
 			alt=""
 			width={aforceStringWidth}
 			height={aforceStringHeight}
 		/>,
 		<Image
 			key="image13"
-			src="top_A-force_string.svg"
+			src="/img/top_A-force_string.svg"
 			alt=""
 			width={aforceStringWidth}
 			height={aforceStringHeight}
 		/>,
 		<Image
 			key="image14"
-			src="top_A-force_string.svg"
+			src="/img/top_A-force_string.svg"
 			alt=""
 			width={aforceStringWidth}
 			height={aforceStringHeight}
 		/>,
 		<Image
 			key="image15"
-			src="top_A-force_string.svg"
+			src="/img/top_A-force_string.svg"
 			alt=""
 			width={aforceStringWidth}
 			height={aforceStringHeight}
@@ -178,7 +178,7 @@ export default function Home() {
 					>
 						<Image
 							className="pb-[69px]"
-							src="top_Alogo.svg"
+							src="/img/top_Alogo.svg"
 							alt="エイ・フォース株式会社"
 							width={487}
 							height={402}
@@ -190,7 +190,7 @@ export default function Home() {
 							transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
 						>
 							<Image
-								src="top_logomark.svg"
+								src="/img/top_logomark.svg"
 								alt="エイ・フォースロゴ"
 								width={144}
 								height={143}
@@ -295,7 +295,7 @@ export default function Home() {
 				</div>
 				<div className="">
 					<Image
-						src="top_catchcopy.svg"
+						src="/img/top_catchcopy.svg"
 						alt="ここいちばんで頼りになる、エースの集団"
 						width={468}
 						height={24}
@@ -305,7 +305,13 @@ export default function Home() {
 			{/* 会社案内 */}
 			<section className="flex flex-col items-center justify-center  pt-[232px]">
 				<div className="flex">
-					<Image className="" src="top_orangepoint.svg" alt="" width={16} height={16} />
+					<Image
+						className=""
+						src="/img/top_orangepoint.svg"
+						alt=""
+						width={16}
+						height={16}
+					/>
 					<h2 className="pl-[8px] text-af-sm">会社案内</h2>
 				</div>
 				<motion.section
@@ -324,7 +330,7 @@ export default function Home() {
 					transition={{ duration: 2 }}
 				>
 					<Image
-						src="top_ourmissiontitle.svg"
+						src="/img/top_ourmissiontitle.svg"
 						alt="お客様の成功と笑顔を広げ、社会、社員を豊かに"
 						width={703}
 						height={317}
@@ -355,7 +361,7 @@ export default function Home() {
 			{/* 事業概要（Service） */}
 			<section className="bg-af-black px-[80px] pt-[68px] rounded-tl-[48px]">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
+					<Image src="/img/top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm text-af-white">事業概要</h2>
 				</div>
 				<AnimatedSectionTitle
@@ -374,7 +380,7 @@ export default function Home() {
 					<div className="flex-1 h-full pt-[96px] overflow-y-auto">
 						<div className="">
 							<Image
-								src="top_venn_diagram.svg"
+								src="/img/top_venn_diagram.svg"
 								alt=""
 								width={447.55}
 								height={424.12}
@@ -388,7 +394,7 @@ export default function Home() {
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
 									<Image
-										src="top_serviceIcon_SI.svg"
+										src="/img/top_serviceIcon_SI.svg"
 										alt=""
 										width={40}
 										height={40}
@@ -413,7 +419,7 @@ export default function Home() {
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
 									<Image
-										src="top_serviceIcon_Consult.svg"
+										src="/img/top_serviceIcon_Consult.svg"
 										alt=""
 										width={40}
 										height={40}
@@ -438,7 +444,7 @@ export default function Home() {
 							<div className="flex flex-col pt-[56px] pl-[56px] pr-[33px] border rounded-lg bg-af-white">
 								<div className="flex">
 									<Image
-										src="top_serviceIcon_Edu.svg"
+										src="/img/top_serviceIcon_Edu.svg"
 										alt=""
 										width={40}
 										height={40}
@@ -467,7 +473,7 @@ export default function Home() {
 			{/* 取扱製品一覧 */}
 			<section className="flex flex-col items-center justify-center mx-[80px] mt-[161px]">
 				<div className="flex">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
+					<Image src="/img/top_orangepoint.svg" alt="" width={16} height={16} />
 					<h2 className="pl-[8px] text-af-sm">取扱製品一覧</h2>
 				</div>
 				<AnimatedSectionTitle
@@ -500,7 +506,7 @@ export default function Home() {
 						<div className="flex items-center justify-center rounded-lg h-[408px] w-[408px] m-[31px] border border-af-black">
 							<Image
 								className="px-[32px]"
-								src="/top_CELF.jpg"
+								src="/img/top_CELF.jpg"
 								alt="CELFロゴ"
 								width={320}
 								height={81}
@@ -541,7 +547,7 @@ export default function Home() {
 						<div className="flex items-center justify-center rounded-lg h-[408px] w-[408px] m-[31px] border border-af-black">
 							<Image
 								className="px-[32px]"
-								src="/top_Salesforce.jpg"
+								src="/img/top_Salesforce.jpg"
 								alt="Salesforceロゴ"
 								width={320}
 								height={81}
@@ -617,7 +623,7 @@ export default function Home() {
 			{/* 採用情報 */}
 			<section className="bg-af-black pt-[116px] pb-[48px]">
 				<div className="flex px-[80px]">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
+					<Image src="/img/top_orangepoint.svg" alt="" width={16} height={16} />
 					<h3 className="pl-[8px] text-af-sm text-af-white">採用情報</h3>
 				</div>
 				<AnimatedSectionTitle
@@ -633,7 +639,7 @@ export default function Home() {
 				<div className="px-[80px]">
 					<div className="flex justify-end pr-64 pt-1.5">
 						<Image
-							src="top_workwithus.svg"
+							src="/img/top_workwithus.svg"
 							alt=""
 							width={428.53}
 							height={138.77}
@@ -653,7 +659,7 @@ export default function Home() {
 			<section className="flex mt-[276px] px-[80px]">
 				<div className="w-1/2">
 					<div className="flex mb-[32px]">
-						<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
+						<Image src="/img/top_orangepoint.svg" alt="" width={16} height={16} />
 						<h3 className="pl-[8px] text-af-sm">お知らせ</h3>
 					</div>
 					<AnimatedSectionTitle
@@ -685,7 +691,7 @@ export default function Home() {
 			{/* セミナー情報 */}
 			<section className="px-[80px] pt-[80px]">
 				<div className="flex mb-[32px]">
-					<Image src="top_orangepoint.svg" alt="" width={16} height={16} />
+					<Image src="/img/top_orangepoint.svg" alt="" width={16} height={16} />
 					<h3 className="pl-[8px] text-af-sm">セミナー情報</h3>
 				</div>
 				<AnimatedSectionTitle

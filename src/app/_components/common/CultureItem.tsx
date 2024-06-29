@@ -7,8 +7,8 @@ function StyledComponent(props: {
 	number: string;
 	text: string;
 	imageUrl: string;
-	imageWidth: string;
-	imageHight: string;
+	imageWidth: number;
+	imageHight: number;
 }) {
 	return (
 		<div className="relative w-[373px] h-[450px] flex items-center justify-center">

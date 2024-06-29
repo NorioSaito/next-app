@@ -18,7 +18,7 @@ function Button(props: { title: string; link: string }) {
 						alt=""
 						width={4}
 						height={10}
-						src="v.svg"
+						src="/img/v.svg"
 					/>
 				</div>
 			</div>
