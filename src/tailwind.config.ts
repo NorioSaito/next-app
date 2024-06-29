@@ -19,6 +19,7 @@ const config: Config = {
 				'af-sm': '2.4rem', // 24px
 				'af-md': '3.2rem', // 32px
 				'af-lg': '6.4rem', // 64px
+				'af-xl': '8.0rem', // 80px
 			},
 			colors: {
 				'af-orange': '#FF5C00', // オレンジ
@@ -27,7 +28,8 @@ const config: Config = {
 				'af-gray': '#F9F9F9', // グレー
 				'af-blue': '#0057FF', // ブルー
 				'af-yellow': '#FFD400', // 黄色
-				'af-green': '#58D073', // 緑
+				'af-green': '#EBFF00', // 緑
+				'af-limegreen': '#58D073', // ライムグリーン
 			},
 		},
 	},

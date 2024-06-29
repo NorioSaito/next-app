@@ -11,9 +11,7 @@ function Button(props: { title: string; link: string }) {
 		>
 			<div className="col-span-2">{props.title}</div>
 			<div className="grid items-center contents-cente justify-end">
-				<div className="font-bold text-center align-middle w-7 h-7 rounded-full bg-orange-600">
-					＞
-				</div>
+				<div className="font-bold text-center align-middle w-7 h-7 rounded-full bg-orange-600"></div>
 			</div>
 		</a>
 	);

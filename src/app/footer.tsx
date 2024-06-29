@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,10 +24,10 @@ function footer() {
 
 	// const returnTop = () => {
 	// 	window.scrollTo({
-	// 	  top: 0,
-	// 	  behavior: 'smooth'
-	// 	})
-	//   }
+	// 		top: 0,
+	// 		behavior: 'smooth',
+	// 	});
+	// };
 
 	return (
 		<footer>

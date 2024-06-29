@@ -4,8 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PopoverGroup } from '@headlessui/react';
-import { Bars3Icon, Square2StackIcon } from '@heroicons/react/24/outline';
+import { Square2StackIcon } from '@heroicons/react/24/outline';
 import PATHS from '../../constants/paths';
+import HamburgerMenu from './HamburgerMenu';
 
 function Topheader() {
 	// const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +23,9 @@ function Topheader() {
 
 	return (
 		<header>
-			<nav className="flex px-20 py-2">
+			<nav className="flex px-20 py-16">
 				<div className="w-1/2">
-					<Link href={PATHS.INDEX} className="-m-1.5 p-1.5">
+					<Link href={PATHS.INDEX} className="m-1.5 p-1.5">
 						<span className="sr-only">Your Company</span>
 						<Image
 							src="A-force_horizon.svg"
@@ -41,22 +42,24 @@ function Topheader() {
 								<div key={item.key}>
 									<Link
 										href={item.path}
-										className="flex items-center space-x-1 text-left"
+										className="flex items-center space-x-1 text-left text-af-xs"
 									>
 										<span>{item.text}</span>
-										<Square2StackIcon className="h-4"></Square2StackIcon>
+										<Square2StackIcon className="h-4 w-4"></Square2StackIcon>
 									</Link>
 								</div>
 							) : (
 								<div key={item.key}>
-									<Link href={item.path}>{item.text}</Link>
+									<Link href={item.path} className="text-af-xs">
+										{item.text}
+									</Link>
 								</div>
 							),
 						)}
 					</PopoverGroup>
 					<div>
 						{/* 20240620時点でハンバーガーメニュー処理未実装 */}
-						<Bars3Icon className="h-7"></Bars3Icon>
+						<HamburgerMenu />
 					</div>
 				</div>
 			</nav>
