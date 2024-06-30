@@ -6,6 +6,6 @@ COPY ./src /web
 WORKDIR /web/src
 
 RUN npm install
-RUN next build
+RUN npm run build
 
-CMD npm start
+CMD npm run start
