@@ -63,7 +63,7 @@ const HamburgerMenu: React.FC = () => {
 						<div className="flex">
 							<Image
 								className="flex justify-start mb-[42px]"
-								src="/img/imgtop_hamburger_A-force.svg"
+								src="/img/top_hamburger_A-force.svg"
 								alt="エイ・フォース株式会社"
 								width={187}
 								height={47}
